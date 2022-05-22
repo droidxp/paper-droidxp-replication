@@ -1,0 +1,1 @@
+"<android.location.LocationManager: java.lang.String getBestProvider(android.location.Criteria,boolean)>""<javax.net.SocketFactory: java.net.Socket createSocket()>""<javax.net.ssl.SSLContext: javax.net.ssl.SSLSocketFactory getSocketFactory()>"

@@ -1,0 +1,1 @@
+"<android.telephony.TelephonyManager: java.lang.String getDeviceId()>""<android.net.ConnectivityManager: android.net.NetworkInfo getNetworkInfo(int)>""<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>""<android.net.NetworkInfo: android.net.NetworkInfo$State getState()>"

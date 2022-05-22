@@ -1,0 +1,1 @@
+"<android.media.AudioManager: int getRingerMode()>""<android.media.AudioManager: boolean isMusicActive()>""<android.telephony.TelephonyManager: java.lang.String getNetworkOperator()>""<android.net.NetworkInfo: int getType()>""<android.media.AudioManager: int getMode()>"

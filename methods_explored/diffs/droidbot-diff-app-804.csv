@@ -1,0 +1,1 @@
+"<org.apache.http.conn.scheme.PlainSocketFactory: org.apache.http.conn.scheme.PlainSocketFactory getSocketFactory()>""<javax.net.SocketFactory: java.net.Socket createSocket()>""<android.telephony.TelephonyManager: java.lang.String getDeviceId()>""<android.location.LocationManager: java.lang.String getBestProvider(android.location.Criteria,boolean)>"

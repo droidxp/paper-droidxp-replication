@@ -1,0 +1,1 @@
+"<android.net.NetworkInfo: int getType()>""<android.net.ConnectivityManager: android.net.NetworkInfo getNetworkInfo(int)>""<android.net.ConnectivityManager: android.net.NetworkInfo getActiveNetworkInfo()>"

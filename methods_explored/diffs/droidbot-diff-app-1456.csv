@@ -1,0 +1,1 @@
+"<org.apache.http.conn.scheme.PlainSocketFactory: org.apache.http.conn.scheme.PlainSocketFactory getSocketFactory()>""<android.telephony.TelephonyManager: java.lang.String getNetworkOperatorName()>""<android.accounts.AccountManager: android.accounts.Account[] getAccounts()>""<android.net.NetworkInfo: int getSubtype()>"
