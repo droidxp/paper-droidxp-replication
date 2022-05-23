@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="9"
+    android:versionName="1.2"
+    package="com.ebserver.syncschedule">
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <application
+        android:label="Sync Schedule"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:label="Sync Schedule"
+            android:name=".syncschedule">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Settings" />
+
+        <receiver
+            android:name="com.ebserver.syncschedule.backend.scheduler.CronScheduler">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ebserver.syncschedule.ACTION_EXECUTE_SCHEDULED_ACTION" />
+
+                <data
+                    android:mimeType="vnd.android.cursor.item/*" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".synconoff.InterfaceStatsProvider"
+            android:authorities="com.ebserver.syncschedule" />
+
+        <receiver
+            android:name=".synconoff.IntentInit">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ebserver.syncschedule.ACTION_RESET_COUNTERS" />
+
+                <data
+                    android:mimeType="vnd.android.cursor.item/interfacestats" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="a14c8c4e4238346" />
+
+        <receiver
+            android:name="com.admob.android.ads.analytics.InstallReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <receiver
+        android:name=".synconoff.Bootstrapper"
+        android:enabled="true">
+
+        <intent-filter>
+
+            <action
+                android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+    </receiver>
+
+    <receiver
+        android:name=".Power"
+        android:enabled="true"
+        android:exported="true">
+
+        <intent-filter>
+
+            <action
+                android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+            <action
+                android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+        </intent-filter>
+    </receiver>
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER" />
+</manifest>

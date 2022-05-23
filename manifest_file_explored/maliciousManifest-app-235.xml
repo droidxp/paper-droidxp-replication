@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0 (2bc6e49)"
+    package="ch.ethz.ethglobe">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="@ref/0x7f040000"
+        android:icon="@ref/0x7f020014"
+        android:allowBackup="false">
+
+        <activity
+            android:label="@ref/0x7f040000"
+            android:name="me.publ.lib.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="me.publ.lib.PDFListActivity" />
+
+        <activity
+            android:name="me.publ.lib.PDFGalleryActivity" />
+    </application>
+</manifest>

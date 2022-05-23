@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.code.vnproapps.haiviet">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:label="@ref/0x7f040001"
+        android:icon="@ref/0x7f02001b">
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name=".MainBookActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.AudiobookActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.ListCategory"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.ListCate"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.ListItem"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.StreamingPlayer"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.HomeTab"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.ListitemHome"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.SearchActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.ListRootCate"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.DownloadActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.HelpActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.ListItemByArtist"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.VideoPlayer"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040001"
+            android:name="com.code.vnproapps.RequireActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <service
+            android:name="com.code.vnproapps.DownloadService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.code.vnproapps.WifiService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.code.vnproapps.PingService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.code.vnproapps.PingMediaService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.code.vnproapps.service.KeepAliveService"
+            android:enabled="true" />
+    </application>
+</manifest>

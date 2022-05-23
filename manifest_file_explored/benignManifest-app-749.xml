@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.01"
+    android:windowSoftInputMode="0x20"
+    package="com.a94936121052df15ecc2fae2a.a57804348a">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020001"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="cordovaExample"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="org.apache.cordova.DroidGap"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter />
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMAdViewOverlayActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+    </application>
+</manifest>

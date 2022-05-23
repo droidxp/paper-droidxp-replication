@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.2"
+    android:installLocation="2"
+    package="com.sundance.kr2">
+
+    <uses-sdk
+        android:minSdkVersion="6" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-feature
+        android:glEsVersion="0x10001" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

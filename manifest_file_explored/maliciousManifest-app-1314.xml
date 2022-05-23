@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="15"
+    android:versionName="1.1.2"
+    package="cn.voilet.gomusicplayer">
+
+    <uses-sdk
+        android:minSdkVersion="10" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true" />
+
+    <application
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f020029">
+
+        <activity
+            android:name="cn.voilet.musicplayer.LibraryActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x30">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0a0005"
+            android:name="cn.voilet.musicplayer.PlaylistActivity"
+            android:launchMode="2" />
+
+        <receiver
+            android:name="cn.voilet.musicplayer.MediaButtonReceiver">
+
+            <intent-filter
+                android:priority="999">
+
+                <action
+                    android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="cn.voilet.musicplayer.PlaybackService">
+
+            <intent-filter>
+
+                <action
+                    android:name="org.kreed.vanilla.action.PLAY" />
+
+                <action
+                    android:name="org.kreed.vanilla.action.PAUSE" />
+
+                <action
+                    android:name="org.kreed.vanilla.action.TOGGLE_PLAYBACK" />
+
+                <action
+                    android:name="org.kreed.vanilla.action.NEXT_SONG" />
+
+                <action
+                    android:name="org.kreed.vanilla.action.PREVIOUS_SONG" />
+
+                <action
+                    android:name="org.kreed.vanilla.SLEEP_TIMEOUT" />
+
+                <action
+                    android:name="cn.voilet.exit" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f0a0005"
+            android:name="cn.voilet.musicplayer.TabOrderActivity" />
+
+        <receiver
+            android:label="@ref/0x7f070000"
+            android:name="cn.voilet.musicplayer.OneCellWidget">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050000" />
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f0a0003"
+            android:name="cn.voilet.musicplayer.MainTopRightDialog"
+            android:launchMode="2" />
+
+        <receiver
+            android:label="EQ Player 1x1"
+            android:name="cn.voilet.musicplayer.OneCellWidget">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050000" />
+        </receiver>
+
+        <receiver
+            android:label="EQ Player 4x1 B"
+            android:name="cn.voilet.musicplayer.WidgetE">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050002" />
+        </receiver>
+
+        <receiver
+            android:label="EQ Player 2x2"
+            android:name="cn.voilet.musicplayer.WidgetD">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050001" />
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@string/0x14" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="google" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.startapp.android.eula.EULAActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:taskAffinity="cn.voilet.gomusicplayer.AppWall" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.startapp.android.publish.AppWallActivity"
+            android:taskAffinity="cn.voilet.gomusicplayer.AppWall"
+            android:configChanges="0xa0" />
+
+        <meta-data
+            android:name="com.startapp.android.DEV_ID"
+            android:value="105210706" />
+
+        <meta-data
+            android:name="com.startapp.android.APP_ID"
+            android:value="203716206" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+</manifest>

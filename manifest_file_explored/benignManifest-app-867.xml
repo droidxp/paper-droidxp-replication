@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.tuan_listview">
+
+    <application
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f020008">
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="com.tuan_listview.SplashScreenActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tuan_listview.tuan_listview" />
+
+        <activity
+            android:theme="@ref/0x7f060001"
+            android:name="com.tuan_listview.switcher" />
+
+        <activity
+            android:label="每日团购汇总"
+            android:name="com.tuan_listview.FeedWebActivity" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4c583ffa1d41c841a4000b2a" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="google market" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="5" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

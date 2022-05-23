@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="6"
+    android:versionName="1.2.4"
+    package="kk.scofield">
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <application
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020004">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name=".Main"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Recommend"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".LadyChannel"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".FashionChannel"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".BeautyChannel"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".Shirt"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".HotType"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".RecommendType"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".PosterShow"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".GoodsInfo"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".WenXiongType"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".NeiKuType"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".QingQuType"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.umeng.api.activity.OauthActivity"
+            android:screenOrientation="-1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f070002"
+            android:name="com.umeng.api.activity.UpdateStatusActivity"
+            android:screenOrientation="-1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="cn.domob.android.ads.DomobActivity" />
+
+        <receiver
+            android:name=".receiver.MReceiver"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4eeedd565270151d12000046" />
+
+        <meta-data
+            android:name="DOMOB_PID"
+            android:value="56OJyBdouML4iDahbk" />
+    </application>
+</manifest>

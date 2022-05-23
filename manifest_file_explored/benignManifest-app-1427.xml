@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="7"
+    android:versionName="1.0.9"
+    package="com.bappz.chelsea">
+
+    <application
+        android:label="@ref/0x7f050019"
+        android:icon="@ref/0x7f020010"
+        android:name="com.bappz.chelsea.ChelseaApp"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f05001b"
+            android:name=".ChelseaActivity"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.bappz.podcast.PodcastProvider"
+            android:exported="true"
+            android:multiprocess="true"
+            android:authorities="com.bappz.chelsea.Podcast" />
+
+        <activity
+            android:label="@ref/0x7f050019"
+            android:name="com.bappz.podcast.ShareOptionsActivity" />
+
+        <activity
+            android:label="@ref/0x7f050019"
+            android:name="com.bappz.podcast.Episodes" />
+
+        <activity
+            android:label="@ref/0x7f05001b"
+            android:name="com.bappz.podcast.TabLayout"
+            android:launchMode="2" />
+
+        <activity
+            android:label="@ref/0x7f050019"
+            android:name="com.bappz.chelsea.ChelseaMediaController"
+            android:launchMode="1" />
+
+        <activity
+            android:label="@ref/0x7f050019"
+            android:name="com.bappz.podcast.PodcastVideoController"
+            android:launchMode="1" />
+
+        <activity
+            android:label="news"
+            android:name="com.bappz.podcast.News" />
+
+        <activity
+            android:label="@ref/0x7f050019"
+            android:name="com.bappz.podcast.NewsDetails" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f05001c"
+            android:name="com.bappz.podcast.About" />
+
+        <activity
+            android:label="@ref/0x7f050019"
+            android:name="com.bappz.podcast.facebook.ShareOnFacebook" />
+
+        <service
+            android:name="com.bappz.chelsea.ChelseaService"
+            android:process=":remote">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.bappz.chelsea.IPodcastService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <receiver
+            android:name="com.google.android.apps.analytics.AnalyticsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+</manifest>

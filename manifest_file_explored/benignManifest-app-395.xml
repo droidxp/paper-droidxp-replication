@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="11"
+    android:versionName="1.4.1"
+    android:installLocation="0"
+    package="com.probcomp.advanceduninstaller">
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020003"
+        android:description="@ref/0x7f050001">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name=".AdvancedUninstaller"
+            android:launchMode="2"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AppOnBootReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".AppInstalledReceiver"
+            android:enabled="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".AppUninstalledReceiver"
+            android:enabled="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".AppMovedReceiver"
+            android:enabled="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
+
+                <action
+                    android:name="android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".UninstallerPrefs"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xb0" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE" />
+</manifest>

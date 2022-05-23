@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.0.1"
+    package="app.atraman.tabsticker">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18"
+        android:installLocation="0" />
+
+    <application
+        android:theme="@ref/0x7f090005"
+        android:label="@ref/0x7f0a0001"
+        android:icon="@ref/0x7f020007"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f0a0001"
+            android:name="app.atraman.tabfbphoto.MainTabsStyled">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="app.atraman.tabfbphoto.ImageDisplayActivity" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

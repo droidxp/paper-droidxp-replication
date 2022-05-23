@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="26"
+    android:versionName="1.9"
+    package="com.edgepublications.aspengayskiweek">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <permission
+        android:name="com.edgepublications.aspengayskiweek.permission.C2D_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.edgepublications.aspengayskiweek.permission.C2D_MESSAGE" />
+
+    <application
+        android:theme="@ref/0x7f0c004e"
+        android:label="@ref/0x7f0b000a"
+        android:icon="@ref/0x7f020064">
+
+        <meta-data
+            android:name="TAG"
+            android:value="Aspen Gay Ski Week" />
+
+        <meta-data
+            android:name="QUANTCAST_API_KEY"
+            android:value="0li7oadcgwl1btx2-qmbyeyqunvtzzug2" />
+
+        <meta-data
+            android:name="APPLICATION_ID"
+            android:value="10" />
+
+        <meta-data
+            android:name="XML_VERSION"
+            android:value="220" />
+
+        <meta-data
+            android:name="AD_CODE"
+            android:value="/1028549/ca-pub-0079427130322557/AND-AspenGaySkiWeek-320x50" />
+
+        <meta-data
+            android:name="AD_CODE_STORY"
+            android:value="/1028549/ca-pub-0079427130322557/AND-AspenGaySkiWeek-300x250" />
+
+        <meta-data
+            android:name="GOOGLE_PROJECT_ID"
+            android:value="538781255" />
+
+        <meta-data
+            android:name="DISPLAY_MESSAGE_ACTION"
+            android:value="com.edgepublications.aspengayskiweek.DISPLAY_MESSAGE" />
+
+        <meta-data
+            android:name="HOME_BACKGROUND_HEX"
+            android:value="000000" />
+
+        <meta-data
+            android:name="ACCENT_COLOR_HEX"
+            android:value="83b1dd" />
+
+        <meta-data
+            android:name="ACCENT_COLOR_R"
+            android:value="131" />
+
+        <meta-data
+            android:name="ACCENT_COLOR_G"
+            android:value="177" />
+
+        <meta-data
+            android:name="ACCENT_COLOR_B"
+            android:value="221" />
+
+        <meta-data
+            android:name="PUBLISHER"
+            android:value="Aspen Gay Ski Week" />
+
+        <meta-data
+            android:name="PUBLISHER_FR"
+            android:value="Aspen Gay Ski Week" />
+
+        <meta-data
+            android:name="APPLICATION"
+            android:value="Aspen Gay Ski Week" />
+
+        <meta-data
+            android:name="APPLICATION_FR"
+            android:value="Aspen Gay Ski Week" />
+
+        <meta-data
+            android:name="PUBLISHER_URL"
+            android:value="http://www.gayskiweek.com/" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.LoadingScreenActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.pridelabs.queeryme.myaccount.AccountSettings" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.HomeActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.HeadlinesActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.BlogsActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.EventsActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.PhotosActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.SponsorsActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.HotelsActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.ConferencePresentersActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.ConferenceScheduleActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.ConferenceTracksActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.FilmFestivalScheduleActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.MoviesActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.GiveawaysActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.AppsActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.HeadlinesViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.BlogsViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.EventsViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.PhotosViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.SponsorsViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.HotelsViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.ConferencePresentersViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.ConferenceScheduleViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.ConferenceTracksViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.FilmFestivalScheduleViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.MoviesViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.ListingsViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.ScreensViewActivity" />
+
+        <activity
+            android:name="com.pridelabs.queeryme.screens.GiveawaysViewActivity" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category
+                    android:name="com.edgepublications.aspengayskiweek" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.edgepublications.aspengayskiweek.GCMIntentService" />
+
+        <receiver
+            android:name="com.google.android.apps.analytics.AnalyticsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

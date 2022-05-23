@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="6"
+    android:versionName="1.01"
+    package="com.nervenets.soohotel">
+
+    <application
+        android:label="@ref/0x7f05002b"
+        android:icon="@ref/0x7f02005c"
+        android:name=".activity.ActivityGlobal"
+        android:hardwareAccelerated="false">
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:label="@ref/0x7f05002b"
+            android:name=".activity.LoadActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.MainActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.HotelDetailActivity"
+            android:process=":detail"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.ChooseCityActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.OrdersEditActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.MoreActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.KeyWordActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.OrdersLoadingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.OrdersNotLogin"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.AboutUsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.LostPasswordActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.FeedbackActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.MyOrderActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.MyFavoritesActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.MyReviewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.TupianBrowseActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.MyOrderDetail"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:name=".activity.ERCodeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5264d83c56240b87b8180fa0" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="market" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FIND_LOCATION" />
+</manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="onweb.gr.rythmos997">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f040001"
+        android:icon="@ref/0x7f020004"
+        android:screenOrientation="1">
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name="onweb.gr.Arhaggelos.OnwebtemplateActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f040001"
+            android:name="onweb.gr.Arhaggelos.Tabs"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f040001"
+            android:name="onweb.gr.Arhaggelos.twitter" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f040001"
+            android:name="onweb.gr.Arhaggelos.contact" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f040001"
+            android:name="onweb.gr.Arhaggelos.facebook" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f040001"
+            android:name="onweb.gr.Arhaggelos.player" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f040001"
+            android:name="onweb.gr.Arhaggelos.message" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f040001"
+            android:name="onweb.gr.Arhaggelos.finish" />
+
+        <service
+            android:name="onweb.gr.Arhaggelos.myPlayService"
+            android:enabled="true" />
+    </application>
+</manifest>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="4"
+    android:versionName="1.0.3"
+    android:installLocation="0"
+    package="toftwood.games.snakesandladders">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="Slot Machine. Snakes And Ladders."
+        android:icon="@ref/0x7f020007"
+        android:allowBackup="true">
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="Slot Machine. Snakes And Ladders."
+            android:name="toftwood.games.snakesandladders.SnakesAndLaddersActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="0xcb0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.mdotm.android.view.MdotMActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+</manifest>

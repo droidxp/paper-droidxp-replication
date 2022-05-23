@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="50"
+    android:versionName="1.12.5.2"
+    package="bt.android.elixir">
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="10" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIMAX_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIMAX_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_AP_STATE" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.NFC" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_STATS" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="bt.android.elixir.permission.USE_ADDON" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f02006b"
+        android:name=".app.ElixirApplication">
+
+        <receiver
+            android:label="@ref/0x7f0704cc"
+            android:name=".widget.Widget1x1Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040000" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704cd"
+            android:name=".widget.Widget1x2Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040001" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704ce"
+            android:name=".widget.Widget1x3Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040002" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704cf"
+            android:name=".widget.Widget1x4Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040003" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d0"
+            android:name=".widget.Widget1x5Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040004" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d1"
+            android:name=".widget.Widget2x1Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040005" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d2"
+            android:name=".widget.Widget2x2Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040006" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d3"
+            android:name=".widget.Widget2x3Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040007" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d4"
+            android:name=".widget.Widget2x4Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040008" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d5"
+            android:name=".widget.Widget3x1Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040009" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d6"
+            android:name=".widget.Widget3x2Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f04000a" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d7"
+            android:name=".widget.Widget3x3Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f04000b" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d8"
+            android:name=".widget.Widget3x4Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f04000c" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704d9"
+            android:name=".widget.Widget4x1Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f04000d" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704da"
+            android:name=".widget.Widget4x2Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f04000e" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704db"
+            android:name=".widget.Widget4x3Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f04000f" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704dc"
+            android:name=".widget.Widget4x4Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040010" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704dd"
+            android:name=".widget.Widget5x1Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040011" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f0704de"
+            android:name=".widget.Widget5x2Provider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040012" />
+        </receiver>
+
+        <activity
+            android:name=".widget.WidgetConfigure"
+            android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".app.AboutActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".app.EnterCodeActivity" />
+
+        <activity
+            android:name=".app.ElixirSystemActivity" />
+
+        <activity
+            android:name=".app.ElixirSensorsActivity" />
+
+        <activity
+            android:name=".app.ElixirRunningActivity" />
+
+        <activity
+            android:name=".app.ElixirRunningProcessesActivity" />
+
+        <activity
+            android:name=".app.ElixirRunningServicesActivity" />
+
+        <activity
+            android:name=".app.ElixirRunningTasksActivity" />
+
+        <activity
+            android:name=".app.SettingsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".app.SettingsGlobalActivity" />
+
+        <activity
+            android:name=".app.SettingsApplicationActivity" />
+
+        <activity
+            android:name=".app.SettingsWidgetActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".app.TipsAndTricksActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".settings.PickApplicationActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".settings.SettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".skin.IconPackActivity" />
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name=".widget.WidgetMenu"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:noHistory="true" />
+
+        <activity
+            android:name=".widget.SlotTypeActivity" />
+
+        <activity
+            android:name=".app.ElixirActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".app.ElixirBroadcastReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.NEW_OUTGOING_CALL" />
+
+                <action
+                    android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".widget.WidgetBroadcastReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.media.RINGER_MODE_CHANGED" />
+
+                <action
+                    android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+
+                <action
+                    android:name="android.net.wifi.RSSI_CHANGED" />
+
+                <action
+                    android:name="bt.android.elixir.actions.MOBILE_DATA_SWITCH" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_CHANGED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_INSTALL" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".widget.WidgetUpdateService" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$WifiToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$BluetoothToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$Bluetooth3StateToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$GpsToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$AirplaneModeToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$AutoRotateToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$AutoBrightnessToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$BrightnessToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$AutoSyncToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$MobileDataToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$RingerModeToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$MuteToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$ScreenTimeoutToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$SpeakerphoneToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$SyncAllToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$LockToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$WifiApToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$WiMaxToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".widget.AbstractWidgetProvider$EditWidgetModeToogleService"
+            android:exported="true" />
+
+        <service
+            android:name=".app.ElixirService" />
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name=".helper.display.AutoBrightnessActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:noHistory="true" />
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name=".helper.display.BrightnessActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:noHistory="true" />
+
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="a14cd16cf2b8b89" />
+
+        <meta-data
+            android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.admob.android.ads.AdMobActivity"
+            android:configChanges="0xb0" />
+
+        <receiver
+            android:name="com.admob.android.ads.analytics.InstallReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

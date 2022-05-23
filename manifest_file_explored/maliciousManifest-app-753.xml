@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0.1"
+    android:installLocation="2"
+    package="com.relaxing.sounds">
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <supports-screens
+        android:anyDensity="false"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <application
+        android:label="Mute the world"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:label="Mute the world"
+            android:name=".main"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+</manifest>

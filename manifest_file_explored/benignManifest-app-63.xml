@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.notebook">
+
+    <application
+        android:label="@ref/0x7f040001"
+        android:icon="@ref/0x7f02000a">
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name=".NoteBook">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="AddNote" />
+
+        <activity
+            android:name="EditNote" />
+
+        <activity
+            android:name="HelpTheme" />
+
+        <meta-data
+            android:name="ZADMO_APP_ID"
+            android:value="9af4d1865e8075dd" />
+
+        <meta-data
+            android:name="gfan_cpid"
+            android:value="CPID" />
+
+        <meta-data
+            android:name="gfan_statistics_appkey"
+            android:value="72AA54637825F3482421" />
+
+        <meta-data
+            android:name="gfan_type"
+            android:value="tongjisdk" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="3" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+</manifest>

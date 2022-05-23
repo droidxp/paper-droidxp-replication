@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1060"
+    android:versionName="1.0.6"
+    package="com.resetgame.volleyball">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name=".Vapp"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="UmAd_APP_SEC"
+            android:value="4f52796f3b47551e" />
+
+        <meta-data
+            android:name="UmAd_APP_ID"
+            android:value="c7aa547a9036f696" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="1"
+        android:targetSdkVersion="4" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+</manifest>

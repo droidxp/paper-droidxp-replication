@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:windowSoftInputMode="0x20"
+    android:hardwareAccelerated="true"
+    package="bmi.weightloss.weight">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f050000"
+            android:name="example"
+            android:screenOrientation="1"
+            android:configChanges="0x4b4">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+</manifest>

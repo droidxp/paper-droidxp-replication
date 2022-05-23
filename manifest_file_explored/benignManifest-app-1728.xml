@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="708"
+    android:versionName="7.08"
+    android:installLocation="0"
+    package="com.riteshsahu.SMSBackupRestorePro">
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_SMS" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SMS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="com.riteshsahu.SMSBackupRestoreNetworkAddon.ACCESS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x7f080012"
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f020013"
+        android:name="com.riteshsahu.SMSBackupRestoreBase.CustomApplication">
+
+        <activity
+            android:name=".ProMain"
+            android:configChanges="0x4a4">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ProPreferences"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name=".ProSchedulePreferences"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name=".ProPasswordPreferences"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name="com.riteshsahu.BackupRestoreCommon.PasswordActivity"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name=".ProConversationView"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name=".ProDeleteFilesActivity"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name=".ProSearchActivity"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name=".ProSearchResultActivity"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name="com.riteshsahu.SMSBackupRestoreBase.MessageView"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name="com.riteshsahu.SMSBackupRestoreBase.ContactView"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name="com.riteshsahu.SMSBackupRestoreBase.Help"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name=".ProSelectFileActivity"
+            android:configChanges="0x4a4">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:pathPattern=".*\.xml" />
+
+                <data
+                    android:host="*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="text/xml"
+                    android:scheme="content" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:host="*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ProLanguageSelectionActivity"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:name=".ProBackupPreferencesActivity"
+            android:configChanges="0x4a4" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:icon="@ref/0x7f020013"
+            android:name=".ProLocaleActivity"
+            android:exported="true"
+            android:configChanges="0x4a4">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ProAlarmProcessorService" />
+
+        <receiver
+            android:name=".ProAlarmProcessor">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category
+                    android:name="android.intent.category.HOME" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ProSendToMessageActivity"
+            android:enabled="@ref/0x7f050000"
+            android:configChanges="0x4a4">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <action
+                    android:name="android.intent.action.SENDTO" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sms" />
+
+                <data
+                    android:scheme="smsto" />
+
+                <data
+                    android:scheme="mms" />
+
+                <data
+                    android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.riteshsahu.SMSBackupRestoreBase.MessagingReceiver"
+            android:permission="android.permission.BROADCAST_SMS"
+            android:enabled="@ref/0x7f050000">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.riteshsahu.SMSBackupRestoreBase.MessagingReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH"
+            android:enabled="@ref/0x7f050000">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+
+                <data
+                    android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.riteshsahu.SMSBackupRestoreBase.MessagingService"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
+            android:enabled="@ref/0x7f050000"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="sms" />
+
+                <data
+                    android:scheme="smsto" />
+
+                <data
+                    android:scheme="mms" />
+
+                <data
+                    android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

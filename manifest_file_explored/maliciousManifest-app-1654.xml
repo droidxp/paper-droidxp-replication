@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="207"
+    android:versionName="2.07"
+    android:installLocation="0"
+    package="com.meidatool.judsapp">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x7f0a0059"
+        android:label="@ref/0x7f09000d"
+        android:icon="@ref/0x7f020075"
+        android:name="com.rave.mediafyre.AppClass">
+
+        <activity
+            android:theme="@ref/0x7f0a0059"
+            android:label="@ref/0x7f09000d"
+            android:name="com.rave.mediafyre.HomeActivity"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.rave.mediafyre.SongEngine"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.rave.mediafyre.ArtistEngine"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.rave.mediafyre.AlbumEngine"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.rave.mediafyre.ArtistAlbums"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.rave.mediafyre.Eighttracks"
+            android:configChanges="0xa0" />
+
+        <service
+            android:label="Arveen"
+            android:name="com.rave.mediafyre.Downloader"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="Downloads"
+            android:name="com.rave.mediafyre.DownloadsView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidBrowser"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:taskAffinity="com.rave.mediafyre.AppWall" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.startapp.android.publish.AppWallActivity"
+            android:taskAffinity="com.rave.mediafyre.AppWall"
+            android:configChanges="0xa0" />
+
+        <meta-data
+            android:name="com.startapp.android.DEV_ID"
+            android:value="1289177344.000000" />
+
+        <meta-data
+            android:name="com.startapp.android.APP_ID"
+            android:value="212355366" />
+    </application>
+</manifest>

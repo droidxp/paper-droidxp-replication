@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    installLocation="preferExternal"
+    package="com.mnf.prr2">
+
+    <uses-sdk
+        android:minSdkVersion="6"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:label="Police Speed Racing"
+        android:icon="@ref/0x7f020001"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerProxyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerNativeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fff">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="unity" />
+
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.playhaven.src.publishersdk.content.PHContentView"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.chartboost.sdk.CBImpressionActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.jirbo.adcolony.AdColonyOverlay"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="com.jirbo.adcolony.AdColonyFullscreen"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="com.jirbo.adcolony.AdColonyBrowser"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.freeworld.unions.ads.JoyAdJoymeng" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.freeworld.promote.prize.JoyPrizeTimerActivity" />
+
+        <activity
+            android:name="com.freeworld.promote.prize.JoyPrizeMoreGameActivity" />
+
+        <receiver
+            android:name="com.freeworld.promote.notice.JoyNoticeReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.letang.fullad.ui.FullAdActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-feature
+        android:glEsVersion="65537" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

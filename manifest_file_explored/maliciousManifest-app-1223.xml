@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="107"
+    android:versionName="1.07"
+    android:installLocation="0"
+    package="com.possiblegames.jamaica">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:theme="@ref/0x7f0b0000"
+        android:label="S&F"
+        android:icon="@ref/0x7f020079"
+        android:allowBackup="true">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="S&F"
+            android:name="com.possiblegames.jamaica.MainActivity"
+            android:launchMode="2"
+            android:screenOrientation="6"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.possiblegames.jamaica.GameActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.jirbo.adcolony.AdColonyOverlay"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="com.jirbo.adcolony.AdColonyFullscreen"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="com.jirbo.adcolony.AdColonyBrowser"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.possiblegames.ext.ApkDownloadActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.possiblegames.ext.SampleDownloaderService" />
+
+        <receiver
+            android:name="com.possiblegames.ext.SampleAlarmReceiver" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f090001" />
+    </application>
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

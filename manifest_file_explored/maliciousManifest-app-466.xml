@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2500"
+    android:versionName="1.8.0"
+    android:installLocation="2"
+    package="com.turner.copatoon">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f050007"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f050007"
+            android:name=".RegularUnityActivity"
+            android:launchMode="2"
+            android:screenOrientation="4"
+            android:configChanges="0x40000fff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f050007"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:screenOrientation="4"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.playhaven.android.view.FullScreen"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="playhaven"
+                    android:host="localhost"
+                    android:pathPattern="/full" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.playhaven.android.push.PushReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="com.playhaven.android" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.playhaven.android.push.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category
+                    android:name="com.turner.copatoon" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-feature
+        android:glEsVersion="0x10001" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <permission
+        android:name="com.turner.copatoon.permission.C2D_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.turner.copatoon.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+</manifest>

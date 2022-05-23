@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="21"
+    android:versionName="2.0.13"
+    package="com.pocketappbuilders.cpuusagestatusbar">
+
+    <application
+        android:label="@ref/0x7f040001"
+        android:icon="@ref/0x7f02002f">
+
+        <receiver
+            android:name=".BootUpReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:enabled="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action." />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x0103000c"
+            android:label="@ref/0x7f040001"
+            android:name=".CPUUsageStatusBarUI"
+            android:screenOrientation="5">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".CPUUsageStatusBar"
+            android:enabled="true" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="5" />
+</manifest>

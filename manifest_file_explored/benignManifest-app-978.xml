@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="20"
+    android:versionName="1.08"
+    package="com.draaagonslayerentertainmentllc.turkeyhunt">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="16" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:label="@ref/0x7f040000"
+        android:icon="@ref/0x7f020000"
+        android:name="com.soomla.store.SoomlaApp">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f040000"
+            android:name=".PZPlayer"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.soomla.billing.BillingService" />
+
+        <receiver
+            android:name="com.soomla.billing.BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="cont_pv"
+            android:value="2" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.elm.LMAK" />
+
+        <service
+            android:name="com.elm.LMS" />
+
+        <service
+            android:name="com.elm.LMSK" />
+
+        <receiver
+            android:name="com.elm.LMR"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="com.zdt.action.ALARM_ACTION" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="lis_pv"
+            android:value="1" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+</manifest>

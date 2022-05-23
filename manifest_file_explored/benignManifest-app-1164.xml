@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="327"
+    android:versionName="3.2.7"
+    android:installLocation="0"
+    package="com.gameloft.android.GAND.GloftAVAR.Avatar">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch" />
+
+    <application
+        android:label="@ref/0x7f06003d"
+        android:icon="@ref/0x7f020008">
+
+        <activity
+            android:name=".GameInstaller"
+            android:multiprocess="false"
+            android:finishOnTaskLaunch="true"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="3"
+            android:screenOrientation="0"
+            android:configChanges="0xf4">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Avatar"
+            android:multiprocess="false"
+            android:finishOnTaskLaunch="true"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0xf4" />
+
+        <activity
+            android:name=".MyVideoView"
+            android:multiprocess="false"
+            android:finishOnTaskLaunch="true"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="3"
+            android:screenOrientation="0"
+            android:configChanges="0xf4"
+            android:noHistory="true" />
+
+        <activity
+            android:theme="@ref/0x7f070005"
+            android:name=".Billing.AndroidBilling"
+            android:launchMode="1"
+            android:screenOrientation="0"
+            android:configChanges="0x400001ff" />
+
+        <receiver
+            android:name=".Billing.SmsReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="5" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="false" />
+</manifest>

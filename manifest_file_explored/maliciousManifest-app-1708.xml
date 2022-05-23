@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="105"
+    android:versionName="1.5.5"
+    package="org.gna.simpledl">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:theme="@ref/0x7f060001"
+        android:label="@ref/0x7f040000"
+        android:icon="@ref/0x7f02000a">
+
+        <activity
+            android:label="@ref/0x7f040000"
+            android:name="com.superphunlabs.yfoom.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.superphunlabs.yfoom.MusicService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.superphunlabs.yfoom.AboutActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.mdotm.android.view.MdotMActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="0xcb0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.adsdk.sdk.banner.InAppWebView"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.adsdk.sdk.video.RichMediaActivity"
+            android:configChanges="0xfb0"
+            android:hardwareAccelerated="false" />
+
+        <meta-data
+            android:name="com.revmob.app.id"
+            android:value="5243520177edf760ff00000f" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.revmob.ads.fullscreen.FullscreenActivity"
+            android:configChanges="0xa0" />
+    </application>
+</manifest>

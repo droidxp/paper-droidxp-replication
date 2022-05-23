@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="8"
+    android:versionName="3.0.0"
+    android:installLocation="2"
+    package="uk.co.omobile.eurekar">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <compatible-screens>
+
+        <screen
+            android:screenSize="300"
+            android:screenDensity="320" />
+
+        <screen
+            android:screenSize="300"
+            android:screenDensity="480" />
+
+        <screen
+            android:screenSize="400"
+            android:screenDensity="120" />
+
+        <screen
+            android:screenSize="400"
+            android:screenDensity="160" />
+
+        <screen
+            android:screenSize="400"
+            android:screenDensity="240" />
+
+        <screen
+            android:screenSize="400"
+            android:screenDensity="320" />
+
+        <screen
+            android:screenSize="400"
+            android:screenDensity="480" />
+
+        <screen
+            android:screenSize="500"
+            android:screenDensity="160" />
+
+        <screen
+            android:screenSize="500"
+            android:screenDensity="240" />
+
+        <screen
+            android:screenSize="500"
+            android:screenDensity="320" />
+
+        <screen
+            android:screenSize="500"
+            android:screenDensity="480" />
+    </compatible-screens>
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f040022"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f040022"
+            android:name="com.qualcomm.QCARUnityPlayer.QCARPlayerNativeActivity"
+            android:screenOrientation="4"
+            android:configChanges="0x40000fff">
+
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f040022"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:screenOrientation="4"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:name="com.unity3d.plugin.downloader.UnityDownloaderActivity" />
+
+        <service
+            android:name="com.unity3d.plugin.downloader.UnityDownloaderService" />
+
+        <receiver
+            android:name="com.unity3d.plugin.downloader.UnityAlarmReceiver" />
+    </application>
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <supports-gl-texture
+        android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+</manifest>

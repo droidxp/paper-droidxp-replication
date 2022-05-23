@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="150"
+    android:versionName="1.5.0"
+    android:installLocation="2"
+    package="com.zhuygdaz.xiaoxigua">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerProxyActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x400003ff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x400003ff" />
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerNativeActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x400003ff">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="unity" />
+
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:screenOrientation="3"
+            android:configChanges="0x400003ff" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:glEsVersion="65537" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+</manifest>

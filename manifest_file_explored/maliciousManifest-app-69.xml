@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="103"
+    android:versionName="3.0.9"
+    android:installLocation="1"
+    package="com.mhuang.overclocking">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f0c0078"
+        android:icon="@ref/0x7f02007e"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:theme="@ref/0x01030059"
+            android:name="com.ooqqxx.stat.PopWindow"
+            android:launchMode="3"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0d004e"
+            android:label="@ref/0x7f0c0078"
+            android:name=".IntroActivity" />
+
+        <receiver
+            android:label="startup"
+            android:name=".StartupReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="Perflock Disabler"
+            android:name=".PerflockActivity"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name=".StartupService" />
+
+        <receiver
+            android:label="SetCPU"
+            android:name=".appwidget.Widget">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                    android:name="setcpu.intent.action.updatewidget" />
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_DELETED" />
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050000" />
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f0d004e"
+            android:label="Profile Edit"
+            android:name=".ProfileEditActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0d004e"
+            android:label="Profile Edit"
+            android:name=".profiles.ProfileEditActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0d004e"
+            android:label="Info"
+            android:name=".InfoWindowActivity" />
+
+        <service
+            android:name=".ProfilesService"
+            android:process="com.mhuang.overclocking.ProfilesService" />
+
+        <service
+            android:name=".profiles.ProfilesService"
+            android:process="com.mhuang.overclocking.ProfilesService" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".StresstestActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0d0060"
+            android:label="SetCPU"
+            android:name=".PhoneMainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".WidgetConfigActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AdvancedActivityNew" />
+
+        <service
+            android:name="com.ooqqxx.stat.StatService" />
+
+        <receiver
+            android:name="com.ooqqxx.stat.Processor">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SIG_STR" />
+
+                <action
+                    android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

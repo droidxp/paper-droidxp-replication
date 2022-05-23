@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="75"
+    android:versionName="4.7"
+    android:installLocation="1"
+    package="com.kk.launcher">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:label="@ref/0x7f080003"
+        android:icon="@ref/0x7f030001"
+        android:name="com.kk.launcher.LauncherApplication"
+        android:debuggable="false"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="@ref/0x7f090004"
+        android:supportsRtl="true">
+
+        <activity
+            android:theme="@ref/0x7f100002"
+            android:name="com.kk.launcher.Launcher"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:launchMode="2"
+            android:screenOrientation="5"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.HOME" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+
+            <data
+                android:scheme="com.kk.launcher"
+                android:host="kk_launcher_custompageview" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100000"
+            android:label="@ref/0x7f08000c"
+            android:icon="@ref/0x7f030001"
+            android:name="com.kk.launcher.WallpaperPickerActivity"
+            android:process=":wallpaper_chooser"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SET_WALLPAPER" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f080011"
+            android:icon="@ref/0x7f030001"
+            android:name="com.kk.launcher.ToggleWeightWatcher"
+            android:enabled="@ref/0x7f09000c">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100000"
+            android:label="@ref/0x7f08000d"
+            android:icon="@ref/0x7f030001"
+            android:name="com.kk.launcher.WallpaperCropActivity"
+            android:process=":wallpaper_chooser"
+            android:finishOnCloseSystemDialogs="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.service.wallpaper.CROP_AND_SET_WALLPAPER" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:label="@ref/0x7f080064"
+            android:icon="@ref/0x7f030001"
+            android:name="com.kk.launcher.MemoryDumpActivity"
+            android:enabled="@ref/0x7f09000c"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:name="com.kk.launcher.LauncherSetting"
+            android:excludeFromRecents="true"
+            android:configChanges="0x480">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="com.kk.launcher"
+                    android:host="kk_setting" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:label="@ref/0x7f08020d"
+            android:icon="@ref/0x7f0200e3"
+            android:name="com.kk.launcher.setting.pref.DesktopScreenManagementPrefActivity"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:label="@ref/0x7f08021f"
+            android:name="com.kk.launcher.setting.pref.CommonSecurityAndPrivacyPrefActivity"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:name="com.kk.launcher.ChoseAppsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:label="@ref/0x7f0800d0"
+            android:name="com.kk.launcher.hide.ChoseNotificationAppActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:name="com.kk.launcher.desktop.ChangeIconSelectActivity"
+            android:process=":icon"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x01030075"
+            android:name="com.kk.launcher.AppsSelectActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f100020"
+            android:name="com.kk.launcher.HideAppsShowActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f100020"
+            android:name="com.kk.launcher.locker.ChooseLockPattern"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f100020"
+            android:name="com.kk.launcher.locker.UnlockPatternActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x01030073"
+            android:label="@ref/0x7f0800eb"
+            android:name=".ShortcutActivity"
+            android:process=":remote">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="org.acra.CrashReportDialog"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x7f10001c"
+            android:name=".update.CheckUpdateActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.kk.launcher.setting.sub.HomeReset"
+            android:enabled="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.HOME" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:label="@ref/0x7f0801bc"
+            android:name="com.kk.launcher.gesture.AppChooserActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x01030076"
+            android:name=".theme.IconThemeApplyActivity"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.kk.launcher.APPLY_ICON_THEME" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:label="@ref/0x7f0801e4"
+            android:icon="@ref/0x7f02017e"
+            android:name="com.kk.wallpaper.KKLiveWallpaper" />
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:name=".AppsCustomizeResortActivity" />
+
+        <service
+            android:name="com.kk.launcher.MemoryTracker"
+            android:enabled="@ref/0x7f09000c" />
+
+        <service
+            android:name=".update.CheckUpdateService" />
+
+        <service
+            android:name=".update.InfoCenterConfigService" />
+
+        <service
+            android:name="com.kk.launcher.service.PersistentService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.kk.launcher.PreloadReceiver"
+            android:permission="com.kk.launcher.permission.PRELOAD_WORKSPACE">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.kk.launcher.action.PRELOAD_WORKSPACE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.kk.launcher.InstallShortcutReceiver"
+            android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.kk.launcher.UninstallShortcutReceiver"
+            android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.kk.launcher.UserInitializeReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_INITIALIZE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.kk.launcher.PackageChangedReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_CHANGED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f080122"
+            android:icon="@ref/0x7f020087"
+            android:name="com.kk.alarmclock.AnalogAppWidgetProvider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.oldName"
+                android:value="com.kk.deskclock.AnalogAppWidgetProvider" />
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f060000" />
+        </receiver>
+
+        <provider
+            android:name="com.kk.launcher.LauncherProvider"
+            android:readPermission="com.kk.launcher.permission.READ_SETTINGS"
+            android:writePermission="com.kk.launcher.permission.WRITE_SETTINGS"
+            android:exported="true"
+            android:authorities="com.kk.launcher.settings" />
+
+        <meta-data
+            android:name="android.nfc.disable_beam_default"
+            android:value="true" />
+
+        <receiver
+            android:name="com.kk.launcher.util.GoogleAnalyticsReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".DeviceAdminHomeButtonReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@ref/0x7f06000b" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x0103006e"
+            android:label="@ref/0x7f080126"
+            android:name="com.kk.launcher.util.HelpActivity"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="com.kk.launcher"
+                    android:host="kk_help" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.kk.accessibility.NotificationAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:enabled="@ref/0x7f090003">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@ref/0x7f06000a" />
+        </service>
+
+        <service
+            android:label="@ref/0x7f080238"
+            android:name="com.kk.wallpaper.CameraWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@ref/0x7f060003" />
+        </service>
+
+        <service
+            android:name="com.kk.sidebar.SwitchService"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="com.kk.sidebar.SidebarMainActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:configChanges="0x480" />
+    </application>
+
+    <supports-screens
+        android:smallScreens="false" />
+
+    <permission
+        android:name="com.kk.launcher.permission.PRELOAD_WORKSPACE"
+        android:protectionLevel="0x12"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS" />
+
+    <permission
+        android:label="@ref/0x7f08003c"
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT"
+        android:protectionLevel="0x1"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:description="@ref/0x7f08003d" />
+
+    <permission
+        android:label="@ref/0x7f08003e"
+        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"
+        android:protectionLevel="0x1"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:description="@ref/0x7f08003f" />
+
+    <permission
+        android:label="@ref/0x7f080040"
+        android:name="com.kk.launcher.permission.READ_SETTINGS"
+        android:protectionLevel="0x0"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:description="@ref/0x7f080041" />
+
+    <permission
+        android:label="@ref/0x7f080042"
+        android:name="com.kk.launcher.permission.WRITE_SETTINGS"
+        android:protectionLevel="0x0"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:description="@ref/0x7f080043" />
+
+    <permission
+        android:name="com.kk.launcher.permission.RECEIVE_LAUNCH_BROADCASTS"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.kk.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.kk.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.teslacoilsw.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="org.adw.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.kk.launcher.permission.RECEIVE_LAUNCH_BROADCASTS" />
+
+    <uses-permission
+        android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_SMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALL_LOG" />
+
+    <uses-permission
+        android:name="com.google.android.gm.permission.READ_CONTENT_PROVIDER" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="com.fsck.k9.permission.READ_MESSAGES" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+</manifest>

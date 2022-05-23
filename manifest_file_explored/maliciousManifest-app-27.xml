@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="8"
+    android:versionName="1.45"
+    android:installLocation="2"
+    package="pl.netigen.bestbassguitarfree">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:theme="@ref/0x7f0c0002"
+        android:label="@ref/0x7f070001"
+        android:icon="@ref/0x7f020020"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f070001"
+            android:name="pl.netigen.bestbassguitarfree.StartActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070001"
+            android:name="pl.netigen.bestbassguitarfree.BassFretboardActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f070001"
+            android:name="pl.netigen.bestbassguitarfree.OtherApps"
+            android:screenOrientation="0"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f070001"
+            android:name="pl.netigen.bestbassguitarfree.Preferences"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

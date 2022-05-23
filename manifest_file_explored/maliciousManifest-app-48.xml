@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="140226"
+    android:versionName="2.8"
+    package="com.zqgame.mbm">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:theme="@ref/0x7f0a0000"
+        android:label="@ref/0x7f050036"
+        android:icon="@ref/0x7f0202b1"
+        android:name="com.zqgame.mbm.model.MbmApplication"
+        android:screenOrientation="1"
+        android:hardwareAccelerated="false">
+
+        <activity
+            android:name=".ui.activity.BootupUi"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ExperienceUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.EditionStatementUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.WelcomeUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.MainUi"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.IndexUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.RegisterUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.CropImgUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.LoginUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.ForgetPwdUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.MessageUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.DetailUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.AttractUserUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.SettingUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.AccountUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.SafeUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.BuyServiceUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.FeedbackUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.ShowImgUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.ModifyInfoUi"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name=".ui.activity.TestBasicVideo"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.MembersInfoEditUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.ApplyGoddessUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.ApplyGoddessGuideUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.LookMembersInfoUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.AddTransportationUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.BuyServiceIntroduceUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.HelpUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.PayUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.AlipayUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.PrivateUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.AboutUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.MemberUserUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.TicketUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.TroubleUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.EnhanceAttractUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.RankingUserListUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.TimeMachineUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.LimitShowBrowserUi"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name=".ui.activity.LimitShowUploadUi"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name=".ui.activity.CollectUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.LimitShowListUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.WebViewUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.NewReplyUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.NewDynamicUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.BuyGiftUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.UserGiftUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.ReplyLimitShowUi"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x5" />
+
+        <activity
+            android:name=".ui.activity.PayCardUi"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name=".ui.activity.PlayVideoUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.OneKeyRegisterUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.RecordVideoUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.UpdatePwdUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.PrivateVideoListUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.RequestMoreUi"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".ui.activity.CharmRankingListUi"
+            android:screenOrientation="1" />
+
+        <service
+            android:name=".socket.MessageServer"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.zqgame.mbm.broadcast.AlarmReceiver" />
+
+        <receiver
+            android:name="com.zqgame.mbm.broadcast.SdcardStateReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_EJECT" />
+
+                <action
+                    android:name="android.intent.action.MEDIA_REMOVED" />
+
+                <action
+                    android:name="android.intent.action.MEDIA_MOUNTED" />
+
+                <data
+                    android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="anzhiMarket" />
+
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="539f36cbf9" />
+
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+
+        <receiver
+            android:name="com.zqgame.mbm.broadcast.PushMessageReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.MESSAGE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.RECEIVE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="fvAs1xbS0rCd0qOmNHppFuSp" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FIND_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+</manifest>

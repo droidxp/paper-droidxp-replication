@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="com.doodlemobile"
+    android:versionCode="3"
+    android:versionName="1.2"
+    android:installLocation="2"
+    package="com.smilerlee.solitaire">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="15" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f0a0039"
+        android:icon="@ref/0x7f02008c">
+
+        <activity
+            android:theme="@ref/0x7f0b0004"
+            android:label="@ref/0x7f0a0039"
+            android:name=".MainMenu"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0b0004"
+            android:label="@ref/0x7f0a0039"
+            android:name=".Solitaire"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f0a0069"
+            android:name=".Preferences" />
+
+        <activity
+            android:label="@ref/0x7f0a0068"
+            android:name=".Statistics" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f0a0039"
+            android:name="com.doodlemobile.gamecenter.GameCenterActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.doodlemobile.gamecenter.LeaderBoardActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.doodlemobile.gamecenter.ProfileActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f0b0005"
+            android:name="com.doodlemobile.gamecenter.MoreGamesActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <meta-data
+            android:name="doodle_mobile_appid"
+            android:value="B3CECE48EAC74B8C" />
+
+        <activity
+            android:name="com.slegl.push.MainActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <service
+            android:name="com.slegl.push.MainService" />
+
+        <receiver
+            android:name="com.slegl.push.MainReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.cadegessdad.iad.AdPushActivity"
+            android:configChanges="0xa0" />
+
+        <receiver
+            android:name="net.cadegessdad.iad.AdPushReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="net.cadegessdad.iad.AdPushService" />
+
+        <meta-data
+            android:name="INIT_KEY"
+            android:value="8378ab9e731b476d8b38c0c9ca246bf4,10251,tf9i8oofq0ux79aw,20121122,1" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="500fc8cf5270155c50000017" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="gfan" />
+    </application>
+</manifest>

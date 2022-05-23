@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="12"
+    android:versionName="2.3"
+    android:installLocation="0"
+    package="org.firstmm.browser">
+
+    <application
+        android:label="@ref/0x7f090000"
+        android:icon="@ref/0x7f02003c"
+        android:debuggable="true"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:label="@ref/0x7f090000"
+            android:name="org.zirco.ui.activities.MainActivity"
+            android:launchMode="2"
+            android:configChanges="0x80"
+            android:hardwareAccelerated="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f090003"
+            android:name="org.zirco.ui.activities.AboutActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f090020"
+            android:name="org.zirco.ui.activities.EditBookmarkActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.BookmarksListActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.HistoryListActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.DownloadsListActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.AdBlockerWhiteListActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.BookmarksHistoryActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f09007a"
+            android:name="org.zirco.ui.activities.ChangelogActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.preferences.PreferencesActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f09007d"
+            android:name="org.zirco.ui.activities.preferences.HomepagePreferenceActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f090086"
+            android:name="org.zirco.ui.activities.preferences.SearchUrlPreferenceActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f09009b"
+            android:name="org.zirco.ui.activities.preferences.UserAgentPreferenceActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.MobileViewListActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.WeaveBookmarksListActivity" />
+
+        <activity
+            android:name="org.zirco.ui.activities.preferences.WeavePreferencesActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f090105"
+            android:name="org.zirco.ui.activities.preferences.WeaveServerPreferenceActivity" />
+
+        <provider
+            android:name="org.zirco.providers.ZircoBookmarksContentProvider"
+            android:authorities="org.zirco.providers.zircobookmarkscontentprovider" />
+
+        <provider
+            android:name="org.zirco.providers.WeaveContentProvider"
+            android:authorities="org.zirco.providers.weavecontentprovider" />
+
+        <provider
+            android:name="org.zirco.providers.LocalFileContentProvider"
+            android:authorities="org.firstmm.android.localfile" />
+
+        <receiver
+            android:name="org.zirco.utils.ProxyChangeReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PROXY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="0xcb0"
+            android:hardwareAccelerated="true" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <uses-permission
+        android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+</manifest>

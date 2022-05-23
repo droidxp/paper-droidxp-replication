@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="106"
+    android:versionName="1.0.6"
+    package="com.dogmabooks.robotoro01">
+
+    <uses-sdk
+        android:minSdkVersion="10" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:label="@ref/0x7f040001"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name="StartActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name="com.emo_framework.EmoActivity"
+            android:screenOrientation="1">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="emo-android" />
+
+            <meta-data
+                android:name="emo.script.runtime"
+                android:value="runtime.nut" />
+
+            <meta-data
+                android:name="emo.script.main"
+                android:value="main.nut" />
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="a14f99dc3576a09" />
+    </application>
+</manifest>

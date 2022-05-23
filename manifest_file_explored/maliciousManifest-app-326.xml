@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="de.emomedia.diaetrezeptefree">
+
+    <application
+        android:theme="@ref/0x7f0b0058"
+        android:label="@ref/0x7f0a0013"
+        android:icon="@ref/0x7f020071">
+
+        <activity
+            android:label="@ref/0x7f0a0013"
+            android:name="de.emomedia.plaetzchen.WeihnachtsplaetzchenActivity"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a0018"
+            android:name="de.emomedia.plaetzchen.Webinfo"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a0020"
+            android:name="de.emomedia.plaetzchen.Rezepteseite"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a002c"
+            android:name="de.emomedia.plaetzchen.BackbuchFragment"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a002c"
+            android:name="de.emomedia.plaetzchen.UebersichtFragment"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a0031"
+            android:name="de.emomedia.plaetzchen.EinkaufslisteFragment"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a0037"
+            android:name="de.emomedia.plaetzchen.GewuerzkundeOverActivity"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a0038"
+            android:name="de.emomedia.plaetzchen.GewuerzkundeFragment"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a003c"
+            android:name="de.emomedia.plaetzchen.Gewuerzseite">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a005b"
+            android:name="de.emomedia.plaetzchen.Infoseite">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a005d"
+            android:name="de.emomedia.plaetzchen.Webview"
+            android:clearTaskOnLaunch="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a0083"
+            android:name="de.emomedia.helperactivities.RezeptlisteHelperActitivy">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a0083"
+            android:name="de.emomedia.helperactivities.UebersichtHelperActitivy">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a0084"
+            android:name="de.emomedia.helperactivities.GewuerzeHelperActivity">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0a005b"
+            android:name="de.emomedia.helperactivities.InAppBillingHelper">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:label="@ref/0x7f0a0091"
+            android:name="de.emomedia.admob.AdmobBanner">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.amazon.device.ads.AdActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f0a0013"
+            android:name="de.emomedia.plaetzchen.Startwerbescreen">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.inappbilling.BillingService" />
+
+        <receiver
+            android:name="com.inappbilling.BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <meta-data
+        android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+        android:value="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION" />
+</manifest>

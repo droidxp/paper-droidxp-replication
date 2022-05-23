@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0.0"
+    android:windowSoftInputMode="0x20"
+    android:hardwareAccelerated="true"
+    package="com.phonegap.lowcarbon">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="@ref/0x7f040000"
+        android:icon="@ref/0x7f020000"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f040000"
+            android:name="HelloWorld"
+            android:screenOrientation="12"
+            android:configChanges="0x4b4">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+</manifest>

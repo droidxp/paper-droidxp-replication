@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="40"
+    android:versionName="4.0"
+    android:installLocation="2"
+    package="com.cobalt.ninja.birds.x.friuit.strike">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:screenOrientation="0"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xfb0" />
+
+        <receiver
+            android:name="com.google.ads.InstallReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.amazon.inapp.purchasing.ResponseReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.amazon.inapp.purchasing.NOTIFY"
+                    android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.chartboost.sdk.CBDialogActivity"
+            android:launchMode="1"
+            android:screenOrientation="0"
+            android:configChanges="0xb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.chartboost.sdk.CBImpressionActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.prime31.EtceteraProxyActivity" />
+
+        <activity
+            android:name="com.prime31.WebViewActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.prime31.P31VideoPlayerActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.flurry.android.CatalogActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="make.me.unique.please" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.prime31.billing.BillingService" />
+
+        <receiver
+            android:name="com.prime31.billing.BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <fr>
+
+        <find />
+
+        <replace />
+    </fr>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-feature
+        android:glEsVersion="0x10001" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-sdk
+        android:minSdkVersion="6"
+        android:targetSdkVersion="16" />
+</manifest>

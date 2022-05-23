@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="35"
+    android:versionName="2.1.2.1"
+    package="com.ideas.hr">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:theme="@ref/0x7f080001"
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f020012"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="Main"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="Setting"
+            android:name="Setting"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="Paragraph"
+            android:name="Paragraph"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

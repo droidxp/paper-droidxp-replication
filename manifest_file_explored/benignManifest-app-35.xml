@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1743"
+    android:versionName="1.2.0"
+    package="com.magicwach.rdefense">
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-sdk
+        android:minSdkVersion="1" />
+
+    <application
+        android:theme="@ref/0x0103000a"
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f02001c"
+        android:sharedUserId="com.magicwach.rdefense_free"
+        android:multiprocess="false"
+        android:stateNotNeeded="true"
+        android:launchMode="2"
+        android:configChanges="0xa0">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name=".TitleActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name=".GameActivity" />
+
+        <activity
+            android:name=".RewardActivity" />
+
+        <activity
+            android:name=".AchievementActivity" />
+
+        <activity
+            android:name=".CreditsActivity" />
+
+        <activity
+            android:name=".LevelSelectActivity" />
+
+        <activity
+            android:name=".MixerSelectActivity" />
+
+        <activity
+            android:name=".DebugActivity" />
+
+        <activity
+            android:name=".OptionsActivity" />
+    </application>
+</manifest>

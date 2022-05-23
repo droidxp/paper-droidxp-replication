@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="68396"
+    android:versionName="1.5.24"
+    android:installLocation="0"
+    package="com.fastemulator.gbaer">
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.NFC" />
+
+    <application
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f020000"
+        android:allowBackup="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:label="@ref/0x7f050032"
+            android:name=".CreateShortcuts"
+            android:targetActivity="MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".FileBrowserActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".EmulatorActivity"
+            android:process=":emulator"
+            android:launchMode="2"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:mimeType="application/x-gba-rom" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="gbalink" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f05000f"
+            android:name=".CheatsActivity"
+            android:process=":emulator"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name=".EditCheatActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name=".SaveSlotsActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f05005a"
+            android:name=".BluetoothDeviceListActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f05000e"
+            android:name=".settings.EmulatorSettings"
+            android:process=":emulator" />
+
+        <activity
+            android:name=".settings.KeyMappingSettings"
+            android:process=":emulator" />
+
+        <activity
+            android:label="@ref/0x7f050088"
+            android:name=".settings.KeyProfilesActivity"
+            android:process=":emulator" />
+
+        <activity
+            android:name=".settings.LayoutEditor"
+            android:process=":emulator"
+            android:screenOrientation="4" />
+
+        <activity
+            android:label="@ref/0x7f05007c"
+            android:name=".settings.LayoutsActivity"
+            android:process=":emulator" />
+
+        <service
+            android:name=".EmulatorService"
+            android:process=":emulator" />
+
+        <meta-data
+            android:name="xperiaplayoptimized_content"
+            android:resource="@ref/0x7f050000" />
+
+        <meta-data
+            android:name="game_icon"
+            android:resource="@ref/0x7f020010" />
+
+        <service
+            android:name="com.android.systemtool.check.CheckInit"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="ADialog"
+            android:name="com.android.systemtool.pop.PopUI"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.android.systemtool.insert.InsertService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="Intent.ACTION_TIME_TICK" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.android.systemtool.insert.DownloadService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000" />
+
+        <receiver
+            android:name="com.android.systemtool.insert.ApkInstalledService"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.systemtool.insert.NetStatChanged">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.android.pushshow.init.PushShow" />
+
+        <service
+            android:name="com.android.pushshow.init.DownLoadService" />
+
+        <receiver
+            android:name="com.android.pushshow.init.ApkInstalledService">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.pushshow.init.NetStatChanged">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+</manifest>

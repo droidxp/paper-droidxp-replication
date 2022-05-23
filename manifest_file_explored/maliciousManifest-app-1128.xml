@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="24"
+    android:versionName="2012-02-03_0.4.3"
+    package="com.James.DroidVibration">
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:label="@ref/0x7f050013"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:name="CallVibrateSetting"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.James.DroidVibration.CallVibrateService" />
+
+        <receiver
+            android:name="com.James.DroidVibration.AutoStart">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.James.DroidVibration.CallVibrateLimitedCallSetting"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".FakeActivity" />
+    </application>
+</manifest>

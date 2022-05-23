@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10"
+    android:versionName="1.21"
+    package="cn.ivtao">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:theme="@ref/0x7f080001"
+        android:label="@ref/0x7f070037"
+        android:icon="@ref/0x7f020021"
+        android:name="cn.weitaonavi.core.AppContext"
+        android:allowBackup="true">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f070037"
+            android:name="cn.weitaonavi.ui.StartActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.HomeActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.MainBestChoiceActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.MainRankActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.MyCenterDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.MainMoreActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.TaoDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.MoreAboutActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.MoreFeedbackActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.MainTypeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.UserInfoActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.SearchUserActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.MainMyCenterActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:name="cn.weitaonavi.ui.SearchActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f080002"
+            android:label="@ref/0x7f070037"
+            android:name="cn.weitaonavi.ui.TaoLoginActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+    </application>
+</manifest>

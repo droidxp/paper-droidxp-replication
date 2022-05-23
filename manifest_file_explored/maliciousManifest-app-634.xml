@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="18"
+    android:versionName="1.0.0.1"
+    android:anyDensity="true"
+    android:smallScreens="false"
+    android:normalScreens="true"
+    android:largeScreens="true"
+    android:installLocation="2"
+    package="animal.coloring">
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020039">
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name=".MainColoring"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".choose_book"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="com.mobclix.APPLICATION_ID"
+            android:value="4AD05690-161A-4877-9B93-14A36BFE5D80" />
+
+        <activity
+            android:name="com.mobclix.android.sdk.MobclixBrowserActivity" />
+
+        <activity
+            android:name="com.millennialmedia.android.MMAdViewOverlayActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="a14c82a3de5e4b3" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+        android:value="true" />
+</manifest>

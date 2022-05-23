@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="9"
+    android:versionName="1.6.0"
+    android:installLocation="2"
+    package="com.baylandblue.sounds.angrybirds">
+
+    <application
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f020005"
+        android:name="AngryBirdsSoundsApplication">
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="com.baylandblue.sounds.soundlib.MainActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMAdViewOverlayActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.admob.android.ads.AdMobActivity"
+            android:configChanges="0xb0" />
+
+        <receiver
+            android:name="com.admob.android.ads.analytics.InstallReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+            android:value="false" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="8" />
+</manifest>

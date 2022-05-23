@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="6"
+    android:versionName="1.3"
+    package="com.anddoes.notifier">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALL_LOG" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_SMS" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission
+        android:name="com.google.android.gm.permission.READ_CONTENT_PROVIDER" />
+
+    <uses-permission
+        android:name="com.google.android.providers.talk.permission.READ_ONLY" />
+
+    <uses-permission
+        android:name="com.fsck.k9.permission.READ_MESSAGES" />
+
+    <uses-permission
+        android:name="com.kaitenmail.permission.READ_MESSAGES" />
+
+    <uses-permission
+        android:name="com.kaitenmail.adsupported.permission.READ_MESSAGES" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <application
+        android:theme="@ref/0x01030119"
+        android:label="@ref/0x7f070024"
+        android:icon="@ref/0x7f02001b"
+        android:name=".NotifierApplication"
+        android:backupAgent=".BackupAgent"
+        android:allowBackup="true"
+        android:restoreAnyVersion="true">
+
+        <activity
+            android:label="@ref/0x7f070024"
+            android:name=".SettingsActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070058"
+            android:name=".CalendarSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f070069"
+            android:name=".GmailSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f070071"
+            android:name=".K9MailSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f070074"
+            android:name=".KaitenMailSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f070074"
+            android:name=".KaitenMailFreeSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f070076"
+            android:name=".BatterySettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f07009a"
+            android:name=".GTalkSettingsActivity" />
+
+        <service
+            android:label="@ref/0x7f070025"
+            android:name=".NotificationService"
+            android:permission="com.anddoes.notifier.permission.READ_NOTIFICATIONS">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.anddoes.notifier.UPDATE_DATA" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:label="@ref/0x7f070026"
+            android:name=".DashClockService1"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="1" />
+
+            <meta-data
+                android:name="description"
+                android:value="@ref/0x7f070029" />
+
+            <meta-data
+                android:name="settingsActivity"
+                android:value=".SettingsActivity" />
+        </service>
+
+        <service
+            android:label="@ref/0x7f070027"
+            android:name=".DashClockService2"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="1" />
+
+            <meta-data
+                android:name="description"
+                android:value="@ref/0x7f070029" />
+
+            <meta-data
+                android:name="settingsActivity"
+                android:value=".SettingsActivity" />
+        </service>
+
+        <service
+            android:label="@ref/0x7f070028"
+            android:name=".DashClockService3"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="1" />
+
+            <meta-data
+                android:name="description"
+                android:value="@ref/0x7f070029" />
+
+            <meta-data
+                android:name="settingsActivity"
+                android:value=".SettingsActivity" />
+        </service>
+
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAI32nWmoc1ns8Me2Juz49NTsQ3Xo2cUhaPP5rpUQ" />
+    </application>
+</manifest>

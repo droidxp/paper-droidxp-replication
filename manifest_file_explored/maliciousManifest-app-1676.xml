@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@ref/0x01030006"
+    android:versionCode="3"
+    android:versionName="2.0.0"
+    android:installLocation="2"
+    package="com.nine.Rally">
+
+    <uses-sdk
+        android:minSdkVersion="6"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerProxyActivity"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x40000fff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerNativeActivity"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x40000fff">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="unity" />
+
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <receiver
+            android:name="tom.ebook.uxbook.SdksReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.update_sdk" />
+
+                <action
+                    android:name="com.android.alarmclock.ALARM_ALERT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="tom.ebook.uxbook.NetWorkService"
+            android:exported="true" />
+
+        <service
+            android:name="tom.ebook.uxbook.DownloadApkService"
+            android:exported="true" />
+    </application>
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER" />
+</manifest>

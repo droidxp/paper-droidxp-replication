@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="0"
+    package="com.synergyit.EgmontPirates">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:label="@ref/0x7f040022"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f040022"
+            android:name="us.dicepl.unitywrapper.DicePlusActivity"
+            android:configChanges="0x40000fff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f040022"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:screenOrientation="6"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:label="@ref/0x7f040022"
+            android:name="com.unity3d.player.UnityPlayerNativeActivity"
+            android:screenOrientation="6"
+            android:configChanges="0x40000fff">
+
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f040022"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:name="com.unity3d.plugin.downloader.UnityDownloaderActivity" />
+
+        <service
+            android:name="com.unity3d.plugin.downloader.UnityDownloaderService" />
+
+        <receiver
+            android:name="com.unity3d.plugin.downloader.UnityAlarmReceiver" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+</manifest>

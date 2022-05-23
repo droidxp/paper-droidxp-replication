@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.1"
+    package="com.appz4fun.stromaelyrics">
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020041"
+        android:screenOrientation="1"
+        android:configChanges="0xa0"
+        android:alwaysRetainTaskState="true"
+        android:allowBackup="true">
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.Demarage">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.MainActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.SecondScreenActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.Ecran1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.Ecran2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.Ecran3"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.Ecran4"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.Carteps" />
+
+        <activity
+            android:name="com.apps4fun.stromaelyrics.Videops" />
+
+        <activity
+            android:label="@ref/0x7f060022"
+            android:name="com.apps4fun.stromaelyrics.Song11A1" />
+
+        <activity
+            android:label="@ref/0x7f060023"
+            android:name="com.apps4fun.stromaelyrics.Video1A1" />
+
+        <activity
+            android:label="@ref/0x7f060024"
+            android:name="com.apps4fun.stromaelyrics.Song1A1" />
+
+        <activity
+            android:label="@ref/0x7f060025"
+            android:name="com.apps4fun.stromaelyrics.Song2A1" />
+
+        <activity
+            android:label="@ref/0x7f060026"
+            android:name="com.apps4fun.stromaelyrics.Song3A1" />
+
+        <activity
+            android:label="@ref/0x7f060027"
+            android:name="com.apps4fun.stromaelyrics.Song4A1" />
+
+        <activity
+            android:label="@ref/0x7f060028"
+            android:name="com.apps4fun.stromaelyrics.Song5A1" />
+
+        <activity
+            android:label="@ref/0x7f060029"
+            android:name="com.apps4fun.stromaelyrics.Song6A1" />
+
+        <activity
+            android:label="@ref/0x7f06002a"
+            android:name="com.apps4fun.stromaelyrics.Song7A1" />
+
+        <activity
+            android:label="@ref/0x7f06002b"
+            android:name="com.apps4fun.stromaelyrics.Song8A1" />
+
+        <activity
+            android:label="@ref/0x7f06002c"
+            android:name="com.apps4fun.stromaelyrics.Song9A1" />
+
+        <activity
+            android:label="@ref/0x7f06002d"
+            android:name="com.apps4fun.stromaelyrics.Song10A1" />
+
+        <activity
+            android:label="@ref/0x7f06002e"
+            android:name="com.apps4fun.stromaelyrics.Song12A1" />
+
+        <activity
+            android:label="@ref/0x7f06002f"
+            android:name="com.apps4fun.stromaelyrics.Song13A1" />
+
+        <activity
+            android:label="@ref/0x7f060030"
+            android:name="com.apps4fun.stromaelyrics.Song1A2" />
+
+        <activity
+            android:label="@ref/0x7f060031"
+            android:name="com.apps4fun.stromaelyrics.Song2A2" />
+
+        <activity
+            android:label="@ref/0x7f060032"
+            android:name="com.apps4fun.stromaelyrics.Song3A2" />
+
+        <activity
+            android:label="@ref/0x7f060033"
+            android:name="com.apps4fun.stromaelyrics.Song4A2" />
+
+        <activity
+            android:label="@ref/0x7f060034"
+            android:name="com.apps4fun.stromaelyrics.Song5A2" />
+
+        <activity
+            android:label="@ref/0x7f060035"
+            android:name="com.apps4fun.stromaelyrics.Song6A2" />
+
+        <activity
+            android:label="@ref/0x7f060036"
+            android:name="com.apps4fun.stromaelyrics.Song7A2" />
+
+        <activity
+            android:label="@ref/0x7f060037"
+            android:name="com.apps4fun.stromaelyrics.Song8A2" />
+
+        <activity
+            android:label="@ref/0x7f060038"
+            android:name="com.apps4fun.stromaelyrics.Song9A2" />
+
+        <activity
+            android:label="@ref/0x7f060039"
+            android:name="com.apps4fun.stromaelyrics.Song10A2" />
+
+        <activity
+            android:label="@ref/0x7f06003a"
+            android:name="com.apps4fun.stromaelyrics.Song11A2" />
+
+        <activity
+            android:label="@ref/0x7f06003b"
+            android:name="com.apps4fun.stromaelyrics.Song12A2" />
+
+        <activity
+            android:label="@ref/0x7f06003c"
+            android:name="com.apps4fun.stromaelyrics.Song1A3" />
+
+        <activity
+            android:label="@ref/0x7f06003d"
+            android:name="com.apps4fun.stromaelyrics.Song2A3" />
+
+        <activity
+            android:label="@ref/0x7f06003e"
+            android:name="com.apps4fun.stromaelyrics.Song3A3" />
+
+        <activity
+            android:label="@ref/0x7f06003f"
+            android:name="com.apps4fun.stromaelyrics.Song4A3" />
+
+        <activity
+            android:label="@ref/0x7f060040"
+            android:name="com.apps4fun.stromaelyrics.Song5A3" />
+
+        <activity
+            android:label="@ref/0x7f060041"
+            android:name="com.apps4fun.stromaelyrics.Song6A3" />
+
+        <activity
+            android:label="@ref/0x7f060042"
+            android:name="com.apps4fun.stromaelyrics.Song7A3" />
+
+        <activity
+            android:label="@ref/0x7f060043"
+            android:name="com.apps4fun.stromaelyrics.Song8A3" />
+
+        <activity
+            android:label="@ref/0x7f060044"
+            android:name="com.apps4fun.stromaelyrics.Song1A4" />
+
+        <activity
+            android:label="@ref/0x7f060045"
+            android:name="com.apps4fun.stromaelyrics.Song2A4" />
+
+        <activity
+            android:label="@ref/0x7f060046"
+            android:name="com.apps4fun.stromaelyrics.Song3A4" />
+
+        <activity
+            android:label="@ref/0x7f060047"
+            android:name="com.apps4fun.stromaelyrics.Song4A4" />
+
+        <activity
+            android:label="@ref/0x7f060048"
+            android:name="com.apps4fun.stromaelyrics.Song5A4" />
+
+        <activity
+            android:label="@ref/0x7f060049"
+            android:name="com.apps4fun.stromaelyrics.Song6A4" />
+
+        <activity
+            android:label="@ref/0x7f06004a"
+            android:name="com.apps4fun.stromaelyrics.Song7A4" />
+
+        <activity
+            android:label="@ref/0x7f06004b"
+            android:name="com.apps4fun.stromaelyrics.Song8A4" />
+
+        <activity
+            android:label="@ref/0x7f06004c"
+            android:name="com.apps4fun.stromaelyrics.Song9A4" />
+
+        <activity
+            android:label="@ref/0x7f06004d"
+            android:name="com.apps4fun.stromaelyrics.Song10A4" />
+
+        <activity
+            android:label="@ref/0x7f06004e"
+            android:name="com.apps4fun.stromaelyrics.Song11A4" />
+
+        <activity
+            android:label="@ref/0x7f06004f"
+            android:name="com.apps4fun.stromaelyrics.Song12A4" />
+
+        <activity
+            android:label="@ref/0x7f060069"
+            android:name="com.apps4fun.stromaelyrics.Song10A3" />
+
+        <activity
+            android:label="@ref/0x7f06006a"
+            android:name="com.apps4fun.stromaelyrics.Video2A1" />
+
+        <activity
+            android:label="@ref/0x7f06006b"
+            android:name="com.apps4fun.stromaelyrics.Video6A1" />
+
+        <activity
+            android:label="@ref/0x7f06006c"
+            android:name="com.apps4fun.stromaelyrics.Video7A1" />
+
+        <activity
+            android:label="@ref/0x7f06006d"
+            android:name="com.apps4fun.stromaelyrics.Video8A1" />
+
+        <activity
+            android:label="@ref/0x7f06006e"
+            android:name="com.apps4fun.stromaelyrics.Video10A1" />
+
+        <activity
+            android:label="@ref/0x7f06006f"
+            android:name="com.apps4fun.stromaelyrics.Video1A2" />
+
+        <activity
+            android:label="@ref/0x7f060070"
+            android:name="com.apps4fun.stromaelyrics.Video2A2" />
+
+        <activity
+            android:label="@ref/0x7f060071"
+            android:name="com.apps4fun.stromaelyrics.Video3A2" />
+
+        <activity
+            android:label="@ref/0x7f060072"
+            android:name="com.apps4fun.stromaelyrics.Video4A2" />
+
+        <activity
+            android:label="@ref/0x7f060073"
+            android:name="com.apps4fun.stromaelyrics.Video5A2" />
+
+        <activity
+            android:label="@ref/0x7f060074"
+            android:name="com.apps4fun.stromaelyrics.Video7A2" />
+
+        <activity
+            android:label="@ref/0x7f060075"
+            android:name="com.apps4fun.stromaelyrics.Video8A2" />
+
+        <activity
+            android:label="@ref/0x7f060076"
+            android:name="com.apps4fun.stromaelyrics.Video9A2" />
+
+        <activity
+            android:label="@ref/0x7f060077"
+            android:name="com.apps4fun.stromaelyrics.Video10A2" />
+
+        <activity
+            android:label="@ref/0x7f060078"
+            android:name="com.apps4fun.stromaelyrics.Video11A2" />
+
+        <activity
+            android:label="@ref/0x7f060079"
+            android:name="com.apps4fun.stromaelyrics.Video12A2" />
+
+        <activity
+            android:label="@ref/0x7f06007a"
+            android:name="com.apps4fun.stromaelyrics.Video1A3" />
+
+        <activity
+            android:label="@ref/0x7f06007b"
+            android:name="com.apps4fun.stromaelyrics.Video2A3" />
+
+        <activity
+            android:label="@ref/0x7f06007c"
+            android:name="com.apps4fun.stromaelyrics.Video3A3" />
+
+        <activity
+            android:label="@ref/0x7f06007d"
+            android:name="com.apps4fun.stromaelyrics.Video6A3" />
+
+        <activity
+            android:label="@ref/0x7f06007e"
+            android:name="com.apps4fun.stromaelyrics.Video7A3" />
+
+        <activity
+            android:label="@ref/0x7f06007f"
+            android:name="com.apps4fun.stromaelyrics.Video8A3" />
+
+        <activity
+            android:label="@ref/0x7f060080"
+            android:name="com.apps4fun.stromaelyrics.Video1A4" />
+
+        <activity
+            android:label="@ref/0x7f060081"
+            android:name="com.apps4fun.stromaelyrics.Video2A4" />
+
+        <activity
+            android:label="@ref/0x7f060082"
+            android:name="com.apps4fun.stromaelyrics.Video3A4" />
+
+        <activity
+            android:label="@ref/0x7f060083"
+            android:name="com.apps4fun.stromaelyrics.Video4A4" />
+
+        <activity
+            android:label="@ref/0x7f060084"
+            android:name="com.apps4fun.stromaelyrics.Video5A4" />
+
+        <activity
+            android:label="@ref/0x7f060085"
+            android:name="com.apps4fun.stromaelyrics.Video6A4" />
+
+        <activity
+            android:label="@ref/0x7f060086"
+            android:name="com.apps4fun.stromaelyrics.Video7A4" />
+
+        <activity
+            android:label="@ref/0x7f060087"
+            android:name="com.apps4fun.stromaelyrics.Video8A4" />
+
+        <activity
+            android:label="@ref/0x7f060088"
+            android:name="com.apps4fun.stromaelyrics.Video9A4" />
+
+        <activity
+            android:label="@ref/0x7f060089"
+            android:name="com.apps4fun.stromaelyrics.Video10A4" />
+
+        <activity
+            android:label="@ref/0x7f06008a"
+            android:name="com.apps4fun.stromaelyrics.Video11A4" />
+
+        <activity
+            android:label="@ref/0x7f06008b"
+            android:name="com.apps4fun.stromaelyrics.Video12A4" />
+
+        <activity
+            android:label="@ref/0x7f06008c"
+            android:name="com.apps4fun.stromaelyrics.Video3A1" />
+
+        <activity
+            android:label="@ref/0x7f06008d"
+            android:name="com.apps4fun.stromaelyrics.Video11A1" />
+
+        <activity
+            android:label="@ref/0x7f06008e"
+            android:name="com.apps4fun.stromaelyrics.Video12A1" />
+
+        <activity
+            android:label="@ref/0x7f06008f"
+            android:name="com.apps4fun.stromaelyrics.Video4A1" />
+
+        <activity
+            android:label="@ref/0x7f060090"
+            android:name="com.apps4fun.stromaelyrics.Video5A1" />
+
+        <activity
+            android:label="@ref/0x7f060091"
+            android:name="com.apps4fun.stromaelyrics.Video9A1" />
+
+        <activity
+            android:label="@ref/0x7f060092"
+            android:name="com.apps4fun.stromaelyrics.Video13A1" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="13" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

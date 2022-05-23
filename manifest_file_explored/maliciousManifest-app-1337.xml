@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="30050"
+    android:versionName="3.0.50"
+    package="com.keyes.screebl.full">
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x0103000d"
+        android:label="@ref/0x7f070015"
+        android:icon="@ref/0x7f02007f"
+        android:debuggable="false">
+
+        <activity
+            android:theme="@ref/0x7f080058"
+            android:label="@ref/0x7f070015"
+            android:name="com.keyes.screebl.ScreeblConfig"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070015"
+            android:name="com.keyes.screebl.prefs.ScreeblPreferences"
+            android:excludeFromRecents="true"
+            android:screenOrientation="4" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f070015"
+            android:name="com.keyes.screebl.ScreeblScreenBlank"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="4" />
+
+        <activity
+            android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
+            android:configChanges="0x3b0"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:label="ScreeblBgService"
+            android:name="com.keyes.screebl.ScreeblBackgroundService" />
+
+        <service
+            android:label="ScreeblStatusService"
+            android:name="com.keyes.screebl.StatusService" />
+
+        <receiver
+            android:label="@ref/0x7f070011"
+            android:name="com.keyes.screebl.ScreeblBackgroundService$ScreeblDeviceAdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:description="@ref/0x7f070012">
+
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@ref/0x7f040000" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.keyes.screebl.AndroidSystemStartupReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <action
+                    android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.keyes.screebl.RestartOnUpgradeReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.keyes.screebl.ScreeblPingAlarmReceiver" />
+
+        <receiver
+            android:name="com.keyes.screebl.ScreeblLockAlarmReceiver" />
+
+        <receiver
+            android:name="com.keyes.screebl.ScreeblVideoCheckAlarmReceiver" />
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:label="@ref/0x7f070015"
+            android:icon="@ref/0x7f02007f"
+            android:name="com.keyes.screebl.locale.EditLocaleSettingsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="0x10"
+            android:uiOptions="0x1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:label="@ref/0x7f070015"
+            android:icon="@ref/0x7f02007f"
+            android:name="com.keyes.screebl.locale.EditConditionActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.twofortyfouram.locale.intent.action.EDIT_CONDITION" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.keyes.screebl.locale.FireLocaleReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.keyes.screebl.locale.QueryReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.twofortyfouram.locale.intent.action.QUERY_CONDITION" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.keyes.screebl.ScreeblApiReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.keyes.screebl.full.api.intent.cmd.START_SERVICE" />
+
+                <action
+                    android:name="com.keyes.screebl.full.api.intent.cmd.STOP_SERVICE" />
+
+                <action
+                    android:name="com.keyes.screebl.full.api.intent.cmd.SUSPEND_SERVICE" />
+
+                <action
+                    android:name="com.keyes.screebl.full.api.intent.cmd.RESUME_SERVICE" />
+
+                <action
+                    android:name="com.keyes.screebl.full.api.intent.cmd.STATE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.keyes.screebl.widget.ScreeblAppWidgetProvider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040002" />
+        </receiver>
+    </application>
+</manifest>

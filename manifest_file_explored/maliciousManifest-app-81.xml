@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="21"
+    android:versionName="4.1"
+    android:installLocation="0"
+    package="mobi.infolife.cachepro">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <uses-permission
+        android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:label="@ref/0x7f0b0016"
+        android:icon="@ref/0x7f020087">
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f0b0016"
+            android:name=".CleanerActivity"
+            android:launchMode="3"
+            android:configChanges="0xfb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0c0059"
+            android:label="@ref/0x7f0b001f"
+            android:name=".SettingActivity" />
+
+        <activity
+            android:label="@ref/0x7f0b000f"
+            android:name=".FeedbackActivity" />
+
+        <activity
+            android:label="@ref/0x7f0b000f"
+            android:name=".ShareActivity" />
+
+        <activity
+            android:label="@ref/0x7f0b000f"
+            android:name=".ViewMoreActivity" />
+
+        <activity
+            android:label="@ref/0x7f0b000f"
+            android:name=".GotoProActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0c0057"
+            android:name=".SetRemindLevelStorageDialogActivity"
+            android:configChanges="0xfb0" />
+
+        <receiver
+            android:label="UninstallerBroadcastReceiver"
+            android:name=".UninstallerBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="mobi.infolife.cachepro.BACKGROUND_CLEAR" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:label="AlarmReceive"
+            android:name=".AlarmReceive"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".ClearService"
+            android:exported="true" />
+
+        <receiver
+            android:label="@ref/0x7f0b0019"
+            android:icon="@ref/0x7f020087"
+            android:name=".WidgetMain">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                    android:name="mobi.infolife.cachepro.BACKGROUND_CLEAR" />
+
+                <action
+                    android:name="mobi.infolife.cachepro.ACTION_REFRESH" />
+
+                <action
+                    android:name="mobi.infolife.cachepro.ACTION_STARTAPP" />
+
+                <action
+                    android:name="mobi.infolife.cachepro.WIDGET_CLEAR" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050000" />
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="@ref/0x7f0b000f"
+            android:name="WidgetSettingActivity"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="mobi.infolife.cachepro.PREFS" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f0b000f"
+            android:name="NotificationProxyActivity"
+            android:configChanges="0xb0" />
+    </application>
+</manifest>

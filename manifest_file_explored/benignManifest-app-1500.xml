@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.toefllistening">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:theme="@ref/0x7f060001"
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f02000a"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.ielts.MainActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f050003"
+            android:name="com.ielts.ListCoursesActivity" />
+
+        <activity
+            android:label="@ref/0x7f050004"
+            android:name="com.ielts.ListLessonActivity" />
+
+        <activity
+            android:label="@ref/0x7f050005"
+            android:name="com.ielts.LearnActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:label="@ref/0x7f050006"
+            android:name="com.ielts.FavoritesActivity" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

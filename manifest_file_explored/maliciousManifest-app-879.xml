@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.7"
+    android:installLocation="2"
+    package="com.storychimes.fannyfoozle_">
+
+    <supports-screens
+        android:xlargeScreens="true" />
+
+    <supports-screens
+        android:xlargeScreens="true" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020094"
+        android:name="com.storychimes.library.StoryApplication">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.home_screen"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.first_screen"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.page_index_screen"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.help_screen"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.help_screen_tab"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.endpage_screen"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.bookcontent"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.Flip3d"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.Flip3dTab"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.game_flip"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.story_info"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.Credits"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.PostToFacebook"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.Preview"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f060000"
+            android:name="com.storychimes.library.PreviewTab"
+            android:screenOrientation="0"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="ADWHIRL_KEY"
+            android:value="@ref/0x7f060002" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.admob.android.ads.AdMobActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.admob.android.ads.AdMobActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMAdViewOverlayActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="9" />
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1"
+    package="com.Egypt.Android.Live.Tv.best.online.free.live.fast">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:theme="@ref/0x7f0c0053"
+        android:label="@ref/0x7f0b002a"
+        android:icon="@ref/0x7f02008e"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f0b002a"
+            android:name="com.fracnc.tv.best.free.online.mobile.live.tv.French.TVActivity"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0b002a"
+            android:name="com.fracnc.tv.best.free.online.mobile.live.tv.French.TVDetail"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:theme="@ref/0x7f0c0056"
+            android:label="@ref/0x7f0b002a"
+            android:name="com.fracnc.tv.best.free.online.mobile.live.tv.French.PlayTV"
+            android:screenOrientation="6" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:launchMode="1"
+            android:screenOrientation="6"
+            android:configChanges="0xe0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

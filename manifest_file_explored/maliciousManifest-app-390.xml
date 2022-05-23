@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="userid.task.killer"
+    android:versionCode="2"
+    android:versionName="1.1.0"
+    package="com.mobo.task.killer">
+
+    <uses-sdk
+        android:minSdkVersion="5" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.FORCE_STOP_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <application
+        android:label="@ref/0x7f080028"
+        android:icon="@ref/0x7f020040"
+        android:name="com.task.killer.ApplicationCore"
+        android:debuggable="false">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f080028"
+            android:name="com.task.killer.MainActivity"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f080028"
+            android:name="com.task.killer.RunningAppsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f080028"
+            android:name="com.task.killer.SettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f080028"
+            android:name="com.task.killer.IgnoreListActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.task.killer.exception.CrashReportDialogActivity"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.task.killer.core.BootReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.task.killer.AutoKillService"
+            android:launchMode="1" />
+
+        <service
+            android:name="com.task.killer.ShakeService"
+            android:launchMode="1" />
+
+        <service
+            android:name="com.task.killer.NotificationService"
+            android:launchMode="1" />
+
+        <service
+            android:name="com.task.killer.NoneService"
+            android:launchMode="1" />
+
+        <provider
+            android:name="com.task.killer.database.DataProvider"
+            android:authorities="com.mobo.task.killer" />
+
+        <service
+            android:label="@ref/0x7f080028"
+            android:name="com.beta.ads.view.AdService" />
+
+        <service
+            android:label="@ref/0x7f080028"
+            android:name="com.beta.ads.services.CheckUpdateService" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.beta.ads.promote.UpdateActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.beta.ads.promote.PromoteActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="0xb0" />
+
+        <service
+            android:name="com.beta.ads.downloadhelper.DownloadService" />
+    </application>
+</manifest>

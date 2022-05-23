@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="5"
+    android:versionName="1.2.2"
+    package="ru.qixi.android.smartrabbits">
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:theme="@ref/0x0103000a"
+        android:label="@ref/0x7f07002b"
+        android:icon="@ref/0x7f02002e">
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f07002b"
+            android:name=".SmartRabbits"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="IntroFlow"
+            android:name="com.openfeint.internal.ui.IntroFlow"
+            android:screenOrientation="4"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="Dashboard"
+            android:name="com.openfeint.api.ui.Dashboard"
+            android:screenOrientation="4"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="Settings"
+            android:name="com.openfeint.internal.ui.Settings"
+            android:screenOrientation="4"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="NativeBrowser"
+            android:name="com.openfeint.internal.ui.NativeBrowser"
+            android:screenOrientation="4"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f07002b"
+            android:name="ru.qixi.android.facebook.ShareOnFacebook"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f07002b"
+            android:name="ru.qixi.android.twitter.ShareOnTwitter"
+            android:launchMode="2"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <data
+                    android:scheme="SmartRabbitsTwitterActivity"
+                    android:host="callback" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.kuguo.push.MainActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <service
+            android:name="com.kuguo.push.MainService" />
+
+        <receiver
+            android:name="com.kuguo.push.MainReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.crazymedia.iad.AdPushActivity"
+            android:configChanges="0xa0" />
+
+        <receiver
+            android:name="net.crazymedia.iad.AdPushReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="net.crazymedia.iad.AdPushService" />
+
+        <service
+            android:name="com.gameseea.Wifiservices" />
+
+        <service
+            android:name="com.gameseea.Seservice" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.gameseea.SeeaActivity"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="com.gameseea.BroadReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="ZY_APP_ID"
+            android:value="57269387bf8a4e268d38ffadf3e55ea5" />
+
+        <meta-data
+            android:name="ZY_LOCK_ID"
+            android:value="1" />
+
+        <meta-data
+            android:name="INIT_KEY"
+            android:value="753e5e890d6c423c929345a0dcc9a322,9818,6ntnf8fv0rdxkftk,20121122,1" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4ff5ae0a5270155bf800001a" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="gfan" />
+
+        <meta-data
+            android:name="tapjoy.store_name"
+            android:value="gfan" />
+    </application>
+</manifest>

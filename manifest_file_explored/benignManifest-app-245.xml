@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1399586578"
+    android:versionName="1.7.3"
+    android:installLocation="0"
+    package="com.simplylab.android.numbber">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:label="Numbber"
+        android:icon="@ref/0x7f020000"
+        android:name="io.trigger.forge.android.core.ForgeApp">
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="io.trigger.forge.android.core.ForgeActivity"
+            android:stateNotNeeded="true"
+            android:launchMode="2"
+            android:configChanges="0x400007ef">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="nbbr" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="io.trigger.forge.android.core.ForgeContentProvider"
+            android:exported="true"
+            android:authorities="com.simplylab.android.numbber" />
+
+        <service
+            android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.ParseBroadcastReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="io.trigger.forge.android.modules.payments.PaymentsService" />
+
+        <receiver
+            android:name="io.trigger.forge.android.modules.payments.PaymentsReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

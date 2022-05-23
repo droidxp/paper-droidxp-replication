@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="com.aliyun.pwmob"
+    android:versionCode="5921"
+    android:versionName="1.2.3"
+    package="com.aliyun.pwmob.www_sqsybbs_com">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <application
+        android:theme="@ref/0x7f080018"
+        android:label="@ref/0x7f060005"
+        android:icon="@ref/0x7f020039"
+        android:name="com.aliyun.pwmob.PwmobApp"
+        android:debuggable="true">
+
+        <activity
+            android:theme="@ref/0x7f080014"
+            android:name="com.aliyun.pwmob.controller.AppActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080017"
+            android:name="com.aliyun.pwmob.controller.MainActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.index.FocusActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.index.IndexActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.index.IndexWebActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.index.LatestImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.index.LatestThreadActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.index.ThreadReplyListActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.index.TopicActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.index.TopicThreadListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.ForumListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.GalleryActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.GridImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.ImageLargeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.OrdinaryThreadListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.PostActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.SubForumListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.ThreadInfoActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.ThreadListIndexActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.ThreadPostActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.ThreadReplyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.TopicListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.forum.TopThreadListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.message.CommentReplyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.message.FriendListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.message.MessageInfoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.message.MessageNewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.message.MessageListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.message.MessageMailListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.message.MessageReferListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.message.MessageCommentListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.user.FollowListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.user.LoginActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.user.RegisterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.user.ReplyListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.user.UserInfoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.AboutActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.DaliySignActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.FeedBackActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.MoreActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.SearchActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.SetActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.SetBrowseTypeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.SetNotifyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.SetUploadQualityActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.SetFontSizeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.aliyun.pwmob.controller.more.WebActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <meta-data
+            android:name="CNZZ_APP_KEY"
+            android:value="phpwind_wxhkhm6u7623d2uzggz9cgww" />
+
+        <meta-data
+            android:name="CNZZ_CHANNEL_ID"
+            android:value="default" />
+
+        <meta-data
+            android:name="CNZZ_DEBUG"
+            android:value="true" />
+
+        <service
+            android:name="com.aliyun.pwmob.model.service.NotifyService"
+            android:process="com.aliyun.pwmob.www_sqsybbs_com.NotifyService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.aliyun.pwmob.www_sqsybbs_com.NOTIFY_SERVICE" />
+
+                <category
+                    android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

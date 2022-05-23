@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.glide.guideapp">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <supports-screens
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f040001"
+        android:icon="@ref/0x7f020002">
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name="com.glide.ui.phone.SplashScreen">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name="com.glide.ui.phone.MainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="com.viewster.syndication.ViewsterAdPlayerActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name="com.glide.ui.phone.GoogleKeepArticlesMenu"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.glide.ui.phone.PlayerViewActivity"
+            android:screenOrientation="5"
+            android:configChanges="0x4a0">
+
+            <meta-data
+                android:name="minVersion"
+                android:value="8" />
+
+            <meta-data
+                android:name="isLaunchableActivity"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name="com.glide.ui.phone.ShowWebContent"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

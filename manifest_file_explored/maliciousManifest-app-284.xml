@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10"
+    android:versionName="2.1.3"
+    android:installLocation="0"
+    package="com.cloudfox.project.browser_electric.cuxiaotiantian">
+
+    <application
+        android:label="@ref/0x7f0b0000"
+        android:icon="@ref/0x7f0200f2"
+        android:name="com.cloudfox.project.browser_electric.games.MainApplication">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.ElectricSearchActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.ElectricMoreActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.ElectricMainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.ElectricFrontPageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.Electric_ShopListActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.cloudfox.project.browser_electric.games.ClearCacheService" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.browser_electric.games.download.DownloadActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.browser_electric.games.GameDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.browser_electric.games.GameListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.StartActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0a001d"
+            android:name="com.cloudfox.project.gamecenter.LoginActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.gamecenter.RegisterActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.cloudfox.project.gamecenter.PersonalInfoEditActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.Html5GameActivity"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.cloudfox.project.browser_electric.ui.activities.Html5GameActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.MainActivity"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="2"
+            android:configChanges="0xa0"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:scheme="about" />
+
+                <data
+                    android:scheme="javascript" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:scheme="inline" />
+
+                <data
+                    android:mimeType="text/html" />
+
+                <data
+                    android:mimeType="text/vnd.wap.wml" />
+
+                <data
+                    android:mimeType="application/xhtml+xml" />
+
+                <data
+                    android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.WEB_SEARCH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/0x1d" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_SEARCH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEARCH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="content" />
+
+                <data
+                    android:mimeType="text/html" />
+
+                <data
+                    android:mimeType="text/vnd.wap.wml" />
+
+                <data
+                    android:mimeType="application/xhtml+xml" />
+
+                <data
+                    android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f0b0004"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.AboutActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f0b0021"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.EditBookmarkActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.BookmarksListActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.HistoryListActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.DownloadsListActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.AdBlockerWhiteListActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.BookmarksHistoryActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.preferences.PreferencesActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f0b0077"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.preferences.HomepagePreferenceActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f0b007e"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.preferences.SearchUrlPreferenceActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f0b0088"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.preferences.UserAgentPreferenceActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.MobileViewListActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.WeaveBookmarksListActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.preferences.WeavePreferencesActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f0b00f1"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.preferences.WeaveServerPreferenceActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.cloudfox.project.browser_electric.ui.activities.ChangeSkinActivity" />
+
+        <activity
+            android:name="com.cloudfox.project.browser_electric.ui.activities.WebsiteActivity" />
+
+        <provider
+            android:name="com.cloudfox.project.browser_electric.cuxiaotiantian.providers.BookmarksContentProvider"
+            android:authorities="com.cloudfox.project.browser_electric.cuxiaotiantian.providers.bookmarkscontentprovider" />
+
+        <provider
+            android:name=".providers.WeaveContentProvider"
+            android:authorities="com.cloudfox.project.browser_electric.cuxiaotiantian.providers.weavecontentprovider" />
+
+        <receiver
+            android:name="com.cloudfox.project.browser_electric.utils.ProxyChangeReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PROXY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.cloudfox.project.browser_electric.download.DownloadService"
+            android:exported="true"
+            android:process="com.cloudfox.project.browser_electric.download"
+            android:launchMode="3" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="16" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <uses-permission
+        android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+</manifest>

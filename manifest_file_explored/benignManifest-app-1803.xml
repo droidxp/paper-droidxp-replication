@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="8"
+    android:versionName="1.9"
+    android:installLocation="0"
+    package="txl.Siete">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f020061">
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="ui.V_Principal"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="ui.V_Configuracion"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="ui.V_Dificultad"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="ui.V_Puntuaciones"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="ui.V_Multijugador"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="ui.V_Salones"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="ui.V_Salon"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="ui.V_Reglas"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="base.I_Mesa"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="base.I_Configuracion"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="base.I_Menu"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="base.I_Final"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="base.M_Mesa"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="base.M_Configuracion"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name="base.M_Menu"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f050001"
+            android:name="log.CompartirPuntuacion"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f050001"
+            android:name="log.ShareOnFacebook"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

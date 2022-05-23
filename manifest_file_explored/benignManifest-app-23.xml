@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="12"
+    android:versionName="0.2.0"
+    package="org.krchuang.android.apps.eventcounterwidget">
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="3" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <application
+        android:theme="@ref/0x01030009"
+        android:label="@ref/0x7f080000"
+        android:icon="@ref/0x7f020006">
+
+        <activity
+            android:name="org.krchuang.eventcounter.activity.EventCounterFragmentActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f080000"
+            android:name="org.krchuang.eventcounter.activity.EventCounterActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="org.krchuang.eventcounter.activity.EventCounterWidgetActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="org.krchuang.eventcounter.service.WidgetService">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.TIME_TICK" />
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="org.krchuang.eventcounter.service.SmallWidgetService">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.TIME_TICK" />
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="org.krchuang.eventcounter.service.EventCounterRestoreService" />
+
+        <receiver
+            android:label="@ref/0x7f080002"
+            android:name="org.krchuang.eventcounter.widget.EventCounterWidget">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                    android:name="android.intent.action.TIME_TICK" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050001" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f080004"
+            android:name="org.krchuang.eventcounter.widget.EventCounterSmallWidget">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                    android:name="android.intent.action.TIME_TICK" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050000" />
+        </receiver>
+
+        <activity
+            android:name="org.krchuang.eventcounter.activity.EventCounterInformationActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="org.krchuang.eventcounter.activity.EventCounterEditActivity"
+            android:screenOrientation="1" />
+    </application>
+</manifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="15"
+    android:versionName="1.1.1"
+    android:installLocation="2"
+    package="com.catstudio.soldierofglory">
+
+    <application
+        android:label="@ref/0x7f040000"
+        android:icon="@ref/0x7f02000e">
+
+        <activity
+            android:label="@ref/0x7f040000"
+            android:icon="@ref/0x7f02000e"
+            android:name=".SoldierOfGloryActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000e"
+            android:name="com.catstudio.common.PromoteActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="org.catstudio.promo.NotificationActivity"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="org.catstudio.promo.PromoService"
+            android:enabled="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="org.catstudio.promo.PromoService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.waps.OffersWebView"
+            android:configChanges="0xa0" />
+
+        <meta-data
+            android:name="WAPS_ID"
+            android:value="5ace09f5a8b9462b7c2e7421a0ef642e" />
+
+        <meta-data
+            android:name="WAPS_PID"
+            android:value="waps" />
+
+        <activity
+            android:name="com.tapjoy.TJCOffersWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyFeaturedAppWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyVideoView"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.catstudio.payment.BillingService" />
+
+        <receiver
+            android:name="com.catstudio.payment.BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.feedback.ui.SendFeedback"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.feedback.ui.FeedbackConversations" />
+
+        <activity
+            android:name="com.feedback.ui.FeedbackConversation"
+            android:configChanges="0x10" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4f13c4145270153cb900000b" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="androidmarekt" />
+    </application>
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="12" />
+</manifest>

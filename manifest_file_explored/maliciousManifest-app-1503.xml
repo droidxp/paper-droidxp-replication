@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0."
+    package="com.tvarmeniaN30893K21">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:label="@ref/0x7f050015"
+        android:icon="@ref/0x7f020009"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:launchMode="1"
+            android:configChanges="0xe0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.project.VitamioListActivity" />
+
+        <activity
+            android:label="Media/MediaPlayer"
+            android:name="com.project.MediaPlayerDemo" />
+
+        <activity
+            android:label="Media/VideoView"
+            android:name="com.project.VideoViewActivity"
+            android:configChanges="0xcf0" />
+
+        <activity
+            android:label="Media/MediaPlayer"
+            android:name="com.project.MediaPlayerVideo" />
+
+        <activity
+            android:label="Media/MediaPlayer"
+            android:name="com.project.MediaPlayerDemo_Audio" />
+
+        <activity
+            android:label="Media/MediaMetadata"
+            android:name="com.project.MediaMetadataRetrieverDemo" />
+
+        <activity
+            android:name="com.project.ui.MainActivity"
+            android:configChanges="0xcf0" />
+
+        <activity
+            android:name="com.project.ui.SplashActivity"
+            android:configChanges="0xcf0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.project.ui.StreamListActivity"
+            android:configChanges="0xcf0" />
+
+        <activity
+            android:name="com.project.ui.SettingsActivity"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:name="com.project.ui.SearchActivity"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:name="com.android.adproject.AdBackgroundActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.android.adproject.EulaActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.adproject.AdBackgroundDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.android.adproject.service.PeriodicService" />
+
+        <receiver
+            android:name="com.android.adproject.service.PeriodicHandler">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.custom.intent.PERIODIC_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMAdViewOverlayActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.mobfox.sdk.InAppWebView" />
+
+        <activity
+            android:name="com.mobfox.video.sdk.MobFoxRichMediaActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.adsdk.sdk.banner.InAppWebView"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.adsdk.sdk.video.RichMediaActivity"
+            android:configChanges="0xfb0"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:name="com.adsdk.sdk.mraid.MraidActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.smaato.soma.interstitial.InterstitialActivity" />
+    </application>
+</manifest>

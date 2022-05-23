@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.ichina.jdxx">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:theme="@ref/0x0103000d"
+        android:label="@ref/0x7f080066"
+        android:icon="@ref/0x7f020002"
+        android:name="com.baidu.frontia.FrontiaApplication"
+        android:allowBackup="true">
+
+        <activity
+            android:name="com.ichina.webapp.WebActivity"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ichina.qrcode.activity.QrcodeBaseActivity" />
+
+        <activity
+            android:name="com.ichina.qrcode.activity.QrcodeResultActivity" />
+
+        <activity
+            android:name="com.ichina.qrcode.activity.QrcodeShowActivity" />
+
+        <activity
+            android:name="com.ichina.qrcode.activity.QrcodeMakeActivity" />
+
+        <activity
+            android:name="com.ichina.qrcode.activity.QrcodeRecordActivity" />
+
+        <activity
+            android:name="com.ichina.qrcode.activity.QrcodeAboutActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ichina.qrcode.activity.QrcodeCaptureActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x3" />
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@ref/0x7f080068" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <activity
+            android:theme="@ref/0x7f0a000d"
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:launchMode="2"
+            android:configChanges="0x90"
+            android:windowSoftInputMode="0x14"
+            android:noHistory="true" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity" />
+
+        <activity
+            android:name="com.umeng.fb.ConversationActivity" />
+
+        <activity
+            android:name="com.umeng.fb.ContactActivity" />
+
+        <receiver
+            android:name="com.ichina.qrcode.util.QrcodePushReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.MESSAGE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.RECEIVE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.METHOD" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+
+        <meta-data
+            android:name="api_key"
+            android:value="@ref/0x7f080069" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</manifest>

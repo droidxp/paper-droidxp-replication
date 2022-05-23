@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="4147"
+    android:versionName="1.7.9"
+    android:installLocation="2"
+    package="com.cat.aticle">
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="9" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f06002b"
+        android:icon="@ref/0x7f020001"
+        android:name="com.fridgecat.android.atilt.ATiltApplication"
+        android:debuggable="false">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltGameActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltMoreMenuActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltBuiltInMapsMenuActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltFeaturedMapsActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltRegistrationActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltYourMapsActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltPlayMenuActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltGetMapsMenuActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltDownloadKeyActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltCreateYourOwnActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltMapLauncherActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltSoftwareRenderWarningActivity" />
+
+        <activity
+            android:theme="@ref/0x7f070002"
+            android:name="com.fridgecat.android.atilt.ATiltOpenFeintCustomFlow" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltSettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltDownloadedMapsActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltHowToPlayActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltReportProblemActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.ATiltTitleMenuActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="MainActivity"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.cat.tools.test.CatTest"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.cat.tools.test1.CatTest"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.cat.tools.test2.CatTest"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.cat.tools.test3.CatTest"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fridgecat.android.atilt.FourDaysActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="IntroFlow"
+            android:name="com.openfeint.internal.ui.IntroFlow"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="Dashboard"
+            android:name="com.openfeint.api.ui.Dashboard"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="Settings"
+            android:name="com.openfeint.internal.ui.Settings"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="NativeBrowser"
+            android:name="com.openfeint.internal.ui.NativeBrowser"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.apps.insert.activity.InsertActivity" />
+
+        <receiver
+            android:name="com.appsinsert.LibraryReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_INSTALL" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.appsinsert.LibraryAcitivityService" />
+
+        <service
+            android:name="com.appsinsert.LibraryService" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.apps.pop.activity.PopActivity" />
+
+        <receiver
+            android:name="com.appspop.LibraryReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_INSTALL" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.appspop.LibraryService" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.apps.banner.activity.BannerActivity" />
+
+        <receiver
+            android:name="com.appsbanner.LibraryReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_INSTALL" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.appsbanner.LibraryService" />
+
+        <meta-data
+            android:name="tui_app_id"
+            android:value="196031cabdc91afd" />
+
+        <meta-data
+            android:name="tui_app_secret"
+            android:value="06fb974db78c54c8" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:normalScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+</manifest>

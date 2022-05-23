@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="15"
+    android:versionName="5.0.1"
+    package="com.riatech.cookbook">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:theme="@ref/0x7f0a0055"
+        android:label="@ref/0x7f09000d"
+        android:icon="@ref/0x7f020079"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f09000d"
+            android:name="com.riatech.cookbook.MainActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.1"
+    android:installLocation="2"
+    package="com.miralcestudios.bullrun">
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f040000"
+        android:icon="@ref/0x7f020006"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f040000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.appflood.AFPanelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.appflood.AFFullScreenActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.appflood.AFListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.appflood.AFInterstitialActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.appflood.notification.NotificationActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="@string/0x19" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.appflood.AFFullScreenActivity"
+            android:launchMode="2"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.appflood.AFInterstitialActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.appflood.AFListActivity"
+            android:launchMode="2"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="@string/0x19" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.appflood.AFReferralReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gcm.GCMAFIntentService" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMAFBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category
+                    android:name="com.papaya.appflood" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.papaya.appflood.permission.C2D_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.papaya.appflood.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+</manifest>

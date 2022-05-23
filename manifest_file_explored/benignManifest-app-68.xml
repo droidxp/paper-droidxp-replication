@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:_="http://schemas.android.com/apk/res/android"
+    _:versionCode="4"
+    _:versionName="1.1"
+    package="com.barbaricsaint.weathersaint">
+
+    <application
+        _:theme="@ref/0x01030006"
+        _:label="@ref/0x7f060001"
+        _:icon="@ref/0x7f020002"
+        _:debuggable="false">
+
+        <activity
+            _:label="@ref/0x7f060001"
+            _:name=".WeatherSaintActivity"
+            _:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    _:name="android.intent.action.MAIN" />
+
+                <category
+                    _:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            _:label="@ref/0x7f060001"
+            _:name="LocationActivity"
+            _:screenOrientation="1"
+            _:windowSoftInputMode="0x5" />
+
+        <meta-data
+            _:name="ADMOB_PUBLISHER_ID"
+            _:value="a14cc7b923ba9cf" />
+
+        <activity
+            _:name="com.google.ads.AdActivity"
+            _:configChanges="0xb0" />
+    </application>
+
+    <uses-sdk
+        _:minSdkVersion="7" />
+
+    <uses-permission
+        _:name="android.permission.INTERNET" />
+
+    <uses-permission
+        _:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

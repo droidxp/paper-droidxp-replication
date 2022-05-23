@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="104"
+    android:versionName="1.04"
+    android:installLocation="2"
+    package="jp.heroz.android.mofuneko">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:theme="@ref/0x7f070000"
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020045"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f060001"
+            android:name="MainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="logoActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

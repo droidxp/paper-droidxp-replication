@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="371"
+    android:versionName="261"
+    android:installLocation="0"
+    package="coolcherrytrees.games.reaxvdre">
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="12" />
+
+    <application
+        android:label="@ref/0x7f07007f"
+        android:icon="@ref/0x7f02008d">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f07007f"
+            android:name=".GameActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:label="@ref/0x7f0700a2"
+            android:name=".SelectModesActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f070046"
+            android:name=".AboutActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f070068"
+            android:name=".AgainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f070068"
+            android:name=".ProAgainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f0700a3"
+            android:name=".GamePreferences"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.ccx.xm.AdActivity" />
+
+        <receiver
+            android:name="com.games.AdReciver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true" />
+</manifest>

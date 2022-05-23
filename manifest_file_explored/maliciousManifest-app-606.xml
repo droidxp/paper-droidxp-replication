@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@ref/0x01030006"
+    android:versionCode="11902"
+    android:versionName="2.0.0"
+    android:installLocation="2"
+    package="com.kabam.ff6android">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:label="@ref/0x7f05003b"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f05003b"
+            android:name="com.explodingbarrel.facebook.FacebookIAPMainActivity"
+            android:screenOrientation="6"
+            android:configChanges="0x40000fff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.explodingbarrel.facebook.WebViewFullScreenActivity"
+            android:screenOrientation="6"
+            configChanges="keyboardHidden|orientation" />
+
+        <receiver
+            android:name="com.mobileapptracker.Tracker"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:label="@ref/0x7f05003b"
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="6"
+            configChanges="keyboardHidden|orientation" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="APP_ID" />
+
+        <activity
+            android:name="com.unity3d.plugin.downloader.UnityDownloaderActivity"
+            android:screenOrientation="6"
+            configChanges="keyboardHidden|orientation" />
+
+        <service
+            android:name="com.unity3d.plugin.downloader.UnityDownloaderService" />
+
+        <receiver
+            android:name="com.unity3d.plugin.downloader.UnityAlarmReceiver" />
+
+        <activity
+            android:name="com.unity3d.player.VideoPlayer"
+            android:configChanges="0x40000fff" />
+    </application>
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+</manifest>

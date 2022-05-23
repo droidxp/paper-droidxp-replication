@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@ref/0x01030006"
+    android:versionCode="2"
+    android:versionName="2.0"
+    android:installLocation="2"
+    package="com.ikasplay.irrienAR201401">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.qualcomm.QCARUnityPlayer.QCARPlayerNativeActivity"
+            android:screenOrientation="4"
+            android:configChanges="0x40000fff">
+
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:screenOrientation="4"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:name="com.prime31.EtceteraProxyActivity"
+            android:configChanges="0xd80" />
+
+        <activity
+            android:name="com.prime31.WebViewActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.prime31.P31VideoPlayerActivity"
+            android:configChanges="0xb0" />
+
+        <receiver
+            android:name="com.prime31.AlarmManagerReceiver" />
+    </application>
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+</manifest>

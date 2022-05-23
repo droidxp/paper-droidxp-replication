@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="com.mobo.video.player.pro"
+    android:versionCode="119"
+    android:versionName="1.1.9"
+    android:installLocation="0"
+    package="com.mobo.video.player.pro">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <permission
+        android:name="com.mobo.video.player.pro.PLUG_IN_EXTENSION" />
+
+    <permission
+        android:name="com.mobo.video.player.pro.PLUG_IN_DATA_SOURCE" />
+
+    <permission
+        android:name="com.mobo.video.player.pro.PLUG_IN_WALLPAPER_SET" />
+
+    <permission
+        android:name="com.mobo.video.player.pro.PLUG_IN_APPLICATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.mobo.video.player.pro.PLUG_IN_LICENSE"
+        android:protectionLevel="2" />
+
+    <permission
+        android:name="com.mobo.video.player.pro.STANDARD"
+        android:protectionLevel="2" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="5" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:label="@ref/0x7f070005"
+        android:icon="@ref/0x7f0200b8"
+        android:name="com.entertainment.player.application.PlayerApplication"
+        android:debuggable="false"
+        android:process="com.mobo.video.player.pro">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.FileListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.entertainment.player.activities.CustomActivity" />
+
+        <activity
+            android:label="@ref/0x7f070005"
+            android:icon="@ref/0x7f0200b8"
+            android:name="com.entertainment.player.activities.PlayerActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:mimeType="video/amv" />
+
+                <data
+                    android:mimeType="video/ape" />
+
+                <data
+                    android:mimeType="video/flv" />
+
+                <data
+                    android:mimeType="video/mkv" />
+
+                <data
+                    android:mimeType="video/rmvb" />
+
+                <data
+                    android:mimeType="video/tta" />
+
+                <data
+                    android:mimeType="video/g3p" />
+
+                <data
+                    android:mimeType="video/3gpp" />
+
+                <data
+                    android:mimeType="video/x-ms-asf" />
+
+                <data
+                    android:mimeType="video/x-msvideo" />
+
+                <data
+                    android:mimeType="video/x-ms-wmv" />
+
+                <data
+                    android:mimeType="audio/x-ms-wma" />
+
+                <data
+                    android:mimeType="audio/x-wav" />
+
+                <data
+                    android:mimeType="audio/x-pn-realaudio" />
+
+                <data
+                    android:mimeType="video/mpeg" />
+
+                <data
+                    android:mimeType="video/mp4" />
+
+                <data
+                    android:mimeType="video/quicktime" />
+
+                <data
+                    android:mimeType="application/x-flac" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.entertainment.player.database.VideoProvider"
+            android:authorities="com.mobo.video.player.pro" />
+
+        <activity
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.WelcomeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.SettingPrefenence"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.FileExplorerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.PlaylistActivity"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080006"
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.AboutDialogActivity"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.HelpActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:theme="@ref/0x7f080006"
+            android:name="com.entertainment.player.activities.RemoveAdsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:theme="@ref/0x7f080006"
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.SeekIntervalSetting"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080006"
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.ScreenLockSetting"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080006"
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.ShowTimeSetting"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080006"
+            android:label="@ref/0x7f070005"
+            android:name="com.entertainment.player.activities.AllVideoListActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.task.killer.database.DataProvider"
+            android:authorities="com.mobo.video.task.killer" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f070016"
+            android:name="com.entertainment.player.utils.SDCardRemovedDialog"
+            android:configChanges="0xe0"
+            system="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.View" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.MoboTap.android.PromotionActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="mobi.mgeek.util.CrashReporter.CrashReportDialogActivity"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:label="@ref/0x7f070005"
+            android:name="com.zdroid.apis.view.AdService" />
+
+        <service
+            android:label="@ref/0x7f070005"
+            android:name="com.zdroid.apis.services.CheckUpdateService" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.zdroid.apis.promote.UpdateActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.zdroid.apis.promote.PromoteActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.zdroid.apis.fullscreen.FullScreenShow"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.zdroid.apis.downloadhelper.DownloadService" />
+
+        <receiver
+            android:name="com.iac.notification.service.BootReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.iac.notification.service.CheckUpdateService" />
+
+        <service
+            android:name="com.iac.notification.download.DownloadService" />
+
+        <activity
+            android:name="com.iac.notification.promote.PromoteActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.mobo.video.player.pro.recommend.EasyBatteryRemmendActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.service.promotion.ui.topapp.TopAppActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.service.promotion.ui.topapp.ToggleDialogActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.service.promotion.ui.quitpromote.QuitActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.service.promotion.service.AlarmService" />
+
+        <service
+            android:name="com.service.promotion.downloadhelper.DownloadService" />
+
+        <receiver
+            android:name="com.service.promotion.receiver.BootReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                    android:name="com.promotion.action.USER_LAUNCH_APP" />
+
+                <action
+                    android:name="com.promotion.action.USER_CLEARN_NOTIFY" />
+
+                <action
+                    android:name="com.promotion.action.REFRESH_NEW_MARK_STATE" />
+
+                <action
+                    android:name="com.promotion.action.CLICK_ACROSS_PROMOTE_AD" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.service.promotion.ads.across"
+            android:value="across_promote" />
+
+        <receiver
+            android:name="com.boost.beluga.tracker.TrackerReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.boost.beluga.push.PushReceiver" />
+
+        <activity
+            android:name="com.boost.beluga.push.PushAdsActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.boost.beluga.hotapps.HotAppsActivity"
+            android:configChanges="0xb0" />
+
+        <meta-data
+            android:name="BELUGA_APPID"
+            android:value="700c3237d5f64566b808e1e4f5ea9ff5" />
+
+        <meta-data
+            android:name="BELUGA_CHANNEL"
+            android:value="GOOGLE_MARKET" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.belugaboost.ad.hotapps.HotAppsActivity"
+            android:launchMode="2"
+            android:configChanges="0xb0" />
+
+        <receiver
+            android:name="com.belugaboost.ad.pushnotification.PushReceiver" />
+
+        <activity
+            android:name="com.belugaboost.ad.pushnotification.PushAdsActivity"
+            android:configChanges="0xb0" />
+
+        <receiver
+            android:name="com.belugaboost.ad.TrackerReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.belugaboost.promotion.AnalyticsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMAdViewOverlayActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.millennialmedia.android.MMActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidBrowser"
+            android:configChanges="0xa0" />
+
+        <receiver
+            android:name="com.easy.remove.ads.AppLaunchReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.easy.remove.ads.action.USER_LAUNCH_APP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.appflood.AFPanelActivity"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.appflood.AFFullScreenActivity"
+            android:launchMode="2"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.appflood.AFListActivity"
+            android:launchMode="2"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TJCOffersWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyFullScreenAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyDailyRewardAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyVideoView"
+            android:configChanges="0xa0" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+</manifest>

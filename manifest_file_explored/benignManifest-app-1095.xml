@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="95"
+    android:versionName="4.2.23"
+    package="pop.excelente.cartoon_reader">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:theme="@ref/0x010300f0"
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f02001a"
+        android:allowBackup="true"
+        android:largeHeap="true">
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.pop.cartoon_reader.MainActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.pop.cartoon_reader.en_Page"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.pop.cartoon_reader.c_page"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.pop.cartoon_reader.c_page_do"
+            android:configChanges="0x4a0" />
+
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W"
+            android:value="640dip" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H"
+            android:value="400dip" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W"
+            android:value="400dip" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H"
+            android:value="200dip" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

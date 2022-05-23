@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="3"
+    android:versionName="2.0"
+    package="com.cn.ning">
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <application
+        android:label="@ref/0x7f04004a"
+        android:icon="@ref/0x7f020061">
+
+        <activity
+            android:label="@ref/0x7f04004a"
+            android:name=".JunshibaikeActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LookpageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name=".Xiangqingpage"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="net.youmi.android.AdActivity"
+            android:configChanges="0xb0" />
+
+        <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="10050" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</manifest>

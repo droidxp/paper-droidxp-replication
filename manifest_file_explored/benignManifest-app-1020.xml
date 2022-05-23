@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.1.3"
+    android:installLocation="0"
+    package="com.faluosi.game.huangjingebulin77">
+
+    <application
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f0200c8">
+
+        <meta-data
+            android:name="gameId"
+            android:value="235273" />
+
+        <meta-data
+            android:name="gamename"
+            android:value="tiaotiaohou" />
+
+        <meta-data
+            android:name="cpId"
+            android:value="226715" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name=".Cover"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CoverActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f070013"
+            android:name=".OptionActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name=".SelectModeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name=".game.GameActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name=".GameOverActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name=".HelpActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="More Games"
+            android:name="com.faluosi.api.promptclient.more.MoreActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.faluosi.api.promptclient.prompt.RecommendActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.faluosi.api.promptclient.prompt.RateActivity"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="com.faluosi.api.scoreclient.ScoreClientProvider"
+            android:authorities="com.faluosi.game.huangjingebulin77.ScoreClient" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.faluosi.api.scoreclient.ui.HighScoresActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.smlon.tools.SMS"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.egame.sdk.uis.EgameWebActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.egame.sdk.uis.WelcomeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.egame.sdk.uis.ImageViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f080009"
+            android:name="com.egame.sdk.uis.InputPopupActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.egame.sdk.uis.MoreActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.egame.sdk.uis.HideSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.egame.sdk.uis.RecomFriendActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f08000c"
+            android:name="com.egame.sdk.uis.school.EgameSchoolWelcomeActivity"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f08000c"
+            android:name="com.egame.sdk.uis.school.EgameSchoolRegActivity"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f08000c"
+            android:name="com.egame.sdk.uis.school.EgameSchoolSelectCityActivity"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f08000c"
+            android:name="com.egame.sdk.uis.school.EgameSchoolSelectSchoolActivity"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f08000c"
+            android:name="com.egame.sdk.uis.school.EgameSchoolSelectLetterActivity"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f08000c"
+            android:name="com.egame.sdk.uis.school.EgameSchoolInfoActivity"
+            android:configChanges="0x20" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <supports-screens
+        android:anyDensity="false"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="false"
+        android:resizeable="false" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+</manifest>

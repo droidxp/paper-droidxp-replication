@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="12135"
+    android:versionName="2.4.6"
+    android:installLocation="0"
+    package="com.dw.btimenbh">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <application
+        android:theme="@ref/0x7f0b0000"
+        android:label="@ref/0x7f0a0002"
+        android:icon="@ref/0x7f020239"
+        android:name="com.dw.btimenbh.MyApplication"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f0a0002"
+            android:name="com.dw.btimenbh.Launcher"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="diwandqbb6" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.dw.btimenbh.LoginActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.Register"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.MainTabActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:name="com.dw.btimenbh.BTParentActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.BTMoreActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.PrivacyMainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.BabyListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.BabyInfoEditActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.RelativeSelectListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.TimeLineActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.TimeLineCellActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.RelativeRecListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.UploadRecoderActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.TimeLineStatisActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.dw.btimenbh.LargeViewActivity" />
+
+        <activity
+            android:name="com.dw.btimenbh.BabyCreateActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.BabyInfoBaseActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.FavoriteItemActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.BabyInfoActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.AddNew"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.dw.btimenbh.SelectActTimeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.SelectActPrivacyActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.EditFamilyPrivacyActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f0b0001"
+            android:name="com.dw.btimenbh.SelectBabyActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.CommentActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.AcceptInvite"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.dw.btimenbh.Setting"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.RelativeCodeList"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.GuardianList"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.ShareSettings"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.ShareToFriends"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.MsgActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.PerAccountInfo"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.Help"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.Policy"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.RelativeInfo"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.AccountInfo"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.EditAccountInfo"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.dw.btimenbh.AccountInfoChild"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.RelationshipList"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.About"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.ResetPwd"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.AddRelationship"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.AddRelativeRecActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.OtherRelative"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.FirstTimeInput"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.dw.btimenbh.PersonInfoInput"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.dw.btimenbh.RelativeInfoInput"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.dw.btimenbh.Feedback"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.mediapicker.MediaPicker"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.dw.btimenbh.mediapicker.CropImage"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.dw.btimenbh.GrowthViewActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.dw.btimenbh.GrowthInputActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:label="@ref/0x7f0a0002"
+            android:name="com.dw.btimenbh.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.dw.btimenbh.sinaweiboapi.RequestMessageActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.dw.btimenbh.AppRecActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.dw.btimenbh.LitNewsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.dw.btimenbh.FavoriteNewsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.SendInvite"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.VaccineActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.FirstTimeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.PersonInfo"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.ChooseProvince"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.GesturePWDCreateActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.GesturePWDManualGuideActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.GesturePWDSettingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.GestureVerifyActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.dw.btimenbh.GesturePWDUnlockActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa4" />
+
+        <activity
+            android:name="com.dw.btimenbh.AlertAndNotify"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.SettingParentingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.SettingBabyNewsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumTabActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumMsgActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumMainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumReportedPostListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumTopicListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumTopicDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumCreateTopicActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumEditTopicActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumReplyPostActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.dw.btimenbh.forum.ForumUserActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.shop.ShopTopicListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.shop.ShopFavoriteListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.shop.ShopToTmallActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.shop.ShopTopicDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.shop.ShopDetailItemActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryMainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryTagActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryTagListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryWebActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryAlbumActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryAudioPlayActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryDownloadListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryFavoriteActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryFavListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryArtCommentActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryArtCommMsgActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasurySearchListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x90" />
+
+        <activity
+            android:name="com.dw.btimenbh.treasury.TreasuryAddCommentActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.dw.btimenbh.parentassist.ParentAstBabyList"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.parentassist.ParentAstTaskListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.parentassist.ParentAstCompleteListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.dw.btimenbh.VaccineCellActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.dw.btimenbh.VideoRecorder"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.dw.btimenbh.media.VideoActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent100334934" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.dw.btimenbh.album.AlbumActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.dw.btimenbh.NotificationService"
+            android:stopWithTask="true" />
+
+        <receiver
+            android:name="com.dw.btimenbh.BootCompleteReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.dw.btimenbh.AlarmReceiver" />
+
+        <receiver
+            android:name="com.dw.btimenbh.MyApplication$ApkInstallReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.dw.btimenbh.baidu.PushMessageReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.MESSAGE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.RECEIVE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.METHOD" />
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.dw.btimenbh.musicplayer.MusicService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.dw.btimenbh.musicplayer.action.TOGGLE_PLAYBACK" />
+
+                <action
+                    android:name="com.dw.btimenbh.musicplayer.action.PLAY" />
+
+                <action
+                    android:name="com.dw.btimenbh.musicplayer.action.PAUSE" />
+
+                <action
+                    android:name="com.dw.btimenbh.musicplayer.action.NEXT" />
+
+                <action
+                    android:name="com.dw.btimenbh.musicplayer.action.PREV" />
+
+                <action
+                    android:name="com.dw.btimenbh.musicplayer.action.STOP" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.dw.btimenbh.musicplayer.MusicIntentReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

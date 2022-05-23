@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.huige.mines">
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f020013"
+        android:debuggable="true">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f050001"
+            android:name=".Main">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name=".PlayActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name=".SetActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name=".ChartsActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name=".HelpActivity" />
+
+        <activity
+            android:name="net.youmi.android.AdActivity"
+            android:configChanges="0xb0" />
+
+        <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="10010" />
+    </application>
+</manifest>

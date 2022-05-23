@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.primarymathsquiz.amo">
+
+    <uses-sdk
+        android:minSdkVersion="3" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <permission
+        android:name="com.primarymathsquiz.permission.C2D_MESSAGE"
+        android:protectionLevel="2" />
+
+    <uses-permission
+        android:name="com.primarymathsquiz.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f02002d"
+        android:name="com.primarymathsquiz.primarymathsquiz_appDelegate">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_activity_root"
+            android:excludeFromRecents="false"
+            android:configChanges="0xa0"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category
+                    android:name="com.primarymathsquiz" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.primarymathsquiz.GCMIntentService" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_activity_base"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_activity_root_tabs"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_menuButtons"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Password_splash"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Email_image"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_quiz"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_pdfDoc"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_blank"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_splash"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_excelDoc"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_settingsDevice"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_wordDoc"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_settingsLogIn"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_customURL"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_htmlDoc"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_menuListSimple"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_map"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_customHTML"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_pptDoc"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_settingsLocation"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Save_contact"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Photoefx"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Notepad_feature"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.App_rater"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BTM_search"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Paint"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BTA_design_menu"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.WB_screen_menuImage"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Mac_image_gallery"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Timer"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.At53_video_player"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Ipad_story_book_page"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Json_snippet_keeper"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.At53_tweet_sheet"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Easy_in_app_purchase"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Record_n_play"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Circleview_list_menu"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_fileManager"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BT_screen_menuListSimpleAdvanced"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Tm_invisibletwitter"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Mmr_tic_tac_toe"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.La_voice_notes"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.La_email_audio"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.NAD_advanced_quiz"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.JC_AlertView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Cr_menu_advanced"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Cr_html_pro"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Dv_flashlight_feature"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.CR_animated_splash"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BTA_thumbViewer"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.BTA_audiostreamer"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Das_video_playlist"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Das_sound_player"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Cp_streamservice"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Cp_stream"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Jce_weather"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Ml_location_map"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Sp_youtube_android"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Ak_countdown"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Tm_invisiblefacebook"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.JM_Xib_button_menu"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.CR_Animated_circle_menu"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Buzz_carousel"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.CR_Random_Splash"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.AK_Voucher_access"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.primarymathsquiz.Rd_simplerss"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.revmob.ads.fullscreen.FullscreenActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <uses-library
+            android:name="com.google.android.maps" />
+    </application>
+</manifest>

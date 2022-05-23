@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="4"
+    android:versionName="3.1"
+    android:installLocation="2"
+    package="com.BlueAlien014.SexyPokerTouch1">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:name="com.applovin.adview.AppLovinInterstitialActivity"
+            android:screenOrientation="1"
+            configChanges="keyboardHidden|orientation" />
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fff" />
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="ZfakPhfUEVfG9KvJ5zp_P91bQhpwCw5nZgUzM9Sbe6tpRm6XkwX83TlUFTOSSUD09i-WtQ7VX_I-mPVTJ2cNbL" />
+
+        <meta-data
+            android:name="applovin.sdk.verbose_logging"
+            android:value="false" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-sdk
+        android:minSdkVersion="6"
+        android:targetSdkVersion="15" />
+</manifest>

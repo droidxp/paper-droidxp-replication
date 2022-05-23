@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="48"
+    android:versionName="1.2.2"
+    android:installLocation="0"
+    package="com.knirirr.beecount">
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:theme="@ref/0x0103006b"
+        android:label="@ref/0x7f080000"
+        android:icon="@ref/0x7f020001">
+
+        <activity
+            android:label="@ref/0x7f080000"
+            android:name=".WelcomeActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f080000"
+            android:name=".NewprojActivity" />
+
+        <activity
+            android:label="@ref/0x7f080000"
+            android:name=".ListprojActivity" />
+
+        <activity
+            android:label="@ref/0x7f080000"
+            android:name=".CountingActivity" />
+
+        <activity
+            android:label="@ref/0x7f080000"
+            android:name=".EditprojActivity" />
+
+        <activity
+            android:theme="@ref/0x7f090000"
+            android:label="@string/0xb"
+            android:name=".MainHelpActivity" />
+
+        <activity
+            android:theme="@ref/0x7f090000"
+            android:label="@string/0xb"
+            android:name=".EditHelpActivity" />
+
+        <activity
+            android:theme="@ref/0x7f090000"
+            android:label="@string/0xb"
+            android:name=".SettingsActivity" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</manifest>

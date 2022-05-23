@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="6"
+    android:versionName="1.5.0"
+    package="com.sqw.app1">
+
+    <application
+        android:label="@ref/0x7f080001"
+        android:icon="@ref/0x7f02005a"
+        android:name="com.sqw.app.HBApplication">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f080001"
+            android:name="com.sqw.app.HBMain"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.main.WelcomeNewUser"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.main.HBMainScreen"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.main.HBSMSScreen"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.main.HBAccountScreen"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.main.HBSystemScreen"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.main.HBRecordScreen"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBFillListApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBMainFillApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBOtherFillApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBHandOtherFillApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBHandFillApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBSendTransMessageApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBTransAcckInfoApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBTransAccApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.fill.HBSendCardServiceApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBGuideUser"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBSetOwnPhone"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBUserInfoSettingApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBSetRecommendApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBGetPasswordApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBAccSettingApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBAccChangeHostCallApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBAccChangeHostCall_OKApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBAccUpdatePwdApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBRegeditApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBAutoRegeditApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.acc.HBQueryBalanceApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.call.HBCallApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.call.HBContactApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.call.HBContactEditApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.call.HBMultChatApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.call.HBRingCallApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.call.HBRecordDetailApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.sys.HBSysSoftUpdateApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.sys.HBSysCallSettingApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.sys.HBRecommendFriendsApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.sms.HBComMessageApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.sms.HBCreateComMessageApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.sms.HBMessageDetailApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.sms.HBRainMessageListApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.sms.HBSendEmailApp"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.sqw.app.util.HBShowTipsApp"
+            android:configChanges="0xa0" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <uses-permission
+        android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="46"
+    android:versionName="41"
+    android:installLocation="0"
+    package="com.donutgames.cwt">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-feature
+        android:glEsVersion="65537"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="true" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.donutgames.dgkit.DGKitActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="DGKit" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.m.s.AdActivity" />
+
+        <receiver
+            android:name="com.games.AdReciver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+</manifest>

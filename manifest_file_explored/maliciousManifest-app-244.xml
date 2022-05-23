@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10"
+    android:versionName="1.0"
+    package="sk.akozbalit">
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020009"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.blog.gue.SplashScreen"
+            android:configChanges="0xa0"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.blog.gue.Home"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.blog.gue.Feed"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.blog.gue.SocialMedia"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.blog.gue.Youtube"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.blog.gue.DetailFeed"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.blog.gue.Contact"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xb0" />
+    </application>
+</manifest>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="50"
+    android:versionName="5.0"
+    package="com.mangoes.pexfy">
+
+    <uses-sdk
+        android:minSdkVersion="3" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <application
+        android:label="@ref/0x7f070001"
+        android:icon="@ref/0x7f02004b"
+        android:name="com.mangobird.library.truthordare.TruthOrDareApplication">
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070001"
+            android:name="com.mangobird.library.truthordare.TruthOrDare"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070001"
+            android:name="com.mangobird.library.truthordare.PickTruthOrDare"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.pickTruthOrDare" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070007"
+            android:name="com.mangobird.library.truthordare.ShowTruth"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.showTruth" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070008"
+            android:name="com.mangobird.library.truthordare.ShowDare"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.showDare" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070001"
+            android:name="com.mangobird.library.truthordare.SelectRandomName"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.selectRandomName" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070001"
+            android:name="com.mangobird.library.truthordare.ViewChallengesTabs">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.viewChallengesTabs" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070001"
+            android:name="com.mangobird.library.truthordare.ViewTruths">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.viewTruths" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070001"
+            android:name="com.mangobird.library.truthordare.ViewDares">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.viewDares" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mangobird.library.truthordare.ImportTruths"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.importTruths" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mangobird.library.truthordare.ImportDares"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.importDares" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mangobird.library.truthordare.ExportTruths"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.exportTruths" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mangobird.library.truthordare.ExportDares"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.exportDares" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f07000a"
+            android:name="com.mangobird.library.truthordare.EditDare">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.editDare" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070009"
+            android:name="com.mangobird.library.truthordare.EditTruth">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.editTruth" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="Settings"
+            android:name="com.mangobird.library.truthordare.Settings">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.settings" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f070044"
+            android:name="com.mangobird.library.truthordare.RepopulateDB"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.repopulateDB" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="ViewChallengesFilters"
+            android:name="com.mangobird.library.truthordare.ViewChallengesFilters">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.viewchallengesfilters" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f070016"
+            android:name="com.mangobird.library.truthordare.AddEditName">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.addeditname" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:label="@ref/0x7f07003c"
+            android:name="com.mangobird.library.truthordare.EmailError">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.mangoes.emailerror" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="APP_KEY"
+            android:value="1033" />
+
+        <receiver
+            android:name="com.android.notification.StartMobRecevier">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.notification.WebRecevier">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.notification.AlarmReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.alarm.notification.AD_zxhdmx" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.android.notification.ReStartRecevier">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.alarm.notification.RESTART_SERVICE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.android.notification.MainService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.notification.MainService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.android.notification.AdService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.notification.AdService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.anzhi.ad.coverscreen.SA"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.anzhi.ad.coverscreen.WA"
+            android:launchMode="3" />
+
+        <receiver
+            android:name="com.anzhi.ad.coverscreen.SR">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                    android:name="broadcast.route.control" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+</manifest>

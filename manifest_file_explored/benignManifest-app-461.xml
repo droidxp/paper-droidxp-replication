@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.01"
+    package="com.classico.animalsselfiepuzzle">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:theme="@ref/0x0103000d"
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020004"
+        android:allowBackup="true"
+        android:largeHeap="true">
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="source.ImagePuzzle"
+            android:screenOrientation="7" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="source.ModesActivity"
+            android:screenOrientation="7">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="source.ImageSelectorActivity"
+            android:screenOrientation="7" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

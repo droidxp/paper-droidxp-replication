@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="12"
+    android:versionName="1.0.9.2"
+    android:installLocation="2"
+    package="com.crossfield.moetoss4">
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <application
+        android:label="@ref/0x7f060001"
+        android:icon="@ref/0x7f020154">
+
+        <activity
+            android:label="@ref/0x7f060001"
+            android:name="MainActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="0xcb0" />
+
+        <meta-data
+            android:name="gamefeat_site_id"
+            android:value="1474" />
+
+        <activity
+            android:label="GameFeat"
+            android:name="jp.basicinc.gamefeat.android.sdk.view.GameFeatAppActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="GameFeat"
+            android:name="jp.basicinc.gamefeat.android.sdk.view.GameFeatAppChildActivity"
+            android:screenOrientation="4"
+            android:configChanges="0xa0" />
+
+        <receiver
+            android:name="jp.basicinc.gamefeat.android.sdk.receiver.GameFeatBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:label="More Game"
+            android:name="com.crossfield.more.MoreActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.game.GameActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.title.TitleActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.rank.RankActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.stage.StageSelectActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f070002"
+            android:name="com.crossfield.shop.ShopActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000c"
+            android:name="net.metaps.sdk.WallActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000c"
+            android:name="net.metaps.sdk.AppListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000c"
+            android:name="net.metaps.sdk.AppDetailActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.crossfield.billing.BillingRequestService" />
+
+        <receiver
+            android:name="com.crossfield.billing.BillingResponseReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.crossfield.gallery.GalleryActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.Achive.AchiveActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.record.RecordActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.settings.SettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.Achive.Achive_PerfectActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.gallery2.Gallery2Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.game2.Game2Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.rank.Rank_PerfectActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.record.Record_PerfectActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.title.Title_PerfectActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.crossfield.more.More2Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f070002"
+            android:name="com.crossfield.help.HelpActivity"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="net.metaps.sdk.CLIENT_ID"
+            android:value="KCHACOTOSS0001" />
+
+        <meta-data
+            android:name="net.metaps.sdk.APP_ID"
+            android:value="OSWYLZQZYD0001" />
+
+        <meta-data
+            android:name="net.metaps.sdk.APP_KEY"
+            android:value="fj22oa93m625j3o" />
+
+        <meta-data
+            android:name="net.metaps.sdk.PROMOTION_ID"
+            android:value="promotionId" />
+
+        <meta-data
+            android:name="net.metaps.sdk.MARKET"
+            android:value="android" />
+
+        <meta-data
+            android:name="net.metaps.sdk.MODE"
+            android:value="0" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+</manifest>

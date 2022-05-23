@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1009"
+    android:versionName="1.0.0.9"
+    package="com.fitue.wallpaperfish2">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020050">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.fitue.japanlovely.ImageViewer">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.mt.airad.MultiAD"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="net.youmi.android.AdActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f050000"
+            android:name="com.fitue.wallpaperselected.FullScreenAdSample" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4ddd0132431fe30f37000073" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="fishall" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+</manifest>

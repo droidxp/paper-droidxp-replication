@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10"
+    android:versionName="1.0"
+    android:installLocation="0"
+    package="net.stway.hooz">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020018"
+        android:allowBackup="true"
+        android:killAfterRestore="false">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:label="@ref/0x7f060001"
+            android:name="IntroActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="MainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="Tab1Activity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="Tab2Activity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="Tab3Activity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="Tab4Activity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="Tab5Activity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="DownloadListActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="DownloadListDetailActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="PlayerActivity"
+            android:screenOrientation="0" />
+    </application>
+
+    <intent-filter>
+
+        <action
+            android:name="android.intent.action.VIEW" />
+
+        <category
+            android:name="android.intent.category.DEFAULT" />
+
+        <category
+            android:name="android.intent.category.BROWSABLE" />
+
+        <data
+            android:scheme="http"
+            android:host="net.stway.hooz" />
+    </intent-filter>
+</manifest>

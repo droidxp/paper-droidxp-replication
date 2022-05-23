@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.0"
+    package="com.facetsoftware.bhcityguide">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="com.example.permission.MAPS_RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:theme="@ref/0x7f0a005b"
+        android:label="@ref/0x7f09000d"
+        android:icon="@ref/0x7f02008e"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f09000d"
+            android:name="com.mobilemerit.cityguide_codecaynon.CityGuideActivity"
+            android:configChanges="0x480">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mobilemerit.cityguide_codecaynon.MapActivity" />
+
+        <activity
+            android:name="com.mobilemerit.cityguide_codecaynon.PlaceDetailActivity" />
+
+        <activity
+            android:name="com.mobilemerit.cityguide_codecaynon.HomeActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.mobilemerit.cityguide_codecaynon.ShowPlacePicsActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.mobilemerit.cityguide_codecaynon.AboutUs_Activity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.mobilemerit.cityguide_codecaynon.WebViewActivity"
+            android:configChanges="0x480" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCPFZUdsJddfE2rzaMv8WVBFsQYV7ThNRg" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <receiver
+            android:name="com.admob.android.ads.analytics.InstallReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+            android:value="true" />
+
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="@ref/0x7f090013" />
+    </application>
+</manifest>

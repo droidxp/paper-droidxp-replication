@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="12"
+    android:versionName="1.0beta11"
+    package="org.wikimedia.commons">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_STATS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:theme="@ref/0x7f0a005d"
+        android:label="@ref/0x7f0b0013"
+        android:icon="@ref/0x7f020074"
+        android:name=".CommonsApplication"
+        android:supportsRtl="true">
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="org.acra.CrashReportDialog"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x7f0a005e"
+            android:name=".auth.LoginActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a005e"
+            android:name=".WelcomeActivity" />
+
+        <activity
+            android:label="@ref/0x7f0b0013"
+            android:icon="@ref/0x7f020074"
+            android:name=".upload.ShareActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+
+                <data
+                    android:mimeType="audio/ogg" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0b0013"
+            android:icon="@ref/0x7f020074"
+            android:name=".upload.MultipleShareActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+
+                <data
+                    android:mimeType="audio/ogg" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0b0013"
+            android:icon="@ref/0x7f020074"
+            android:name=".contributions.ContributionsActivity">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0b0043"
+            android:name=".SettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f0b0048"
+            android:name=".AboutActivity" />
+
+        <service
+            android:name=".upload.UploadService" />
+
+        <service
+            android:name=".auth.WikiAccountAuthenticatorService"
+            android:exported="true"
+            android:process=":auth">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@ref/0x7f040000" />
+        </service>
+
+        <service
+            android:name=".contributions.ContributionsSyncService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@ref/0x7f040001" />
+        </service>
+
+        <service
+            android:name=".modifications.ModificationsSyncService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@ref/0x7f040002" />
+        </service>
+
+        <provider
+            android:label="@ref/0x7f0b002d"
+            android:name=".contributions.ContributionsContentProvider"
+            android:exported="false"
+            android:authorities="org.wikimedia.commons.contributions.contentprovider"
+            android:syncable="true" />
+
+        <provider
+            android:label="@ref/0x7f0b003a"
+            android:name=".modifications.ModificationsContentProvider"
+            android:exported="false"
+            android:authorities="org.wikimedia.commons.modifications.contentprovider"
+            android:syncable="true" />
+
+        <provider
+            android:label="@ref/0x7f0b004a"
+            android:name=".category.CategoryContentProvider"
+            android:exported="false"
+            android:authorities="org.wikimedia.commons.categories.contentprovider"
+            android:syncable="false" />
+    </application>
+</manifest>

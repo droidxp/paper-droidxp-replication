@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.0.1"
+    package="com.valiton.eworld24">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f020011"
+        android:name="App">
+
+        <meta-data
+            android:name="RELEASE"
+            android:value="true" />
+
+        <activity
+            android:name="com.valiton.ehybridmodules.view.Splashscreen"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.valiton.ehybridmodules.view.Startscreen"
+            android:screenOrientation="1"
+            android:configChanges="0x30" />
+
+        <activity
+            android:name="com.valiton.ehybridmodules.view.WebViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.valiton.ehybridmodules.view.EanScanner"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.valiton.ehybridmodules.view.CameraHelp"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.valiton.ehybridmodules.view.NavigationActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.valiton.ehybridmodules.view.SubNavigationActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.valiton.ehybridmodules.view.submodule.MenuActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x30"
+            android:windowSoftInputMode="0x20" />
+    </application>
+</manifest>

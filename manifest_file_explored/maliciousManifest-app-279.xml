@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.0.1"
+    android:installLocation="0"
+    package="ch.romandroid.android.feedgoal">
+
+    <application
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f020006">
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.mfavez.android.feedgoal.SplashScreenActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.mfavez.android.feedgoal.FeedTabActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.mfavez.android.feedgoal.FeedWebActivity" />
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.mfavez.android.feedgoal.FeedItemActivity" />
+
+        <activity
+            android:label="@ref/0x7f070001"
+            android:name="com.mfavez.android.feedgoal.FeedPrefActivity" />
+
+        <meta-data
+            android:name="splash_screen_duration"
+            android:value="1000" />
+
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="a14c8cd2dcf1c1e" />
+
+        <meta-data
+            android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+            android:value="true" />
+
+        <meta-data
+            android:name="GOOGLE_ANALYTICS_PROFILE_ID"
+            android:value="UA-10869506-6" />
+
+        <receiver
+            android:name="com.google.android.apps.analytics.AnalyticsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="4" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true" />
+</manifest>

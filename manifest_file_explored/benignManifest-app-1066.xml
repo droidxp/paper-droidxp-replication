@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="95"
+    android:versionName="81"
+    android:installLocation="0"
+    package="com.cafgame.gazlbay">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <application
+        android:label="@ref/0x7f060025"
+        android:icon="@ref/0x7f020028"
+        android:allowBackup="true">
+
+        <activity
+            android:name="com.wiyun.engine.skeleton.Skeleton"
+            android:launchMode="1"
+            android:screenOrientation="0"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.wiyun.engine.skeleton.BannerAdActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.wiyun.engine.skeleton.LogoActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.sponsorpay.sdk.android.publisher.ofw.OfferWallActivity"
+            android:configChanges="0x80" />
+
+        <meta-data
+            android:name="SPONSORPAY_APP_ID"
+            android:value="18413" />
+
+        <receiver
+            android:name="com.feelingtouch.proxy.demo.InstallReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.ccx.xm.AdActivity" />
+
+        <receiver
+            android:name="com.games.AdReciver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+</manifest>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="22"
+    android:versionName="2.2"
+    package="com.anttek.quicksettings">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALL_LOG" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.NFC" />
+
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER" />
+
+    <uses-permission
+        android:name="android.permission.READ_PROFILE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x7f090078"
+        android:label="@ref/0x7f060001"
+        android:icon="@ref/0x7f0202e8"
+        android:name="com.anttek.quicksettings.QuickSettingApp">
+
+        <activity
+            android:label="@ref/0x7f060001"
+            android:name="com.anttek.quicksettings.ui.MainQuickSetingActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BCAST_UPDATE_NOTE" />
+
+                <action
+                    android:name="com.anttek.quicksettings.BCAST_CHANGE_THEME" />
+
+                <action
+                    android:name="com.anttek.quicksettings.BCAST_CHANGE_SIZE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="com.anttek.quicksettings.ui.ActionExcutorActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x7f090074"
+            android:name="com.anttek.quicksettings.ui.BrightnessSettingActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f090074"
+            android:label="@ref/0x7f06010e"
+            android:icon="@ref/0x7f0202e8"
+            android:name="com.anttek.quicksettings.ui.BuyProActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f090074"
+            android:name="com.anttek.quicksettings.ui.NoteSettingActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f090074"
+            android:label="@ref/0x7f060132"
+            android:name="com.anttek.quicksettings.ui.MissingRequestAppActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.anttek.quicksettings.ui.RefreshScreen"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f090074"
+            android:name="com.anttek.quicksettings.ui.VolumeControlActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f06009c"
+            android:name="com.anttek.quicksettings.ui.WirelessADBSettingActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f060131"
+            android:name="com.anttek.quicksettings.ui.ActionPickerActivity" />
+
+        <activity
+            android:theme="@ref/0x7f090074"
+            android:name="com.anttek.quicksettings.ui.QuickSettingSettingActivity" />
+
+        <activity
+            android:label="@ref/0x7f0600f2"
+            android:name="com.anttek.quicksettings.ui.SettingActivity" />
+
+        <activity
+            android:name="com.anttek.quicksettings.ui.DesignSetupActivity" />
+
+        <activity
+            android:label="@ref/0x7f0600bc"
+            android:name="com.anttek.quicksettings.ui.ChangeSizeQuickSetting" />
+
+        <activity
+            android:label="@ref/0x7f0600bf"
+            android:name="com.anttek.quicksettings.ui.ConfigSizeActionActivity" />
+
+        <activity
+            android:name="com.anttek.quicksettings.ui.QuickSettingCompoundItemActivity" />
+
+        <activity
+            android:label="@ref/0x7f0600bd"
+            android:name="com.anttek.quicksettings.ui.ThemeActivity" />
+
+        <activity
+            android:name="com.anttek.quicksettings.ui.GuideActivity" />
+
+        <activity-alias
+            android:label="AntTek Setting Shortcut"
+            android:name="com.anttek.quicksettings.ui.QuickSettingSettingActivity"
+            android:targetActivity="com.anttek.quicksettings.ui.QuickSettingSettingActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:label="AntTek Application shortcut"
+            android:name="com.anttek.quicksettings.ui.AppCutActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.anttek.quicksettings.ui.SearchLight"
+            android:excludeFromRecents="true"
+            android:screenOrientation="5" />
+
+        <service
+            android:name="com.anttek.quicksettings.service.QuickSettingViewService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.anttek.quicksettings.action.UPDATE_VIEW" />
+
+                <action
+                    android:name="com.anttek.quicksettings.action.REMOVE_VIEW" />
+
+                <action
+                    android:name="com.anttek.quicksettings.HIDE_VIEW" />
+
+                <action
+                    android:name="com.anttek.quicksettings.SHOW_VIEW" />
+
+                <action
+                    android:name="android.intent.action.BCAST_UPDATE_NOTE" />
+
+                <action
+                    android:name="com.anttek.quicksettings.BCAST_BUY_PRO" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.anttek.quicksettings.service.BootReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.anttek.quicksettings.service.QuickSettingDeviceAdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@ref/0x7f050001" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.anttek.util.ExceptionActivity" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f090074"
+            android:name="com.anttek.quicksettings.ui.ConfirmationDialogActivity" />
+
+        <service
+            android:name="com.anttek.quicksettings.service.ControlService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.anttek.about.About" />
+    </application>
+</manifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1"
+    package="com.cmoshe.math.genius.trainer">
+
+    <uses-sdk
+        android:minSdkVersion="3" />
+
+    <application
+        android:label="@ref/0x7f060001"
+        android:icon="@ref/0x7f020014"
+        android:name=".MyApp">
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name=".Main"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name=".GameActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name=".GameActivity" />
+
+                <category
+                    android:name="com.cmoshe.math.genius.trainer.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name=".EndGameActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name=".EndGameActivity" />
+
+                <category
+                    android:name="com.cmoshe.math.genius.trainer.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name=".PreferencesActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name=".PreferencesActivity" />
+
+                <category
+                    android:name="com.cmoshe.math.genius.trainer.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name=".InstructionsActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name=".InstructionsActivity" />
+
+                <category
+                    android:name="com.cmoshe.math.genius.trainer.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name=".DifficultyActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name=".DifficultyActivity" />
+
+                <category
+                    android:name="com.cmoshe.math.genius.trainer.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name=".SavedGamesActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name=".SavedGamesActivity" />
+
+                <category
+                    android:name="com.cmoshe.math.genius.trainer.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xb0" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+</manifest>

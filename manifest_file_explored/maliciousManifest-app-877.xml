@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="0"
+    package="com.supart.kids.fun.play">
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f02003d"
+        android:logo="@ref/0x7f02003e"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:label="@ref/0x7f060001"
+            android:name="memory.game.kids.fun.play.ui.MainActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060001"
+            android:name="memory.game.kids.fun.play.ui.PreferencesActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

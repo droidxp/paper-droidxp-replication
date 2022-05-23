@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="15"
+    android:versionName="1.0"
+    android:installLocation="2"
+    package="com.gobit.burgershop">
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:glEsVersion="0x10001" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="Burger Shop"
+        android:icon="@ref/0x7f020002"
+        android:allowBackup="false">
+
+        <activity
+            android:label="Burger Shop"
+            android:name=".BurgerShopGoogle"
+            android:screenOrientation="0"
+            android:configChanges="0xfb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

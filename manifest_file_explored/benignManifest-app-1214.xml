@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="5"
+    android:versionName="1.4"
+    package="com.krazymobile.emojismartkeyboard">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:theme="@ref/0x7f090001"
+        android:label="@ref/0x7f080003"
+        android:icon="@ref/0x7f0201da">
+
+        <service
+            android:name="com.emoji.softkeyboard.SoftKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@ref/0x7f050013" />
+        </service>
+
+        <activity
+            android:label="@ref/0x7f08000a"
+            android:name="com.emoji.softkeyboard.ImePreferences" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f080000"
+            android:name="com.emoji.ui.SplashScreen"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f080000"
+            android:name="com.emoji.ui.MainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:taskAffinity="com.krazymobile.emojismartkeyboard.AppWall" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.startapp.android.publish.AppWallActivity"
+            android:taskAffinity="com.krazymobile.emojismartkeyboard.AppWall"
+            android:configChanges="0xa0" />
+    </application>
+</manifest>

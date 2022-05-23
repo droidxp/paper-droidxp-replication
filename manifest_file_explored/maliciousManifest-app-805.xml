@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10"
+    android:versionName="2.0"
+    package="com.viet_talent.study.japanese_n2">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:theme="@ref/0x7f060000"
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f02000d"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f050003"
+            android:name="com.example.japan_learning.Japan_Learning">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f050004"
+            android:name="com.example.japan_learning.Vocabulary_Activity">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.japan_learning.Vocabulary_Test_Mode" />
+
+        <activity
+            android:name="com.example.japan_learning.Vocabulary_Test_Result" />
+
+        <activity
+            android:name="com.example.japan_learning.Check_Mode" />
+
+        <activity
+            android:name="com.example.japan_learning.Practice" />
+
+        <activity
+            android:name="com.example.japan_learning.Collection" />
+
+        <activity
+            android:name="com.example.japan_learning.Collection_Mode" />
+
+        <activity
+            android:name="com.example.japan_learning.Practice_Mode" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.viettalent.dictionarylib.DictionaryDialogActivity" />
+
+        <activity
+            android:name="com.rankpark.RankParkActivity" />
+
+        <activity
+            android:name="jp.adlantis.android.AdlantisAdActivity" />
+
+        <meta-data
+            android:name="Adlantis_Publisher_ID"
+            android:value="MjMwMDg%3D%0A" />
+
+        <meta-data
+            android:name="i-mobile_Publisher_ID"
+            android:value="20171" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

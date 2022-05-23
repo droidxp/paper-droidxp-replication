@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.speakcreative.thecreek">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission
+        android:name="android.permission.CONTROL_LOCATION_UPDATES" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission
+        android:name="com.speakcreative.memphiszoo.permission.MAPS_RECEIVE" />
+
+    <permission
+        android:name="com.speakcreative.memphiszoo.permission.MAPS_RECEIVE"
+        android:protectionLevel="2" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <application
+        android:label="@ref/0x7f050016"
+        android:icon="@ref/0x7f02007c"
+        android:name="com.speakcreative.tapwrench.TapWrenchApplication">
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:label="The Creek"
+            android:icon="@ref/0x7f02007c"
+            android:name="com.speakcreative.tapwrench.HomeDashboard">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.AboutActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.BlogItemsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.BlogItemActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.CustomContentActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.ExhibitsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.ExhibitsMapActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.ExhibitItemsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.ExhibitItemActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.EventDetailActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.EventsSettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.EventsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.MapViewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.MediaChannelActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.MediaSeriesActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.MediaEpisodeActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.MediaAudioPlayerActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.NewsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.NewsArticleActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.PagesListActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.PhotoBoothCameraActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.PhotoBoothCameraView" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.PhotoBoothFrameSelectionActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.PhotoBoothReviewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.TwitterActivity" />
+
+        <activity
+            android:theme="@ref/0x7f0a0050"
+            android:name="com.speakcreative.tapwrench.WebActivity" />
+
+        <service
+            android:name="com.speakcreative.tapwrench.MediaAudioPlayerService" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD5JJGQZFOE6fppU0Qdih61VGA0RjK1Q3M" />
+    </application>
+</manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="13"
+    android:versionName="2.3"
+    package="blowingnose.circular">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:theme="@ref/0x0103000f"
+        android:label="@ref/0x7f080000"
+        android:icon="@ref/0x7f0200f8"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f080003"
+            android:name="activities.SplashScreenActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000c"
+            android:label="@ref/0x7f080006"
+            android:name="activities.MainManuActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f080007"
+            android:name="activities.PlayActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f080008"
+            android:name="activities.HighscoreActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f080009"
+            android:name="activities.TutorialActivity"
+            android:screenOrientation="1" />
+    </application>
+</manifest>

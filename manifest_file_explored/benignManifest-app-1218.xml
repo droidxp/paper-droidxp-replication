@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0.0"
+    android:installLocation="0"
+    package="kultidea.pazo_vista_alegre">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <application
+        android:label="Pazo Vista Alegre"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:label="Pazo Vista Alegre"
+            android:name="com.genuitec.mobione.build.template.android.Main"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="Pazo Vista Alegre"
+            android:name="com.genuitec.mobione.android.PlayVideoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter />
+        </activity>
+
+        <activity
+            android:label="Pazo Vista Alegre"
+            android:name="com.phonegap.plugins.pdf.ProxyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter />
+        </activity>
+
+        <activity
+            android:label="Pazo Vista Alegre"
+            android:name="org.apache.cordova.DroidGap"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter />
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0.0"
+    android:installLocation="2"
+    package="com.andiapush.BaloonKaboom">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.unity3d.player.UnityPlayerProxyActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x40000fff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.unity3d.player.UnityPlayerNativeActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x40000fff">
+
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.unity3d.player.VideoPlayer"
+            android:configChanges="0x40000fff" />
+
+        <activity
+            android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidBrowser"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMAdViewOverlayActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="6"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+</manifest>

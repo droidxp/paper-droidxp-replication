@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="3"
+    android:versionName="1.34"
+    android:installLocation="0"
+    package="com.ColePowered.PlanetWars">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="10" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="false" />
+
+    <application
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020006">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.ColePowered.PlanetWars.Main"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.1"
+    android:installLocation="0"
+    package="com.uinnetworks.real.grand.piano">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f02007f"
+        android:name="uin.android.piano.en.MiniPianoApp">
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="uin.android.piano.en.MiniPiano2Activity"
+            android:screenOrientation="0"
+            android:configChanges="0xb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="uin.android.piano.en.play.PlayActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="uin.android.piano.en.list.SongListActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="uin.android.piano.en.list.RecordListActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="uin.android.piano.en.play.popup.PlayEndPopup"
+            android:screenOrientation="0"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <service
+            android:name="uin.android.piano.en.billing.BillingService" />
+
+        <receiver
+            android:name="uin.android.piano.en.billing.BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

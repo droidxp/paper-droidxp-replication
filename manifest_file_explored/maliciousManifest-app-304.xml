@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.1"
+    package="com.game.Blackjack.Classic.free1">
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <uses-feature
+        android:glEsVersion="131072" />
+
+    <application
+        android:label="@ref/0x7f040000"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f040000"
+            android:name=".game"
+            android:screenOrientation="1"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.joy.start.main.screen" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.oljoy.free1.AccountService" />
+
+        <service
+            android:name="com.oljoy.free1.AccountAuthenticator" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.oljoy.free1.AddCity"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:layerType="1" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.oljoy.free1.SignUpActivity"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:layerType="1" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.oljoy.free1.LoginActivity"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:layerType="1" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.oljoy.free1.AboutActivity"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:layerType="1" />
+
+        <activity
+            android:label="freeworld-sdk-v2.0.0"
+            android:name="com.freeworld.entry.Main"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.playhaven.src.publishersdk.content.PHContentView"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.chartboost.sdk.CBImpressionActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.jirbo.adcolony.AdColonyOverlay"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="com.jirbo.adcolony.AdColonyFullscreen"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="com.jirbo.adcolony.AdColonyBrowser"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.freeworld.unions.ads.JoyAdJoymeng" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.freeworld.promote.prize.JoyPrizeTimerActivity" />
+
+        <activity
+            android:name="com.freeworld.promote.prize.JoyPrizeMoreGameActivity" />
+
+        <receiver
+            android:name="com.freeworld.promote.notice.JoyNoticeReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="@ref/0x7f040000"
+            android:name="com.letang.fullad.ui.FullAdActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fff">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+</manifest>

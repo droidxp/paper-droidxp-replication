@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.1"
+    package="com.bul.bulgariatv">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:theme="@ref/0x7f060002"
+        android:label="@ref/0x7f050007"
+        android:icon="@ref/0x7f02000d"
+        android:allowBackup="true">
+
+        <activity
+            android:theme="@ref/0x01030008"
+            android:label="@ref/0x7f050007"
+            android:name="com.example.shaffexvideoplayer.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f05000a"
+            android:name="com.example.shaffexvideoplayer.VideoPlayerFullscreenActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:launchMode="1"
+            android:configChanges="0xe0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

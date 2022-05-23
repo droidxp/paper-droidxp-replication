@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="3"
+    android:versionName="1.1.1"
+    android:installLocation="2"
+    package="com.igg.pokerdeluxetw1">
+
+    <uses-sdk
+        android:minSdkVersion="5" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <permission
+        android:name="com.igg.pokerdeluxetw1.permission.C2D_MESSAGE"
+        android:protectionLevel="2" />
+
+    <uses-permission
+        android:name="com.igg.pokerdeluxetw1.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:label="@ref/0x7f080019"
+        android:icon="@ref/0x7f020100"
+        android:name="com.igg.pokerdeluxe.MyApplication"
+        android:debuggable="false"
+        android:configChanges="0x4">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.login.ActivityWelcome"
+            android:screenOrientation="0"
+            android:configChanges="0xa4"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="mmbrandedapp" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.login.ActivityRegister"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.login.ActivityForgetPassword"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.main_menu.ActivityHome"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.room_list.ActivityRoomListNormal"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.room_list.ActivityRoomListTournament"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.room_list.ActivityRoomListVip"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.mvp_store.ActivityMvpStore"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.task.ActivityTasks"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.game_room.ActivityGameRoom"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.friend.ActivityFriend"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.help.ActivityHelp"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.event.ActivityEvent"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.livesupport.ActivityLiveSupport"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.message_center.ActivityMessageCenter"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.message_center.ActivityMessageChat"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.settings.ActivitySettings"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.settings.ActivityGuestBindThird"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.settings.ActivityGuestBindIgg"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.settings.ActivityHelp"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.settings.ActivityProfilePhoto"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.advertisement.ActivityOfferAd"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.igg.pokerdeluxe.modules.download.ActivityDownloadHelp"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x7f0b0021"
+            android:name="com.igg.pokerdeluxe.modules.slot.DialogSlot"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.tapjoy.TJCOffersWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyFullScreenAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyDailyRewardAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyVideoView"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.igg.pokerdeluxe.modules.mall.BillingService" />
+
+        <receiver
+            android:name="com.igg.pokerdeluxe.modules.mall.BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.AdX.tag.AdXAppTracker"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f080019"
+            android:name="com.igg.pokerdeluxe.PackageReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igg.pokerdeluxe.modules.download.DownloadService" />
+
+        <receiver
+            android:name="com.igg.pokerdeluxe.PokerGCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category
+                    android:name="com.igg.pokerdeluxetw1" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igg.pokerdeluxe.GCMIntentService" />
+
+        <meta-data
+            android:name="APP_NAME"
+            android:value="com.igg.pokerdeluxetw1" />
+
+        <meta-data
+            android:name="ADX_CLIENT_ID"
+            android:value="IGG912967df" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+</manifest>

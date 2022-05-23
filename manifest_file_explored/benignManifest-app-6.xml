@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="886"
+    android:versionName="1.7.7.4"
+    android:installLocation="0"
+    package="org.montrealtransit.android">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.NFC" />
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="10" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f0d0006"
+        android:icon="@ref/0x7f020021"
+        android:description="@ref/0x7f0d0007"
+        android:backupAgent=".services.BackupAgentHelper"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true">
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".activity.SearchResult" />
+
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="@ref/0x7f0d0005" />
+
+        <provider
+            android:name=".provider.DataProvider"
+            android:exported="false"
+            android:authorities="org.montrealtransit.android.data" />
+
+        <provider
+            android:name=".provider.StmProvider"
+            android:exported="false"
+            android:authorities="org.montrealtransit.android.stm" />
+
+        <provider
+            android:name=".provider.BixiProvider"
+            android:exported="false"
+            android:authorities="org.montrealtransit.android.bixi" />
+
+        <activity
+            android:label="@ref/0x7f0d0006"
+            android:icon="@ref/0x7f020021"
+            android:name=".activity.SplashScreen"
+            android:configChanges="0xa0"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0d0006"
+            android:icon="@ref/0x7f020021"
+            android:name=".activity.MainScreen"
+            android:launchMode="2"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.FavListTab" />
+
+        <activity
+            android:name=".activity.BusStopCodeTab" />
+
+        <activity
+            android:name=".activity.BusTab"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.v4.BusTab"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.SubwayTab"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.BikeTab"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.BusLineInfo"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.v4.BusLineInfo"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.BusStopInfo"
+            android:launchMode="1"
+            android:configChanges="0xa0">
+
+            <intent-filter
+                android:label="@ref/0x7f0d0105">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="vnd.android.cursor.item/vnd.org.montrealtransit.android.provider.busstopslivefolder" />
+            </intent-filter>
+
+            <intent-filter
+                android:priority="-101">
+
+                <action
+                    android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="application/org.montrealtransit.android.bus.stop" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SubwayStationInfo"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.SubwayLineInfo"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.v4.SubwayLineInfo"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.BikeStationInfo"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".activity.UserPreferences" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name=".activity.SearchResult"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEARCH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@ref/0x7f040000" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0d0107"
+            android:icon="@ref/0x7f020020"
+            android:name=".activity.FavListLiveFolder">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <receiver
+            android:name="com.google.android.apps.analytics.AnalyticsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

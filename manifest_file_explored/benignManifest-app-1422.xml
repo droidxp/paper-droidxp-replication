@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.2"
+    package="com.wooboo.swing.lover">
+
+    <application
+        android:label="@ref/0x7f060001"
+        android:icon="@ref/0x7f02000c">
+
+        <activity
+            android:label="@ref/0x7f060001"
+            android:name=".Swing"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".SwingService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="Wooboo_PID"
+            android:value="9c3545cbfd8e457b868024087c8fe86b" />
+
+        <meta-data
+            android:name="Market_ID"
+            android:value="28" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="3" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+</manifest>

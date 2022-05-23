@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10"
+    android:versionName="2.0.3"
+    package="com.ikentop.hutomled.xkcarbon">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f02003e"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.ikentop.hutomled.SplashScreensActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.MainActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.AudioActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.CameraActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.ColorPalletActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.HolidayActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.PowerActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.ProgramsActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.ProgramCustomActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.PickColorActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.MusicListActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.ikentop.hutomled.SettingActivity"
+            android:screenOrientation="0" />
+
+        <service
+            android:name="com.ikentop.common.service.JobSchedulerService"
+            android:enabled="true" />
+    </application>
+</manifest>

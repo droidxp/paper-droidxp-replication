@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.chinat2t10539zw.templte">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:theme="@ref/0x0103000d"
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f020034"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="com.chinat2t.yuncoo.WelComeActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.chinat2t.yuncoo.TestListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.MenuActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Menu1_1Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Menu1_2Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Menu1Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Menu2Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Menu3Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Menu4Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Menu5Activity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Xinxidetail32"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.XQActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.CompanyXQActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Xinxidetail"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Xinxidetail35"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Xinxidetail41"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Xinxidetail37"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.Xinxidetail40"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.GYWMActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.LXWMActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.SearchActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.SearchListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.chinat2t.yuncoo.CompanySearchActivity"
+            android:screenOrientation="1" />
+    </application>
+</manifest>

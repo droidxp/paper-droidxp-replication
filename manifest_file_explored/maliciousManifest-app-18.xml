@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.mathtest.activity">
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="9" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f070001"
+        android:icon="@ref/0x7f02000e"
+        android:orientation="1">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f070001"
+            android:name=".ViewsMgrActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f070001"
+            android:name=".PlayActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f070001"
+            android:name=".FinishActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <service
+            android:label="@ref/0x7f070002"
+            android:name=".CubeWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@ref/0x7f050001" />
+        </service>
+
+        <receiver
+            android:label="@ref/0x7f070001"
+            android:icon="@ref/0x7f02000e"
+            android:name=".LuncherWidget">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                    android:name="com.iworks.widget.TOUCH_MOVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050000" />
+        </receiver>
+
+        <meta-data
+            android:name="DOMOB_PID"
+            android:value="56OJycH4uMA26K8Mcy" />
+
+        <meta-data
+            android:name="DOMOB_TEST_MODE"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="cn.domob.android.ads.DomobActivity" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+</manifest>

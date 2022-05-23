@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.thronesapps.match3dotsgold">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000">
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="Pan3T5-vhxznKbK9Xs0TO1u7srSVRE2rqqvMwtGcpEO7qiGLZHvzJn4AbXf2nitaXnySeC3RQRTF8qbh6UeQFk" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f030000"
+            android:name="com.me.match3game.Match3Game"
+            android:screenOrientation="1"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.applovin.adview.AppLovinInterstitialActivity" />
+
+        <activity
+            android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+</manifest>

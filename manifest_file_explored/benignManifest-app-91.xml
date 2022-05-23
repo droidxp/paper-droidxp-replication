@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="43"
+    android:versionName="2.1.0.0"
+    package="com.asksven.betterwifionoff">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:label="@ref/0x7f0a0015"
+        android:icon="@ref/0x7f02006f">
+
+        <activity
+            android:label="@ref/0x7f0a0015"
+            android:name=".MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.asksven.betterwifionoff.ReadmeActivity" />
+
+        <activity
+            android:name="com.asksven.betterwifionoff.CreditsActivity" />
+
+        <activity
+            android:name="com.asksven.betterwifionoff.AppWhitelistActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.asksven.betterwifionoff.AppWhitelistActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.asksven.betterwifionoff.CellLogActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.asksven.betterwifionoff.CellLogActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.asksven.betterwifionoff.TagsActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.asksven.betterwifionoff.TagsActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PreferencesActivity" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f0b0059"
+            android:label="@ref/0x7f0a0020"
+            android:icon="@ref/0x7f020073"
+            android:name="com.asksven.betterwifionoff.localeplugin.ui.EditActivity"
+            android:exported="true"
+            android:uiOptions="0x1" />
+
+        <receiver
+            android:name="com.asksven.betterwifionoff.localeplugin.receiver.FireReceiver"
+            android:exported="true"
+            android:process=":background" />
+
+        <receiver
+            android:name=".handlers.BroadcastHandler">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".WifiOffAlarmReceiver"
+            android:process=":remote" />
+
+        <receiver
+            android:name=".WifiConnectedAlarmReceiver"
+            android:process=":remote" />
+
+        <receiver
+            android:name=".TimedCheckAlarmReceiver"
+            android:process=":remote" />
+
+        <receiver
+            android:name="MyWidgetProvider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f040002" />
+        </receiver>
+
+        <service
+            android:name=".services.EventWatcherService" />
+
+        <service
+            android:name=".services.SetWifiStateService" />
+
+        <service
+            android:name=".services.UpdateWidgetService" />
+    </application>
+</manifest>

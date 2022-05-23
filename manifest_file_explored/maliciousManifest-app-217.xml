@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="34"
+    android:versionName="3.0"
+    package="com.guide.steincraft">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="false"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:requiresSmallestWidthDp="600" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f020119"
+        android:allowBackup="true">
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Splash">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Main">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.MAINMENU" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Gameplay">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.GAMEPLAY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Tutorials">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.TUTORIALS" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Tools">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.TOOLS" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Technical">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.TECHNICAL" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_World">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.WORLD" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Redstone">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.REDSTONE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Redstone_LGates">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.REDSTONELGATES" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Redstone_Components">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.REDSTONECOMPONENTS" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Redstone_Advanced">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.REDSTONEADVANCED" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Mobs">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.MOBS" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Mobs_Special">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.MOBSSPECIAL" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Crafting">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.CRAFTING" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Biome">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.BIOME" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Item">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.ITEM" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Special_Item">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.SPECIALITEM" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_MC_ServerTracker">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.MCSERV" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_MC_AddServer">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.MCSERVADD" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Activity_Billing">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.BILLING" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f070000"
+            android:name="appinventor.ai_admin.Minecraft_Guide.Payment">
+
+            <intent-filter>
+
+                <action
+                    android:name="appinventor.ai_admin.Minecraft_Guide.PAYMENT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="BillingService" />
+
+        <receiver
+            android:name="BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

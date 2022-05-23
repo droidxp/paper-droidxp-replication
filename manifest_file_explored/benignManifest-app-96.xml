@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="16"
+    android:versionName="2.3"
+    package="com.BubbleBurster.Classic">
+
+    <application
+        android:label="@ref/0x7f040001"
+        android:icon="@ref/0x7f02000b">
+
+        <activity
+            android:label="@ref/0x7f040001"
+            android:name=".Main">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".REPL"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".HighScoreView"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".ExplainGame"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="a14c001b822a72e" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="3" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+</manifest>

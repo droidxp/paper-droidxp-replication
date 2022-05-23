@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.0.0.10"
+    package="loveanime.fans">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:label="@ref/0x7f09003e"
+        android:icon="@ref/0x7f020012"
+        android:name="com.oohapp.wallpaper.AnimeApplication"
+        android:allowBackup="false">
+
+        <activity
+            android:name="com.oohapp.wallpaper.AnimeBrowseActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SET_WALLPAPER" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.oohapp.wallpaper.FeedBack"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.oohapp.wallpaper.LoadMoreInfo"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.oohapp.wallpaper.UploadActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.oohapp.filechooser.FileChooserActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1118"
+    android:versionName="1.1.1.8"
+    package="gg.go.azdemo.azyaweng2">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020035">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:name="com.fitue.japanlovely.ImageViewer">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.mt.airad.MultiAD"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="net.youmi.android.AdActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f050000"
+            android:name="com.fitue.wallpaperselected.FullScreenAdSample" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="cn.domob.android.ads.DomobActivity" />
+
+        <activity
+            android:name="com.vpon.adon.android.WebInApp"
+            android:screenOrientation="1"
+            android:configChanges="0xf0" />
+
+        <activity
+            android:name="com.lmmob.ad.sdk.LmMobAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.lmmob.ad.sdk.LmMobFullImageActivity"
+            android:configChanges="0xa0" />
+
+        <meta-data
+            android:name="BaiduMobAd_APP_ID"
+            android:value="5a7c084b" />
+
+        <meta-data
+            android:name="BaiduMobAd_APP_SEC"
+            android:value="5a7c084b" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:resizeable="true" />
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+</manifest>

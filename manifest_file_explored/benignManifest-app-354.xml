@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="8"
+    android:versionName="2.1.8"
+    android:installLocation="2"
+    package="com.casual.mypuzzle.sheeprun.free">
+
+    <application
+        android:label="@ref/0x7f0600ab"
+        android:icon="@ref/0x7f020000"
+        android:name="com.mobosquare.sdk.game.core.GameApplication"
+        android:debuggable="false">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f0600ab"
+            android:name="com.casual.puzzle.sheeprun.free.MyActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="com.casual.puzzle.sheeprun.free.StartActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.WelcomeActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.DashboardActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.MainActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.MobosquareActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.TaplerAllMeActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.TaplerBadgeActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.TaplerFollowFollowerActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.TaplerActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.FriendFollowFollowerActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.FriendBadgeActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.FriendAllNewsActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.FollowDialogActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mobosquare.sdk.game.TaplerBadgeDetailActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.FriendProfileActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xa0" />
+
+        <receiver
+            android:name="com.mobosquare.sdk.game.AccountSynchronizer">
+
+            <intent-filter>
+
+                <action
+                    android:name="intent.action.mobosquare.signout" />
+
+                <action
+                    android:name="intent.action.mobosquare.signin" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.HotGamesActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.MobosquareActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.LeaderboardActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.SignupActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.EditProfileActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mobosquare.sdk.game.RetrievePwdActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mobosquare.sdk.game.CreateNewAccountActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.RankListActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.GlobalLeaderboardActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.LocalLeaderboardActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.SwitchAccountActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mobosquare.sdk.game.CheckinResultActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.ChangeAvatarActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.TwitterSigninActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.AchievementActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.mobosquare.sdk.game.AppSearchActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.mobosquare.sdk.game.UrlSpanHandleService" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.mobosquare.sdk.game.DownloadMobosuqareActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.donson.momark.activity.AdActivity"
+            android:launchMode="1" />
+
+        <provider
+            android:name="com.mobosquare.database.SearchDataProvider"
+            android:authorities="com.mobosquare.search.sheeprun" />
+
+        <provider
+            android:name="com.mobosquare.database.TaplerDataProvider"
+            android:authorities="com.mobosquare.square.sheeprun" />
+
+        <provider
+            android:name="com.mobosquare.database.GameDataProvider"
+            android:authorities="com.mobosquare.game.sheeprun" />
+
+        <meta-data
+            android:name="MOBOSQUARE_API_KEY"
+            android:value="19FEFEDCA544465" />
+
+        <meta-data
+            android:name="MOBOSQUARE_API_SECRET"
+            android:value="90F1F9033C54FB2" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+</manifest>

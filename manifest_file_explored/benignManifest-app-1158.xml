@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="153"
+    android:versionName="1.5.3"
+    android:installLocation="2"
+    package="com.fruitroll.game.top.best.free">
+
+    <application
+        android:label="@ref/0x7f070031"
+        android:icon="@ref/0x7f02001e"
+        android:name="com.fruitroll.game.top.best.free.OpenFeintApplication"
+        android:debuggable="false">
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070031"
+            android:name="net.blaze.forever.MyActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:label="@ref/0x7f070031"
+            android:name=".GodBubble"
+            android:screenOrientation="0"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:label="@ref/0x7f070031"
+            android:name="com.rapid.hands.view.AdService" />
+
+        <service
+            android:label="@ref/0x7f070031"
+            android:name="com.rapid.hands.services.CheckUpdateService" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.rapid.hands.promote.UpdateActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.rapid.hands.promote.PromoteActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.rapid.hands.fullscreen.FullScreenShow"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.rapid.hands.downloadhelper.DownloadService" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:label="IntroFlow"
+            android:name="com.openfeint.internal.ui.IntroFlow"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:label="Dashboard"
+            android:name="com.openfeint.api.ui.Dashboard"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:label="Settings"
+            android:name="com.openfeint.internal.ui.Settings"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f080001"
+            android:label="NativeBrowser"
+            android:name="com.openfeint.internal.ui.NativeBrowser"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.chartboost.sdk.CBDialogActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xb0" />
+
+        <receiver
+            android:name="com.google.android.apps.analytics.AnalyticsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.service.promotion.ui.topapp.TopAppActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.service.promotion.ui.topapp.ToggleDialogActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.service.promotion.ui.quitpromote.QuitActivity"
+            android:launchMode="1"
+            android:screenOrientation="0" />
+
+        <service
+            android:name="com.service.promotion.service.AlarmService" />
+
+        <service
+            android:name="com.service.promotion.downloadhelper.DownloadService" />
+
+        <receiver
+            android:name="com.service.promotion.receiver.BootReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                    android:name="com.promotion.action.USER_LAUNCH_APP" />
+
+                <action
+                    android:name="com.promotion.action.USER_CLEARN_NOTIFY" />
+
+                <action
+                    android:name="com.promotion.action.REFRESH_NEW_ICON_VISIBLE_STATE" />
+
+                <action
+                    android:name="com.promotion.action.REFRESH_NEW_MARK_STATE" />
+
+                <action
+                    android:name="com.promotion.action.CLICK_ACROSS_PROMOTE_AD" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.service.promotion.ads.across"
+            android:value="across_promote" />
+
+        <receiver
+            android:name="com.boost.beluga.tracker.TrackerReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.boost.beluga.push.PushReceiver" />
+
+        <activity
+            android:name="com.boost.beluga.push.PushAdsActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.boost.beluga.hotapps.HotAppsActivity"
+            android:configChanges="0xb0" />
+
+        <meta-data
+            android:name="BELUGA_APPID"
+            android:value="43fdbac13f8d4bf1b8917da7bfcddf07" />
+
+        <meta-data
+            android:name="BELUGA_CHANNEL"
+            android:value="GOOGLE_MARKET" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.belugaboost.ad.hotapps.HotAppsActivity"
+            android:launchMode="2"
+            android:configChanges="0xb0" />
+
+        <receiver
+            android:name="com.belugaboost.ad.pushnotification.PushReceiver" />
+
+        <activity
+            android:name="com.belugaboost.ad.pushnotification.PushAdsActivity"
+            android:configChanges="0xb0" />
+
+        <receiver
+            android:name="com.belugaboost.ad.TrackerReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.belugaboost.promotion.AnalyticsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.millennialmedia.android.MMAdViewOverlayActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.millennialmedia.android.MMActivity"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.mopub.mobileads.MraidBrowser"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.appflood.AFPanelActivity"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.appflood.AFFullScreenActivity"
+            android:launchMode="2"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.appflood.AFListActivity"
+            android:launchMode="2"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TJCOffersWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyFullScreenAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyDailyRewardAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyVideoView"
+            android:configChanges="0xa0" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</manifest>

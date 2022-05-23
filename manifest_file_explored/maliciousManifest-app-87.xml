@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="2"
+    package="com.gamayun.biketothefuturefree">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:theme="@ref/0x01030007"
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f050000"
+            android:name=".ActivityPlay"
+            android:screenOrientation="0"
+            android:configChanges="0xb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
+        <meta-data
+            android:name="cooId"
+            android:value="7b9da47476054333a121e9e9ec42ea52" />
+
+        <meta-data
+            android:name="channelId"
+            android:value="k-gfan" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.kuguo.ad.MainActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.kuguo.ad.BoutiqueActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <service
+            android:name="com.kuguo.ad.MainService" />
+
+        <receiver
+            android:name="com.kuguo.ad.MainReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.youmi.android.AdActivity"
+            android:configChanges="0xb0" />
+
+        <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="10020" />
+
+        <meta-data
+            android:name="AdView_CHANNEL"
+            android:value="GFAN" />
+    </application>
+</manifest>

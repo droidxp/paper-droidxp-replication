@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="54"
+    android:versionName="2.9.0"
+    android:installLocation="0"
+    package="com.ggee.vividruntime.gg_945">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <application
+        android:label="@ref/0x7f060074"
+        android:icon="@ref/0x7f02000f">
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.acrodea.vividruntime.ticketloader.TicketLoader"
+            android:process=":ticket"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xe7"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="ggee-ticket-gg" />
+
+                <data
+                    android:host="launch" />
+
+                <data
+                    android:pathPrefix="/945/" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.acrodea.vividruntime.launcher.Launcher"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0xe7"
+            android:windowSoftInputMode="0x20" />
+
+        <service
+            android:name="com.acrodea.vividruntime.launcher.DownloadService"
+            android:process=":service" />
+
+        <service
+            android:name="com.acrodea.vividruntime.launcher.ForegroundService" />
+
+        <service
+            android:name="com.acrodea.vividruntime.ticketloader.TicketLoaderUpdateCheckService"
+            android:process=":updatecheck" />
+
+        <activity
+            android:name="com.acrodea.vividruntime.launcher.BillingActivity"
+            android:screenOrientation="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.acrodea.vividruntime.launcher.MovieActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xe7">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.acrodea.vividruntime.launcher.JacketActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xe7"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f050000"
+            android:name="com.acrodea.vividruntime.purchase.ItemListActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x400000e7" />
+
+        <activity
+            android:theme="@ref/0x7f050000"
+            android:name="com.acrodea.vividruntime.purchase.ItemInfoActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x400000e7" />
+
+        <activity
+            android:theme="@ref/0x7f050000"
+            android:name="com.acrodea.vividruntime.purchase.ChargeCoinActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x400000e7" />
+
+        <activity
+            android:theme="@ref/0x7f050000"
+            android:name="com.acrodea.vividruntime.purchase.TermsActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x400000e7" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.acrodea.vividruntime.purchase.WebPurchaseActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x400000e7" />
+
+        <activity
+            android:theme="@ref/0x7f050000"
+            android:name="com.acrodea.vividruntime.purchase.InAppBillingActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x400000e7" />
+
+        <service
+            android:name="com.acrodea.vividruntime.purchase.google.InAppBillingService"
+            android:process=":remote" />
+
+        <receiver
+            android:name="com.acrodea.vividruntime.purchase.google.InAppBillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

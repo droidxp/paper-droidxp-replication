@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="28"
+    android:versionName="1.5.0"
+    package="com.avos.minute">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:theme="@ref/0x7f0c005d"
+        android:label="@ref/0x7f060031"
+        android:icon="@ref/0x7f0200a4"
+        android:name="com.avos.minute.PlayshotApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="fa555574a52bcf7479fea2fe4ae8279f" />
+
+        <activity
+            android:name="com.avos.minute.LoginActivity"
+            android:screenOrientation="1"
+            android:noHistory="true" />
+
+        <activity
+            android:name="com.avos.minute.SearchActivity"
+            android:launchMode="1"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@ref/0x7f050000" />
+        </activity>
+
+        <activity
+            android:name="com.avos.minute.RecommendUsersActivity"
+            android:screenOrientation="1"
+            android:noHistory="true" />
+
+        <activity
+            android:label="@ref/0x7f060031"
+            android:name="com.avos.minute.UserGuideActivity"
+            android:screenOrientation="1"
+            android:noHistory="true" />
+
+        <activity
+            android:name="com.avos.minute.WelcomeActivity"
+            android:screenOrientation="1"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060031"
+            android:name="com.avos.minute.PlayshotMainActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0600d0"
+            android:name="com.avos.minute.auth.ShareMessageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f060044"
+            android:name="com.avos.minute.ProfileActivity"
+            android:screenOrientation="1">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlayshotMainActivity" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="wanpai"
+                    android:host="user" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060045"
+            android:name="com.avos.minute.FullscreenShootActivity"
+            android:screenOrientation="1"
+            android:noHistory="true" />
+
+        <activity
+            android:label="@ref/0x7f060047"
+            android:name="com.avos.minute.FullscreenPreviewActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f06004c"
+            android:name="com.avos.minute.LocationPickerActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f0600f3"
+            android:name="com.avos.minute.TagPickerActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f0600fb"
+            android:name="com.avos.minute.MediaTowerActivity"
+            android:screenOrientation="1">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlayshotMainActivity" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f06004f"
+            android:name="com.avos.minute.CommentActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f06005f"
+            android:name="com.avos.minute.RelationshipActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f060062"
+            android:name="com.avos.minute.SettingActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f06007a"
+            android:name="com.avos.minute.MediaPublishActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f060055"
+            android:name="com.avos.minute.TagDetailActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlayshotMainActivity" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060055"
+            android:name="com.avos.minute.SingleVideoActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlayshotMainActivity" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="wanpai"
+                    android:host="media" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f06008c"
+            android:name="com.avos.minute.InviteFriendsActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f06008c"
+            android:name="com.avos.minute.SelectFriendsActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f0600ac"
+            android:name="com.avos.minute.LikeUserListActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.avos.minute.FeaturedUsersActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f0600aa"
+            android:name="com.avos.minute.AboutActivity" />
+
+        <activity
+            android:name="com.avos.minute.PopularMediaActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.avos.minute.OfflineTaskActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12">
+
+            <meta-data
+                android:name="Adapter"
+                android:value="com.avos.minute.auth.WPAdapter" />
+        </activity>
+
+        <activity
+            android:name="cn.sharesdk.sina.weibo.SSOActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.avos.minute.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.avos.minute.service.ShareService" />
+
+        <service
+            android:name="com.avos.minute.service.ProfileUpdateService" />
+
+        <service
+            android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+
+        <provider
+            android:name="com.avos.minute.util.SearchSuggestionsProvider"
+            android:authorities="com.avos.minute.util.SearchSuggestionsProvider" />
+
+        <receiver
+            android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.avos.avoscloud.PushService" />
+
+        <receiver
+            android:name="com.avos.avoscloud.ParseBroadcastReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.avos.minute.service.AVCloudPushReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.avos.minute.UPDATE_NOTIFY" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5146e9cb56240b20ca00936a" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="360 Market" />
+    </application>
+</manifest>

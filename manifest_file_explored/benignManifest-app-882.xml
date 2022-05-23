@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1020"
+    android:versionName="1.0.20"
+    android:installLocation="2"
+    package="com.digitalchocolate.androidmonk">
+
+    <application
+        android:label="Shaolin Jump"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false">
+
+        <activity
+            android:label="Shaolin Jump"
+            android:name=".DCMonk"
+            android:screenOrientation="1"
+            android:configChanges="0xb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <action
+                    android:name="com.transpera.sdk.android.videoad.Playvideo" />
+
+                <category
+                    android:name="android.intent.category.EMBED" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.paypal.android.MEP.PayPalActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f040000"
+            android:label="Paymo Panel"
+            android:name="com.boku.mobile.android.PaymentPanelActivity"
+            android:configChanges="0xf0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.fortumo.android.FortumoActivity" />
+
+        <service
+            android:name="com.fortumo.android.FortumoService" />
+
+        <activity
+            android:name="com.transpera.sdk.android.videoad.Playvideo"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.transpera.sdk.android.videoad.Playvideo" />
+
+                <category
+                    android:name="android.intent.category.EMBED" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.globalcharge.android.BackendBillingActivity"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".FortumoPaymentManager"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.admarvel.android.ads.AdMarvelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.admarvel.android.ads.AdMarvelVideoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xb0" />
+
+        <service
+            android:name=".BillingService" />
+
+        <receiver
+            android:name=".BillingReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+
+                <action
+                    android:name="com.android.vending.billing.RESPONSE_CODE" />
+
+                <action
+                    android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="3" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_SMS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="false" />
+
+    <compatible-screens />
+</manifest>

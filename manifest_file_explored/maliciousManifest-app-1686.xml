@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="394"
+    android:versionName="1.0.3"
+    package="com.yipinapp.gm">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:theme="@ref/0x0103000d"
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020030"
+        android:name="com.yipinapp.gm.app.GuessSportsApp"
+        android:allowBackup="true">
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="51dcfd9b56240b4cb903bd12" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Android market" />
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.WelcomeActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.MainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.HorizontalGridActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.GuessActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.ImageActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.WebViewActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.SettingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.DialogGiftActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.DialogGiftSubmitActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="@ref/0x7f060000"
+            android:name="com.yipinapp.gm.activity.DialogOpenCategoryActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.ccx.xm.AdActivity" />
+
+        <receiver
+            android:name="com.games.AdReciver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="3"
+    android:versionName="1.0.2"
+    package="com.tapsg.en">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.tapsg.en" />
+
+    <application
+        android:label="@ref/0x7f050000"
+        android:icon="@ref/0x7f020002"
+        android:persistent="false">
+
+        <activity
+            android:label="@ref/0x7f050000"
+            android:icon="@ref/0x7f020002"
+            android:name="com.tapsg.en.GameActivity"
+            android:process="com.tapsg.en"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.impaycenter.PaycenterActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.droid.engine.BrowActivity" />
+
+        <activity
+            android:name="com.tapjoy.TJCOffersWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyFullScreenAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyDailyRewardAdWebView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tapjoy.TapjoyVideoView"
+            android:configChanges="0xa0" />
+    </application>
+</manifest>

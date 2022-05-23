@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10"
+    android:versionName="1.0"
+    package="com.omesoft.childhooddreams">
+
+    <application
+        android:label="@ref/0x7f050001"
+        android:icon="@ref/0x7f020004"
+        android:name=".Resoult">
+
+        <activity
+            android:label="@ref/0x7f050001"
+            android:name=".ActivityMain">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WebAbout"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".First"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".Setting"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".game.Jigsaw"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".AddPic"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name=".ShowPicture"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <meta-data
+            android:name="Wooboo_PID"
+            android:value="28ebf921b8974061ac02463069149717" />
+
+        <meta-data
+            android:name="Market_ID"
+            android:value="74" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="3" />
+
+    <lenovo-screens
+        android:priority="3" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+</manifest>

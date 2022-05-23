@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="7"
+    android:versionName="2.0"
+    package="com.minemaps.publicmine">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:theme="@ref/0x7f0a0054"
+        android:label="@ref/0x7f09000d"
+        android:icon="@ref/0x7f020075"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:theme="@ref/0x0103000e"
+            android:label="@ref/0x7f09000d"
+            android:name="com.zulucoding.ESCAPEVELOCITY.Splashscreen">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0a0055"
+            android:label="@ref/0x7f09000f"
+            android:name="com.zulucoding.ESCAPEVELOCITY.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000e"
+            android:label="@ref/0x7f090010"
+            android:name="com.zulucoding.ESCAPEVELOCITY.Registration"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

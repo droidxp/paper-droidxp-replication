@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="5"
+    android:versionName="1.4"
+    package="com.japjisahibaudiocafeinks">
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f020003"
+        android:name="com.hanumanchalisaaudiocafeinks.hanumanchalisaaudiocafeinks_appDelegate"
+        android:debuggable="true">
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_activity_root"
+            android:excludeFromRecents="false"
+            android:configChanges="0xa0"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_activity_base"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_activity_root_tabs"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_audio"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_customHTML"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_imageCaption"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_imageEmail"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_images"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_imageUpload"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_menuButtons"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_menuList"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_menuSearch"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_quiz"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_rssReader"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_settingsDevice"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_settingsLocation"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_settingsLogIn"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_shareFacebook"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_shareTwitter"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_splash"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_webView"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_video"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f060000"
+            android:name="com.hanumanchalisaaudiocafeinks.BT_screen_map"
+            android:configChanges="0xa0" />
+
+        <uses-library
+            android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

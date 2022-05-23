@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="114"
+    android:versionName="1.0"
+    android:installLocation="0"
+    package="com.appris.mYUREDSFddgts">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="@ref/0x7f070000"
+        android:icon="@ref/0x7f020064"
+        android:allowBackup="true">
+
+        <activity
+            android:theme="@ref/0x7f080000"
+            android:name="com.appris.monsters.activities.MainActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.appris.monsters.activities.ShukazyoActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.appris.monsters.activities.TamagoyaActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.appris.monsters.activities.ZukanActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.appris.monsters.activities.MoreActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.appris.monsters.activities.RirekiActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.appris.monsters.activities.EndingActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.appris.monsters.activities.JukeizuActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.appris.monsters.activities.HelpActivity"
+            android:screenOrientation="1"
+            android:finishOnCloseSystemDialogs="true" />
+
+        <service
+            android:name="com.appris.monsters.services.NotifyServiceChange" />
+
+        <service
+            android:name="com.appris.monsters.services.NotifyServiceShinka" />
+
+        <service
+            android:name="com.appris.monsters.services.NotifyServiceLimit" />
+
+        <service
+            android:name="com.appris.monsters.services.NotifyServiceU" />
+
+        <service
+            android:name="com.appris.monsters.services.NotifyServiceSeven" />
+
+        <service
+            android:name="com.appris.monsters.services.ServiceShitukeDown" />
+
+        <receiver
+            android:name="com.appris.monsters.receivers.BootReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.freen.bead.noodlle.TyycmCrab"
+            android:configChanges="0x480" />
+
+        <service
+            android:name="com.freen.bead.noodlle.SjsbxteCrab" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+</manifest>

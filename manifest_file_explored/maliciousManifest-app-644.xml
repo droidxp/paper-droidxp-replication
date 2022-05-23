@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="6"
+    android:versionName="1.5"
+    package="com.mhk.android.russian_music">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <application
+        android:theme="@ref/0x7f070001"
+        android:label="@ref/0x7f060000"
+        android:icon="@ref/0x7f02002f"
+        android:name="com.mhk.android.russian_music.BaseApplication"
+        android:allowBackup="true">
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:label="@ref/0x7f060000"
+            android:name="com.mhk.android.russian_music.Splash"
+            android:configChanges="0xfb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:label="@ref/0x7f060000"
+            android:name="com.mhk.android.russian_music.MainActivity_"
+            android:configChanges="0xfb0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.mhk.android.russian_music.DownloadWatcher">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mhk.android.russian_music.DownloadWatcherService" />
+
+        <receiver
+            android:name="com.mhk.android.russian_music.DownloadClickReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mhk.android.russian_music.DownloadClickService" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="0xfb0" />
+    </application>
+</manifest>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="9"
+    android:versionName="1.07.00"
+    package="com.jiongji.andriod.card">
+
+    <supports-screens
+        android:anyDensity="true" />
+
+    <uses-sdk
+        android:minSdkVersion="4" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f0a0003"
+        android:icon="@ref/0x7f02003c"
+        android:name=".JiongjiApplication"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true">
+
+        <activity
+            android:theme="@ref/0x7f0c000b"
+            android:label="@ref/0x7f0a0003"
+            android:name=".activity.LinearLayoutDataControl"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0c000b"
+            android:label="@ref/0x7f0a0003"
+            android:name=".upload.UploadPictureActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0c000b"
+            android:label="@ref/0x7f0a0003"
+            android:name=".upload.AgreementActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.feedback.ui.SendFeedback"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.feedback.ui.FeedbackConversations" />
+
+        <activity
+            android:name="com.feedback.ui.FeedbackConversation"
+            android:configChanges="0x10" />
+
+        <service
+            android:label="@ref/0x7f0a0004"
+            android:name=".service.PlayerService" />
+
+        <service
+            android:label="@ref/0x7f0a0004"
+            android:name=".service.DownloadService" />
+
+        <service
+            android:label="@ref/0x7f0a0004"
+            android:name=".service.UpgradeService" />
+
+        <service
+            android:label="@ref/0x7f0a0004"
+            android:name=".service.MessageService"
+            android:process=":message" />
+
+        <receiver
+            android:name=".appwidget.ExampleAppWidgetProvider">
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f050000" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".appwidget.UpdateService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.jiongji.andriod.card.appwidget.service.IMM_UPDATE_SERVICE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.mobclick.android.UmengFeedback" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="umeng" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4e019680431fe33cb2000155" />
+    </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_FRAME_BUFFER" />
+
+    <uses-permission
+        android:name="android.permission.READ_INPUT_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_OWNER_DATA" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_OWNER_DATA" />
+</manifest>
