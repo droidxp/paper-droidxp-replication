@@ -1,0 +1,70 @@
+---
+title: "Exploratory Analysis"
+author: rbonifacio
+date: "5/27/2022"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(sqldf)
+setwd(".")
+```
+
+### Load the dataset
+
+
+```{r load}
+
+dataset <- read.csv("summaryAll.csv", head=T, sep=",")
+colnames(dataset)
+nrow(dataset)
+
+
+dataset["CallDiffDetection"] = dataset$methods_in_diff > 0 
+```
+
+### Summarizing our dataset 
+
+   * here we see that 193 out 800 malware instances (24.12%) have been detected by the the CallDiff approach
+   
+```{r summary}
+summary(dataset)
+```
+
+### Compute the correlation between similarity and methods in diff
+
+   * note, methods_in_diff reports the number of methods in the set CallDiff. Not sure if "correlation" is relevant 
+   
+```{r correlation}
+cor(dataset$methods_in_diff, dataset$simiScore, method="spearman") # non-parametric
+```
+
+### Logistic regression 
+
+   * Here we want to understand if the simmilarity coefficient is statistically relevant or not, for predicting the CallDiff performance. The result suggests the contrary. 
+   
+```{r logisticRegression}
+model = glm(CallDiffDetection~simiScore, family = binomial(link = "logit"), data = dataset) 
+
+summary(model)
+```
+
+### Let's review our results, but now considering just a small subset of the malwares. 
+
+   * First loading the original dataset. 
+
+```{r load-original}
+original <- read.csv("originalMalwareSample.csv", head=T, sep=',')
+
+smallDataset <- sqldf("select d.* from dataset d, original o where d.app = o.app")
+
+summary(smallDataset)
+```
+   
+   
+   * The results above confirm that, for the original dataset (101 malwares), the 
+   performance of the CallDiff is superior (> 65%). Nonetheless, it seems to me that the 
+   similarity coefficient can not explain such a difference. 
