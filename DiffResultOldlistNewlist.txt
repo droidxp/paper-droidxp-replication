@@ -10,6 +10,3 @@ Our list: 800 app pair (included 101)
 APIs Diff - 193 - 24.12%
 Trace Diff - 369 - 46.12%
 Manifest Diff - 446 - 55.75%
-
-
-token - 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
