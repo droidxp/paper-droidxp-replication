@@ -1,0 +1,1 @@
+"<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)>""<android.net.ConnectivityManager: android.net.NetworkInfo getNetworkInfo(int)>""<android.net.wifi.WifiInfo: java.lang.String getMacAddress()>"

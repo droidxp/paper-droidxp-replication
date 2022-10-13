@@ -1,1 +1,1 @@
-"<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>""<android.telephony.TelephonyManager: java.lang.String getLine1Number()>"
+"<android.telephony.TelephonyManager: java.lang.String getLine1Number()>""<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>"

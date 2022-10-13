@@ -1,0 +1,1 @@
+"<android.hardware.display.DisplayManager: android.view.Display[] getDisplays()>""<android.net.NetworkInfo: int getType()>""<android.hardware.display.DisplayManager: android.view.Display getDisplay(int)>""<android.hardware.display.DisplayManager: android.view.Display[] getDisplays(java.lang.String)>"

@@ -1,0 +1,1 @@
+"<android.telephony.TelephonyManager: java.lang.String getSimOperator()>""<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>""<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>""<java.lang.reflect.Method: java.lang.String getName()>"

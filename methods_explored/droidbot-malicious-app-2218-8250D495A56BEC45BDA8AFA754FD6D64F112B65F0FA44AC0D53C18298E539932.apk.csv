@@ -1,0 +1,27 @@
+<android.graphics.drawable.BitmapDrawable: android.graphics.Bitmap getBitmap()>
+<android.net.Uri: android.net.Uri parse(java.lang.String)>
+<android.content.ComponentName: android.content.ComponentName clone()>
+<android.widget.RemoteViews: android.widget.RemoteViews clone()>
+<android.app.Activity: android.content.Intent getIntent()>
+<android.app.ListActivity: android.widget.ListView getListView()>
+<java.io.ByteArrayOutputStream: byte[] toByteArray()>
+<android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)>
+<android.content.Intent: android.os.Bundle getExtras()>
+<android.view.ContextThemeWrapper: android.content.res.Resources getResources()>
+<android.util.SparseArray: android.util.SparseArray clone()>
+<android.app.Activity: android.view.WindowManager getWindowManager()>
+<java.lang.StringBuilder: java.lang.String toString()>
+<android.view.animation.Animation: android.view.animation.Animation clone()>
+<android.content.Context: java.lang.String getString(int)>
+<android.content.res.Resources: android.graphics.drawable.Drawable getDrawable(int)>
+<android.widget.EditText: android.text.Editable getText()>
+
+<android.widget.Toast: android.widget.Toast makeText(android.content.Context,java.lang.CharSequence,int)>
+<java.util.ArrayList: java.lang.Object get(int)>
+<java.lang.Object: java.lang.Object clone()>
+<java.io.Writer: java.io.Writer append(java.lang.CharSequence,int,int)>
+<java.lang.String: java.lang.String trim()>
+<android.appwidget.AppWidgetProviderInfo: android.appwidget.AppWidgetProviderInfo clone()>
+<android.animation.Animator: android.animation.Animator clone()>
+<android.util.SparseBooleanArray: android.util.SparseBooleanArray clone()>
+<android.content.res.Resources: java.lang.String getString(int)>

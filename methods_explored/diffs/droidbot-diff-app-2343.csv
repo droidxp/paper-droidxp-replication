@@ -1,0 +1,1 @@
+"<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>""<android.location.LocationManager: boolean isProviderEnabled(java.lang.String)>""<android.telephony.TelephonyManager: java.lang.String getDeviceId()>"

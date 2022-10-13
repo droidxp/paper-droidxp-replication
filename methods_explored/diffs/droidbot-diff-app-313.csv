@@ -1,1 +1,1 @@
-"<android.telephony.TelephonyManager: java.lang.String getDeviceId()>""<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>"
+"<android.telephony.TelephonyManager: java.lang.String getDeviceId()>""<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>""<java.lang.reflect.Method: java.lang.String getName()>"

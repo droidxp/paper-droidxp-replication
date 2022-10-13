@@ -1,1 +1,1 @@
-"<java.net.InetSocketAddress: int getPort()>""<java.net.InetSocketAddress: java.net.InetAddress getAddress()>"
+"<java.lang.reflect.Method: java.lang.Class getReturnType()>""<java.lang.reflect.Proxy: java.lang.reflect.InvocationHandler getInvocationHandler(java.lang.Object)>""<java.lang.reflect.InvocationTargetException: java.lang.Throwable getCause()>""<java.lang.reflect.Method: java.lang.String getName()>""<java.net.InetSocketAddress: java.net.InetAddress getAddress()>""<java.net.InetSocketAddress: int getPort()>"

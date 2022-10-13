@@ -1,0 +1,1 @@
+"<android.telephony.TelephonyManager: java.lang.String getSimOperator()>""<android.app.ActivityManager: java.util.List getRunningTasks(int)>""<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>""<java.lang.reflect.Field: int getInt(java.lang.Object)>"

@@ -1,0 +1,1 @@
+"<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>""<android.net.NetworkInfo: java.lang.String getExtraInfo()>""<android.telephony.TelephonyManager: java.lang.String getNetworkOperatorName()>""<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>"
