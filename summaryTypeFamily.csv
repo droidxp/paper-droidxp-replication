@@ -1,368 +1,368 @@
-app,type,family,maliciouApp_methodsSensitiveAccess,malwareDetected,hasDifferentTraces
-app-998,adware,No Identify,14,False,False
+app,type,family,maliciousmethods_access,malware,hasDifferentTraces
+app-998,Adware,No Identify,14,False,False
 app-995,No Identify,No Identify,22,False,False
 app-992,No Identify,deng,20,False,False
-app-991,adware,airpush,28,False,False
-app-990,adware,airpush,27,False,False
-app-99,adware,dowgin,42,False,True
-app-989,adware,No Identify,22,False,True
-app-985,adware,airpush,27,False,False
-app-983,adware,No Identify,15,False,True
+app-991,Adware,airpush,28,False,False
+app-990,Adware,airpush,27,False,False
+app-99,Adware,dowgin,42,False,True
+app-989,Adware,No Identify,22,False,True
+app-985,Adware,airpush,27,False,False
+app-983,Adware,No Identify,15,False,True
 app-981,No Identify,deng,7,False,False
-app-98,adware,kuguo,43,True,True
+app-98,Adware,kuguo,43,True,True
 app-979,No Identify,No Identify,34,True,False
-app-978,adware,artemis,14,False,True
+app-978,Adware,artemis,14,False,True
 app-971,No Identify,No Identify,7,False,False
 app-970,No Identify,droidkungfu,13,True,False
-app-97,adware,dowgin,34,True,True
+app-97,Adware,dowgin,34,True,True
 app-969,No Identify,No Identify,38,True,False
-app-967,adware,adwo,17,True,True
+app-967,Adware,adwo,17,True,True
 app-966,No Identify,deng,23,False,False
-app-965,adware,airpush,18,False,False
-app-964,adware,airpush,18,False,False
-app-960,adware,No Identify,14,False,False
-app-96,adware,adwo,42,True,False
+app-965,Adware,airpush,18,False,False
+app-964,Adware,airpush,18,False,False
+app-960,Adware,No Identify,14,False,False
+app-96,Adware,adwo,42,True,False
 app-959,No Identify,deng,23,False,False
 app-957,No Identify,deng,52,False,False
-app-956,trojan,ranapama,13,False,True
-app-954,trojan,No Identify,14,False,True
-app-953,adware,No Identify,22,False,False
+app-956,Trojan,ranapama,13,False,True
+app-954,Trojan,No Identify,14,False,True
+app-953,Adware,No Identify,22,False,False
 app-952,No Identify,No Identify,27,True,False
-app-95,adware,kuguo,29,True,False
+app-95,Adware,kuguo,29,True,False
 app-949,No Identify,deng,5,False,False
 app-944,No Identify,ddlight,15,False,False
 app-943,No Identify,No Identify,32,False,False
 app-942,No Identify,No Identify,25,False,False
-app-941,adware,No Identify,83,False,True
+app-941,Adware,No Identify,83,False,True
 app-940,No Identify,deng,7,False,False
 app-94,No Identify,zusy,10,False,True
-app-939,trojan++trojansms,cwzgou,22,False,False
-app-938,adware,mobclick,16,False,True
-app-937,trojan,No Identify,9,False,True
-app-933,trojan,dowgin,8,False,False
+app-939,TrojanFakeinst,cwzgou,22,False,False
+app-938,Adware,mobclick,16,False,True
+app-937,Trojan,No Identify,9,False,True
+app-933,Trojan,dowgin,8,False,False
 app-932,No Identify,deng,9,False,False
-app-931,adware,umeng,26,False,True
-app-930,adware,No Identify,15,False,True
-app-929,adware,startapp,29,True,True
+app-931,Adware,umeng,26,False,True
+app-930,Adware,No Identify,15,False,True
+app-929,Adware,startapp,29,True,True
 app-928,No Identify,deng,9,False,False
 app-923,No Identify,deng,7,False,False
 app-920,No Identify,No Identify,23,False,False
 app-92,No Identify,wooboo,37,True,True
-app-919,adware,waps,5,False,False
-app-917,adware,No Identify,21,False,False
-app-916,adware,No Identify,33,True,True
+app-919,Adware,waps,5,False,False
+app-917,Adware,No Identify,21,False,False
+app-916,Adware,No Identify,33,True,True
 app-913,No Identify,No Identify,32,True,False
-app-91,trojan,systush,38,True,True
+app-91,Trojan,systush,38,True,True
 app-908,No Identify,viking,21,False,False
-app-901,adware,No Identify,24,True,True
-app-90,trojan,gingermaster,29,True,True
-app-9,adware,kuguo,45,True,False
-app-897,adware,No Identify,21,False,False
+app-901,Adware,No Identify,24,True,True
+app-90,Trojan,gingermaster,29,True,True
+app-9,Adware,kuguo,45,True,False
+app-897,Adware,No Identify,21,False,False
 app-893,No Identify,deng,7,False,False
-app-89,adsware,admobads,3,False,False
+app-89,Adware,admobads,3,False,False
 app-889,No Identify,ads,67,True,False
-app-886,spyware,dowgin,19,False,False
-app-884,adware,No Identify,28,False,False
+app-886,Spyware,dowgin,19,False,False
+app-884,Adware,No Identify,28,False,False
 app-882,No Identify,ksapp,30,False,False
-app-881,adware,No Identify,16,False,True
-app-880,adware,airpush,24,True,True
-app-879,adware,No Identify,15,False,False
-app-877,adware,airpush,12,False,False
+app-881,Adware,No Identify,16,False,True
+app-880,Adware,airpush,24,True,True
+app-879,Adware,No Identify,15,False,False
+app-877,Adware,airpush,12,False,False
 app-874,No Identify,No Identify,20,True,False
 app-873,No Identify,deng,5,False,False
-app-872,adware,No Identify,35,False,True
-app-871,adware,No Identify,38,False,False
-app-87,adware,kuguo,36,True,True
-app-869,spyware,dowgin,15,False,True
-app-867,adware,wooboo,19,True,True
-app-866,adware,umeng,35,False,True
-app-865,trojan,cosha,38,False,False
-app-86,tool,rooter,0,False,False
-app-859,adware,wooboo,16,True,False
-app-858,troj,No Identify,19,False,False
-app-856,adware,revmob,24,True,False
+app-872,Adware,No Identify,35,False,True
+app-871,Adware,No Identify,38,False,False
+app-87,Adware,kuguo,36,True,True
+app-869,Spyware,dowgin,15,False,True
+app-867,Adware,wooboo,19,True,True
+app-866,Adware,umeng,35,False,True
+app-865,Trojan,cosha,38,False,False
+app-86,virTool,rooter,0,False,False
+app-859,Adware,wooboo,16,True,False
+app-858,Trojan,No Identify,19,False,False
+app-856,Adware,revmob,24,True,False
 app-855,No Identify,No Identify,26,False,False
-app-854,trojan,smsspy,39,False,False
-app-853,adware,No Identify,15,False,False
+app-854,Trojan,smsspy,39,False,False
+app-853,Adware,No Identify,15,False,False
 app-852,No Identify,No Identify,4,False,False
-app-850,trojan,fakeav,14,False,True
-app-85,adware,dowgin,8,True,True
+app-850,Trojan,fakeav,14,False,True
+app-85,Adware,dowgin,8,True,True
 app-846,No Identify,No Identify,31,False,False
 app-844,No Identify,No Identify,29,False,False
-app-843,adware,leadbolt,35,True,False
-app-842,adware,mobwin,26,False,False
-app-84,adware,dowgin,39,True,False
-app-839,adsware,admobads,3,False,False
+app-843,Adware,leadbolt,35,True,False
+app-842,Adware,mobwin,26,False,False
+app-84,Adware,dowgin,39,True,False
+app-839,Adware,admobads,3,False,False
 app-838,No Identify,deng,4,False,False
 app-837,No Identify,eldorado,38,False,False
-app-835,spr,bankun,2,False,False
-app-834,adware,No Identify,44,True,False
-app-833,adware,airpush,18,False,False
-app-831,adware,No Identify,27,True,False
+app-835,Spyware,bankun,2,False,False
+app-834,Adware,No Identify,44,True,False
+app-833,Adware,airpush,18,False,False
+app-831,Adware,No Identify,27,True,False
 app-830,No Identify,deng,20,False,False
-app-83,adware,kuguo,39,True,False
-app-829,adware,airpush,27,False,False
-app-828,adware,No Identify,12,False,False
-app-827,worm,No Identify,27,False,True
+app-83,Adware,kuguo,39,True,False
+app-829,Adware,airpush,27,False,False
+app-828,Adware,No Identify,12,False,False
+app-827,Worm,No Identify,27,False,True
 app-826,No Identify,No Identify,49,False,False
 app-823,No Identify,No Identify,16,False,False
 app-822,No Identify,domob,12,False,True
 app-820,No Identify,deng,35,False,False
-app-82,adware,kuguo,40,True,True
-app-819,adware,No Identify,21,False,True
+app-82,Adware,kuguo,40,True,True
+app-819,Adware,No Identify,21,False,True
 app-814,No Identify,No Identify,29,False,False
-app-813,adware,youmi,22,False,True
+app-813,Adware,youmi,22,False,True
 app-812,No Identify,No Identify,38,True,False
-app-81,adware,adwhirlads,39,False,False
-app-809,trojan,No Identify,13,False,True
-app-806,adware,No Identify,7,False,True
-app-805,adware,No Identify,26,False,True
-app-804,exploit,cve,47,True,True
-app-802,adware,wiyun,6,False,False
+app-81,Adware,adwhirlads,39,False,False
+app-809,Trojan,No Identify,13,False,True
+app-806,Adware,No Identify,7,False,True
+app-805,Adware,No Identify,26,False,True
+app-804,Exploit,cve,47,True,True
+app-802,Adware,wiyun,6,False,False
 app-801,No Identify,No Identify,14,False,False
-app-80,adware,dowgin,27,True,True
-app-8,adware,kuguo,35,True,True
-app-793,adware,tapjoyads,22,False,True
+app-80,Adware,dowgin,27,True,True
+app-8,Adware,kuguo,35,True,True
+app-793,Adware,tapjoyads,22,False,True
 app-791,No Identify,boqx,18,False,False
-app-790,adware,airpush,20,False,False
+app-790,Adware,airpush,20,False,False
 app-79,No Identify,No Identify,2,False,True
-app-789,adware,airpush,20,False,False
-app-781,trojan,No Identify,4,False,False
-app-78,adware,dowgin,23,True,True
-app-778,adware,airpush,27,True,True
+app-789,Adware,airpush,20,False,False
+app-781,Trojan,No Identify,4,False,False
+app-78,Adware,dowgin,23,True,True
+app-778,Adware,airpush,27,True,True
 app-777,No Identify,deng,7,False,False
-app-776,exploit,No Identify,19,False,False
+app-776,Exploit,No Identify,19,False,False
 app-773,No Identify,No Identify,27,False,False
-app-772,adware,No Identify,34,False,False
-app-770,adware,revmob,21,False,False
-app-77,adware,kuguo,37,True,True
-app-769,exploit,No Identify,18,False,False
-app-767,trojan,No Identify,20,False,False
+app-772,Adware,No Identify,34,False,False
+app-770,Adware,revmob,21,False,False
+app-77,Adware,kuguo,37,True,True
+app-769,Exploit,No Identify,18,False,False
+app-767,Trojan,No Identify,20,False,False
 app-763,No Identify,No Identify,26,False,False
-app-762,adware,No Identify,22,False,True
-app-761,adware,waps,5,False,False
-app-760,adware,revmob,23,True,True
-app-76,adware,kuguo,33,True,True
+app-762,Adware,No Identify,22,False,True
+app-761,Adware,waps,5,False,False
+app-760,Adware,revmob,23,True,True
+app-76,Adware,kuguo,33,True,True
 app-756,No Identify,droidkungfu,10,True,True
-app-753,adware,leadbolt,21,True,False
-app-752,adware,No Identify,15,False,False
-app-750,adware++adware,umeng,33,False,True
+app-753,Adware,leadbolt,21,True,False
+app-752,Adware,No Identify,15,False,False
+app-750,Adware,umeng,33,False,True
 app-75,No Identify,symmi,3,False,False
-app-749,adware,inmobiads,45,False,False
-app-748,trojan,No Identify,35,False,True
+app-749,Adware,inmobiads,45,False,False
+app-748,Trojan,No Identify,35,False,True
 app-747,No Identify,symmi,5,False,False
-app-745,adware,No Identify,14,False,True
-app-743,adware,No Identify,16,False,False
-app-74,adware,dowgin,35,True,True
-app-739,adware,admobads,5,False,False
-app-737,adware,dowgin,2,True,False
-app-733,adware,No Identify,17,False,True
-app-73,adware,youmi,21,False,True
-app-729,adware,No Identify,22,False,True
-app-723,adware,inmobi,46,False,True
+app-745,Adware,No Identify,14,False,True
+app-743,Adware,No Identify,16,False,False
+app-74,Adware,dowgin,35,True,True
+app-739,Adware,admobads,5,False,False
+app-737,Adware,dowgin,2,True,False
+app-733,Adware,No Identify,17,False,True
+app-73,Adware,youmi,21,False,True
+app-729,Adware,No Identify,22,False,True
+app-723,Adware,inmobi,46,False,True
 app-722,No Identify,ramnit,28,False,True
 app-721,No Identify,plankton,12,False,False
-app-72,adware,mobclick,14,False,True
-app-719,adware,plankton,4,False,False
-app-716,troj,No Identify,26,False,False
+app-72,Adware,mobclick,14,False,True
+app-719,Adware,plankton,4,False,False
+app-716,Trojan,No Identify,26,False,False
 app-715,No Identify,No Identify,57,False,False
-app-713,adware,No Identify,44,False,False
-app-712,adware,No Identify,18,False,False
-app-711,adware,No Identify,18,False,False
-app-710,adware,airpush,34,True,False
-app-71,trojan,ginermaster,34,True,True
+app-713,Adware,No Identify,44,False,False
+app-712,Adware,No Identify,18,False,False
+app-711,Adware,No Identify,18,False,False
+app-710,Adware,airpush,34,True,False
+app-71,Trojan,ginermaster,34,True,True
 app-709,No Identify,deng,14,False,False
-app-70,trojan,No Identify,8,False,True
-app-7,adware,umeng,18,False,True
-app-69,trojan,boqx,24,True,False
-app-683,adware,No Identify,18,False,False
-app-682,adware,dowgin,27,True,True
+app-70,Trojan,No Identify,8,False,True
+app-7,Adware,umeng,18,False,True
+app-69,Trojan,boqx,24,True,False
+app-683,Adware,No Identify,18,False,False
+app-682,Adware,dowgin,27,True,True
 app-681,No Identify,No Identify,29,True,True
-app-68,adware,No Identify,7,False,False
-app-677,adware,droidkungfu,14,True,False
+app-68,Adware,No Identify,7,False,False
+app-677,Adware,droidkungfu,14,True,False
 app-673,No Identify,No Identify,33,True,False
 app-670,No Identify,deng,7,False,False
-app-67,trojan,startapp,52,True,False
-app-669,riskware,No Identify,15,False,True
-app-667,adware,No Identify,29,False,False
+app-67,Trojan,startapp,52,True,False
+app-669,Riskware,No Identify,15,False,True
+app-667,Adware,No Identify,29,False,False
 app-664,No Identify,deng,20,False,True
-app-662,troj,No Identify,33,False,True
-app-66,adware,No Identify,9,False,False
+app-662,Trojan,No Identify,33,False,True
+app-66,Adware,No Identify,9,False,False
 app-659,No Identify,deng,7,False,False
 app-658,No Identify,deng,5,False,False
 app-653,No Identify,deng,7,False,False
-app-65,adware,admobads,7,False,False
-app-648,trojan,No Identify,12,False,False
-app-645,adware,No Identify,8,False,True
-app-644,adware,airpush,22,False,True
+app-65,Adware,admobads,7,False,False
+app-648,Trojan,No Identify,12,False,False
+app-645,Adware,No Identify,8,False,True
+app-644,Adware,airpush,22,False,True
 app-641,No Identify,sephish,9,False,False
-app-64,adware,dowgin,17,True,False
-app-639,trojan,No Identify,33,False,False
-app-637,adware,No Identify,32,False,False
-app-634,adware,millennialmediaads,23,False,False
-app-63,troj,droidkungfu,7,False,True
+app-64,Adware,dowgin,17,True,False
+app-639,Trojan,No Identify,33,False,False
+app-637,Adware,No Identify,32,False,False
+app-634,Adware,millennialmediaads,23,False,False
+app-63,Trojan,droidkungfu,7,False,True
 app-629,No Identify,No Identify,22,True,False
-app-628,adware,youmi,21,False,True
+app-628,Adware,youmi,21,False,True
 app-627,No Identify,deng,4,False,False
-app-626,adware,No Identify,25,False,False
-app-625,adware,utchi,5,False,False
+app-626,Adware,No Identify,25,False,False
+app-625,Adware,utchi,5,False,False
 app-624,No Identify,deng,4,False,False
 app-620,No Identify,No Identify,51,True,False
-app-62,adware,douwan,63,False,True
-app-618,adware,admobads,4,False,False
+app-62,Adware,douwan,63,False,True
+app-618,Adware,admobads,4,False,False
 app-616,No Identify,No Identify,31,True,True
-app-614,adware++adware,umeng,85,False,False
+app-614,Adware,umeng,85,False,False
 app-613,No Identify,deng,10,False,False
-app-610,troj,No Identify,29,True,False
-app-61,trojan,startapp,52,True,False
-app-606,adware,charboostads,41,False,False
-app-605,trojan,droidkungfu,7,True,True
-app-603,adware,No Identify,24,False,True
-app-602,adware,waps,5,False,False
-app-60,adware,youmi,0,False,False
-app-6,adware,No Identify,12,False,True
+app-610,Trojan,No Identify,29,True,False
+app-61,Trojan,startapp,52,True,False
+app-606,Adware,charboostads,41,False,False
+app-605,Trojan,droidkungfu,7,True,True
+app-603,Adware,No Identify,24,False,True
+app-602,Adware,waps,5,False,False
+app-60,Adware,youmi,0,False,False
+app-6,Adware,No Identify,12,False,True
 app-597,No Identify,No Identify,40,True,True
 app-594,No Identify,No Identify,56,True,False
-app-593,adware,waps,20,False,True
-app-59,adware,dowgin,37,True,True
-app-589,adware,tapjoyads,58,False,False
-app-586,dropped++trojan,No Identify,41,False,True
+app-593,Adware,waps,20,False,True
+app-59,Adware,dowgin,37,True,True
+app-589,Adware,tapjoyads,58,False,False
+app-586,TrojanDropped,No Identify,41,False,True
 app-583,No Identify,deng,21,False,False
-app-582,spyware,dowgin,27,False,True
+app-582,Spyware,dowgin,27,False,True
 app-581,No Identify,No Identify,22,False,True
-app-580,adware,revmob,11,True,True
-app-58,adware,dowgin,49,True,True
-app-577,adware,No Identify,17,False,False
-app-576,adware,domob,32,True,False
-app-575,adware,No Identify,26,False,False
-app-573,adware,mobclixads,22,False,False
-app-57,adware,kuguo,41,True,False
-app-569,adware,No Identify,11,False,False
-app-563,adware,wapsx,4,True,False
-app-561,adware++adware,umeng,27,False,True
-app-560,adware,tapjoyads,72,False,False
-app-56,exploit,ratc,8,False,True
-app-554,adware,No Identify,22,False,True
-app-553,adware,leadbolt,42,True,True
-app-550,spyware,dowgin,10,False,False
-app-55,adware,kuguo,19,True,False
+app-580,Adware,revmob,11,True,True
+app-58,Adware,dowgin,49,True,True
+app-577,Adware,No Identify,17,False,False
+app-576,Adware,domob,32,True,False
+app-575,Adware,No Identify,26,False,False
+app-573,Adware,mobclixads,22,False,False
+app-57,Adware,kuguo,41,True,False
+app-569,Adware,No Identify,11,False,False
+app-563,Adware,wapsx,4,True,False
+app-561,Adware,umeng,27,False,True
+app-560,Adware,tapjoyads,72,False,False
+app-56,Exploit,ratc,8,False,True
+app-554,Adware,No Identify,22,False,True
+app-553,Adware,leadbolt,42,True,True
+app-550,Spyware,dowgin,10,False,False
+app-55,Adware,kuguo,19,True,False
 app-546,No Identify,gumen,18,False,True
-app-543,adware,No Identify,22,False,True
-app-541,trojan,kuguo,32,True,True
-app-54,trojan,kuguo,22,True,False
-app-53,trojan,gingermaster,25,True,False
+app-543,Adware,No Identify,22,False,True
+app-541,Trojan,kuguo,32,True,True
+app-54,Trojan,kuguo,22,True,False
+app-53,Trojan,gingermaster,25,True,False
 app-526,No Identify,deng,7,False,False
-app-525,adware,waps,5,False,False
-app-523,adware,No Identify,22,False,True
-app-520,adware,charboostads,33,False,True
-app-52,trojan,ginermaster,31,True,False
-app-511,trojan,No Identify,59,False,True
+app-525,Adware,waps,5,False,False
+app-523,Adware,No Identify,22,False,True
+app-520,Adware,charboostads,33,False,True
+app-52,Trojan,ginermaster,31,True,False
+app-511,Trojan,No Identify,59,False,True
 app-510,No Identify,ddlight,15,False,True
-app-51,adware,kuguo,37,True,True
-app-509,riskware,smspay,43,True,False
-app-50,adware,dowgin,34,True,False
+app-51,Adware,kuguo,37,True,True
+app-509,Riskware,smspay,43,True,False
+app-50,Adware,dowgin,34,True,False
 app-5,No Identify,cmcradar,2,False,False
 app-496,No Identify,deng,5,False,False
-app-494,adware,umeng,18,False,True
-app-493,adware,No Identify,21,False,True
-app-49,adware,dowgin,23,True,False
-app-488,adware,No Identify,8,False,True
+app-494,Adware,umeng,18,False,True
+app-493,Adware,No Identify,21,False,True
+app-49,Adware,dowgin,23,True,False
+app-488,Adware,No Identify,8,False,True
 app-486,No Identify,deng,18,False,False
 app-481,No Identify,No Identify,28,False,False
 app-480,No Identify,deng,7,False,False
-app-48,adware,baiduads,70,False,True
-app-478,adware,inmobiads,56,False,True
+app-48,Adware,baiduads,70,False,True
+app-478,Adware,inmobiads,56,False,True
 app-477,No Identify,wooboo,48,True,True
-app-476,adware,adpush,50,False,False
-app-475,adware,No Identify,15,False,False
+app-476,Adware,adpush,50,False,False
+app-475,Adware,No Identify,15,False,False
 app-474,No Identify,deng,24,False,False
 app-473,No Identify,No Identify,29,False,False
-app-471,adware,airpush,15,False,False
-app-470,adware,No Identify,17,False,True
-app-47,trojan,pjapps,10,True,True
-app-466,exploit,No Identify,45,True,False
-app-464,adware,waps,15,False,False
-app-462,adware,appsgeyser,23,True,False
-app-461,adware,No Identify,18,False,False
+app-471,Adware,airpush,15,False,False
+app-470,Adware,No Identify,17,False,True
+app-47,Trojan,pjapps,10,True,True
+app-466,Exploit,No Identify,45,True,False
+app-464,Adware,waps,15,False,False
+app-462,Adware,appsgeyser,23,True,False
+app-461,Adware,No Identify,18,False,False
 app-460,No Identify,No Identify,35,True,False
-app-46,adsware,admobads,4,False,False
+app-46,Adware,admobads,4,False,False
 app-459,No Identify,No Identify,15,False,False
-app-456,adware,No Identify,12,False,False
+app-456,Adware,No Identify,12,False,False
 app-455,No Identify,misospy,18,False,False
 app-450,No Identify,deng,7,False,False
-app-45,adware,admobads,22,True,True
+app-45,Adware,admobads,22,True,True
 app-445,No Identify,No Identify,33,True,False
-app-442,inject++trojan,No Identify,20,False,False
-app-44,adware,kuguo,63,True,False
+app-442,Trojan,No Identify,20,False,False
+app-44,Adware,kuguo,63,True,False
 app-439,No Identify,No Identify,24,False,True
-app-437,adware,waps,20,False,False
-app-432,adware,waps,4,True,False
-app-431,adware,leadbolt,36,True,True
-app-430,adware,No Identify,53,False,True
-app-43,adware,wooboo,9,True,True
-app-429,troj,No Identify,26,False,False
-app-426,adware,No Identify,22,False,True
-app-425,adware,No Identify,22,False,True
-app-42,adware,youmi,22,True,True
-app-412,adware,waps,5,False,False
-app-410,virus,No Identify,18,False,False
+app-437,Adware,waps,20,False,False
+app-432,Adware,waps,4,True,False
+app-431,Adware,leadbolt,36,True,True
+app-430,Adware,No Identify,53,False,True
+app-43,Adware,wooboo,9,True,True
+app-429,Trojan,No Identify,26,False,False
+app-426,Adware,No Identify,22,False,True
+app-425,Adware,No Identify,22,False,True
+app-42,Adware,youmi,22,True,True
+app-412,Adware,waps,5,False,False
+app-410,Virus,No Identify,18,False,False
 app-405,No Identify,cmcradar,2,False,False
-app-404,adware,youmi,2,False,True
-app-402,adware,No Identify,15,False,False
-app-400,adware,dowgin,22,False,False
-app-40,trojan,No Identify,31,False,True
-app-4,adware,admobads,10,True,False
-app-399,adware,No Identify,12,False,True
-app-396,adware,No Identify,28,False,False
-app-395,adware,No Identify,8,False,False
-app-390,adware,inmobi,33,False,True
-app-39,adsware,inmobiads,40,False,False
+app-404,Adware,youmi,2,False,True
+app-402,Adware,No Identify,15,False,False
+app-400,Adware,dowgin,22,False,False
+app-40,Trojan,No Identify,31,False,True
+app-4,Adware,admobads,10,True,False
+app-399,Adware,No Identify,12,False,True
+app-396,Adware,No Identify,28,False,False
+app-395,Adware,No Identify,8,False,False
+app-390,Adware,inmobi,33,False,True
+app-39,Adware,inmobiads,40,False,False
 app-387,No Identify,deng,7,False,False
 app-385,No Identify,boqx,18,False,False
 app-384,No Identify,gumen,18,False,True
-app-383,adware,No Identify,29,False,True
-app-382,adware,millennialmediaads,23,False,False
+app-383,Adware,No Identify,29,False,True
+app-382,Adware,millennialmediaads,23,False,False
 app-380,No Identify,No Identify,32,True,False
-app-375,trojan,No Identify,9,False,False
-app-37,adware,adwo,62,True,True
+app-375,Trojan,No Identify,9,False,False
+app-37,Adware,adwo,62,True,True
 app-369,No Identify,No Identify,18,False,False
 app-368,No Identify,deng,28,False,True
-app-363,clicker++trojan,dowgin,18,False,False
-app-362,adware,waps,20,False,False
-app-361,adware,revmobads,19,False,False
+app-363,TrojanClicker,dowgin,18,False,False
+app-362,Adware,waps,20,False,False
+app-361,Adware,revmobads,19,False,False
 app-359,No Identify,No Identify,27,False,True
-app-357,adware,No Identify,49,False,True
+app-357,Adware,No Identify,49,False,True
 app-356,No Identify,No Identify,32,False,False
-app-354,spyware,adwo,24,True,True
-app-35,trojan,adrd,6,True,False
+app-354,Spyware,adwo,24,True,True
+app-35,Trojan,adrd,6,True,False
 app-346,No Identify,andup,11,False,True
 app-342,No Identify,deng,40,False,False
-app-340,adware,admobads,24,True,False
-app-34,adware,airpush,12,True,False
-app-339,adware,kuguo,50,False,True
-app-338,adware,tapjoyads,33,False,False
-app-336,adware,kuguo,37,True,False
-app-335,adware,genbl,32,True,True
+app-340,Adware,admobads,24,True,False
+app-34,Adware,airpush,12,True,False
+app-339,Adware,kuguo,50,False,True
+app-338,Adware,tapjoyads,33,False,False
+app-336,Adware,kuguo,37,True,False
+app-335,Adware,genbl,32,True,True
 app-334,No Identify,No Identify,25,False,False
-app-333,trojan,No Identify,22,True,False
-app-33,adware,dowgin,35,True,True
-app-329,trojan,basebridge,20,False,True
+app-333,Trojan,No Identify,22,True,False
+app-33,Adware,dowgin,35,True,True
+app-329,Trojan,basebridge,20,False,True
 app-328,No Identify,eldorado,29,False,False
 app-327,No Identify,No Identify,19,False,False
-app-326,adware,No Identify,26,False,True
+app-326,Adware,No Identify,26,False,True
 app-324,No Identify,nylea,61,False,True
-app-322,trojan,No Identify,14,False,True
-app-321,adware,umeng,31,True,True
-app-320,adware,No Identify,22,False,True
-app-316,adware,No Identify,14,False,True
+app-322,Trojan,No Identify,14,False,True
+app-321,Adware,umeng,31,True,True
+app-320,Adware,No Identify,22,False,True
+app-316,Adware,No Identify,14,False,True
 app-315,No Identify,eldorado,27,True,False
-app-313,adware,No Identify,11,True,True
-app-31,adware,No Identify,6,False,False
+app-313,Adware,No Identify,11,True,True
+app-31,Adware,No Identify,6,False,False
 app-309,No Identify,ddlight,16,False,False
 app-304,No Identify,deng,68,False,True
-app-300,troj,No Identify,27,True,False
-app-30,adware,dowgin,36,True,True
-app-3,adware,dowgin,35,True,True
+app-300,Trojan,No Identify,27,True,False
+app-30,Adware,dowgin,36,True,True
+app-3,Adware,dowgin,35,True,True
 app-298,No Identify,No Identify,24,False,False
 app-297,No Identify,No Identify,24,False,False
 app-296,No Identify,No Identify,24,False,False
@@ -372,834 +372,834 @@ app-293,No Identify,No Identify,24,False,False
 app-292,No Identify,wooboo,34,True,False
 app-291,No Identify,No Identify,32,True,False
 app-290,No Identify,No Identify,32,True,False
-app-29,adware,kuguo,37,True,True
+app-29,Adware,kuguo,37,True,True
 app-289,No Identify,deng,7,False,False
 app-288,No Identify,deng,7,False,False
 app-287,No Identify,deng,7,False,False
 app-286,No Identify,deng,7,False,False
 app-285,No Identify,deng,7,False,False
 app-284,No Identify,expiro,37,False,True
-app-283,trojan,mseg,13,False,True
-app-282,adware,airpush,27,False,True
-app-280,adware,No Identify,13,False,False
-app-28,adware,No Identify,61,True,False
-app-279,adware,admobads,18,False,True
-app-278,adware,No Identify,18,False,False
-app-277,adware,waps,10,False,False
-app-276,adware,waps,10,False,False
+app-283,Trojan,mseg,13,False,True
+app-282,Adware,airpush,27,False,True
+app-280,Adware,No Identify,13,False,False
+app-28,Adware,No Identify,61,True,False
+app-279,Adware,admobads,18,False,True
+app-278,Adware,No Identify,18,False,False
+app-277,Adware,waps,10,False,False
+app-276,Adware,waps,10,False,False
 app-275,No Identify,genbl,36,False,True
-app-273,adware,utchi,13,False,False
-app-272,trojan,No Identify,13,False,False
-app-271,malware,oddjs,13,False,True
-app-270,fakeinst++trojan,No Identify,13,False,False
-app-27,adware,No Identify,21,False,False
-app-264,trojan,gingermaster,27,False,False
-app-26,adware,dowgin,18,True,True
-app-254,trojan,plankton,35,True,False
-app-253,exploit,No Identify,18,False,False
+app-273,Adware,utchi,13,False,False
+app-272,Trojan,No Identify,13,False,False
+app-271,Malware,oddjs,13,False,True
+app-270,TrojanFakeinst,No Identify,13,False,False
+app-27,Adware,No Identify,21,False,False
+app-264,Trojan,gingermaster,27,False,False
+app-26,Adware,dowgin,18,True,True
+app-254,Trojan,plankton,35,True,False
+app-253,Exploit,No Identify,18,False,False
 app-252,No Identify,deng,4,False,False
 app-251,No Identify,deng,4,False,False
 app-250,No Identify,deng,4,False,False
 app-249,No Identify,deng,4,False,False
 app-248,No Identify,deng,4,False,False
 app-247,No Identify,deng,4,False,False
-app-246,trojan,vdloader,66,False,False
+app-246,Trojan,vdloader,66,False,False
 app-245,No Identify,ramnit,17,False,False
-app-244,adware,No Identify,14,True,False
-app-243,exploit,No Identify,27,False,False
-app-242,adware,adswo,27,False,False
-app-24,trojan,gingermaster,34,True,True
+app-244,Adware,No Identify,14,True,False
+app-243,Exploit,No Identify,27,False,False
+app-242,Adware,adswo,27,False,False
+app-24,Trojan,gingermaster,34,True,True
 app-239,No Identify,fileinfector,17,True,False
-app-2384,adware,admobads,28,False,False
+app-2384,Adware,admobads,28,False,False
 app-2383,No Identify,deng,17,False,False
 app-2382,No Identify,deng,17,False,False
-app-2381,adload,artemis,4,False,False
-app-2380,adware,droidkungfu,28,True,True
-app-2377,adware,cauly,17,False,False
+app-2381,Backdoor,artemis,4,False,False
+app-2380,Adware,droidkungfu,28,True,True
+app-2377,Adware,cauly,17,False,False
 app-2376,No Identify,deng,6,False,False
-app-2374,riskware,dowgin,8,False,False
-app-2373,spyware,dowgin,27,True,False
-app-2372,adware,mobclick,5,False,False
+app-2374,Riskware,dowgin,8,False,False
+app-2373,Spyware,dowgin,27,True,False
+app-2372,Adware,mobclick,5,False,False
 app-2371,No Identify,symmi,17,False,False
-app-2370,adware,No Identify,53,True,False
+app-2370,Adware,No Identify,53,True,False
 app-2369,No Identify,deng,31,False,False
-app-2368,trojan,sendpay,20,False,False
-app-2367,adware,No Identify,23,False,True
-app-2366,adware,revmob,61,True,False
-app-2364,trojan,teap,48,True,True
-app-2363,trojan,uten,20,False,False
+app-2368,Trojan,sendpay,20,False,False
+app-2367,Adware,No Identify,23,False,True
+app-2366,Adware,revmob,61,True,False
+app-2364,Trojan,teap,48,True,True
+app-2363,Trojan,uten,20,False,False
 app-2362,No Identify,No Identify,15,False,True
 app-2360,No Identify,eldorado,6,True,False
-app-236,troj,No Identify,48,False,True
-app-2358,adware,No Identify,64,True,False
-app-2357,adware,charboostads,64,True,False
+app-236,Trojan,No Identify,48,False,True
+app-2358,Adware,No Identify,64,True,False
+app-2357,Adware,charboostads,64,True,False
 app-2355,No Identify,No Identify,26,True,False
-app-2353,spr,stopsms,24,False,True
+app-2353,Spyware,stopsms,24,False,True
 app-2352,No Identify,basebridge,26,True,False
-app-2351,adware,youmi,54,False,False
-app-2350,trojan,No Identify,32,False,False
-app-235,pws++trojan,onlinegames,11,False,False
+app-2351,Adware,youmi,54,False,False
+app-2350,Trojan,No Identify,32,False,False
+app-235,TrojanSpy,onlinegames,11,False,False
 app-2349,No Identify,No Identify,64,False,True
-app-2348,adware,millennialmediaads,23,False,False
-app-2347,riskware,dowgin,3,False,False
+app-2348,Adware,millennialmediaads,23,False,False
+app-2347,Riskware,dowgin,3,False,False
 app-2346,No Identify,deng,6,False,False
-app-2343,adware,millennialmediaads,47,True,False
-app-2342,adware,dowgin,57,True,True
-app-2341,trojan,fjcon,11,True,False
+app-2343,Adware,millennialmediaads,47,True,False
+app-2342,Adware,dowgin,57,True,True
+app-2341,Trojan,fjcon,11,True,False
 app-2340,No Identify,deng,13,False,False
-app-2338,adware,waps,5,False,False
-app-2337,adware,charboostads,43,True,True
-app-2334,riskware,dowgin,22,False,False
+app-2338,Adware,waps,5,False,False
+app-2337,Adware,charboostads,43,True,True
+app-2334,Riskware,dowgin,22,False,False
 app-2333,No Identify,No Identify,19,True,False
-app-2332,adware,No Identify,20,True,False
-app-2331,adsware,revmobads,30,False,False
-app-2329,adware,revmob,50,True,False
-app-2328,adware,No Identify,24,False,True
-app-2327,adware,kuguo,46,False,False
-app-2326,addisplay,revmob,28,False,False
+app-2332,Adware,No Identify,20,True,False
+app-2331,Adware,revmobads,30,False,False
+app-2329,Adware,revmob,50,True,False
+app-2328,Adware,No Identify,24,False,True
+app-2327,Adware,kuguo,46,False,False
+app-2326,Adware,revmob,28,False,False
 app-2325,No Identify,ramnit,21,False,False
-app-2322,adsware,admobads,12,False,False
+app-2322,Adware,admobads,12,False,False
 app-2320,No Identify,kazy,8,False,False
-app-2319,worm,benjamin,23,False,False
-app-2318,troj,No Identify,46,True,False
-app-2317,troj,No Identify,31,True,False
-app-2316,malware,No Identify,43,False,False
+app-2319,Worm,benjamin,23,False,False
+app-2318,Trojan,No Identify,46,True,False
+app-2317,Trojan,No Identify,31,True,False
+app-2316,Malware,No Identify,43,False,False
 app-2315,No Identify,No Identify,35,True,False
-app-2314,adware,umeng,30,True,False
+app-2314,Adware,umeng,30,True,False
 app-2313,No Identify,No Identify,21,False,False
-app-2312,adware,wooboo,50,True,False
-app-2311,adware,revmob,85,False,False
+app-2312,Adware,wooboo,50,True,False
+app-2311,Adware,revmob,85,False,False
 app-2310,No Identify,No Identify,15,False,False
-app-2309,trojan,jpgiframe,14,False,True
+app-2309,Trojan,jpgiframe,14,False,True
 app-2308,No Identify,deng,39,False,False
 app-2307,No Identify,No Identify,15,False,False
-app-2306,adsware,admobads,29,False,False
+app-2306,Adware,admobads,29,False,False
 app-2305,No Identify,No Identify,22,False,False
-app-2304,adsware,domob,21,True,False
-app-2303,adware,No Identify,47,False,False
+app-2304,Adware,domob,21,True,False
+app-2303,Adware,No Identify,47,False,False
 app-2301,No Identify,ramnit,93,False,False
 app-2300,No Identify,deng,23,False,False
 app-23,No Identify,No Identify,23,True,False
-app-2299,adware,adwo,51,True,False
-app-2297,adware,kuguo,17,False,False
-app-2296,adware,airpush,30,True,False
-app-2295,troj,No Identify,31,True,False
+app-2299,Adware,adwo,51,True,False
+app-2297,Adware,kuguo,17,False,False
+app-2296,Adware,airpush,30,True,False
+app-2295,Trojan,No Identify,31,True,False
 app-2294,No Identify,runouce,5,False,False
 app-2292,No Identify,No Identify,23,False,False
-app-2291,adsware,mobclixads,15,False,False
+app-2291,Adware,mobclixads,15,False,False
 app-2290,No Identify,No Identify,21,False,False
-app-2289,adsware,admobads,43,False,False
+app-2289,Adware,admobads,43,False,False
 app-2288,No Identify,No Identify,27,False,False
-app-2286,adware,airpush,30,False,False
-app-2285,troj,No Identify,26,True,False
-app-2284,malware,oddjs,15,False,False
-app-2282,adware,startapp,33,False,True
-app-2281,adware,No Identify,14,False,False
-app-2278,adware,No Identify,13,False,False
-app-2277,adware,No Identify,20,False,False
-app-2275,adware,No Identify,15,False,False
-app-2274,adware,startapp,17,False,False
-app-2273,fakeangry,umeng,16,True,True
+app-2286,Adware,airpush,30,False,False
+app-2285,Trojan,No Identify,26,True,False
+app-2284,Malware,oddjs,15,False,False
+app-2282,Adware,startapp,33,False,True
+app-2281,Adware,No Identify,14,False,False
+app-2278,Adware,No Identify,13,False,False
+app-2277,Adware,No Identify,20,False,False
+app-2275,Adware,No Identify,15,False,False
+app-2274,Adware,startapp,17,False,False
+app-2273,Trojan,umeng,16,True,True
 app-2272,No Identify,deng,19,False,False
-app-2271,adware,mobclick,22,True,False
+app-2271,Adware,mobclick,22,True,False
 app-2270,No Identify,mmarket,27,True,False
-app-2269,trojan,cxqisx,53,False,False
-app-2268,adware,No Identify,24,False,False
+app-2269,Trojan,cxqisx,53,False,False
+app-2268,Adware,No Identify,24,False,False
 app-2267,No Identify,deng,5,False,False
-app-2266,adware,inmobiads,39,False,False
+app-2266,Adware,inmobiads,39,False,False
 app-2265,No Identify,deng,31,False,False
-app-2264,adware,airpush,14,False,False
+app-2264,Adware,airpush,14,False,False
 app-2263,No Identify,deng,21,False,False
-app-2261,adware,millennialmediaads,23,False,False
-app-2260,adware,No Identify,18,False,False
-app-2257,riskware,dowgin,0,False,False
-app-2256,adware,No Identify,21,False,False
-app-2255,adware,No Identify,17,False,False
-app-2254,spyware,dowgin,18,False,False
-app-2252,adware,No Identify,7,False,False
-app-2251,adware,waps,38,True,False
+app-2261,Adware,millennialmediaads,23,False,False
+app-2260,Adware,No Identify,18,False,False
+app-2257,Riskware,dowgin,0,False,False
+app-2256,Adware,No Identify,21,False,False
+app-2255,Adware,No Identify,17,False,False
+app-2254,Spyware,dowgin,18,False,False
+app-2252,Adware,No Identify,7,False,False
+app-2251,Adware,waps,38,True,False
 app-2250,No Identify,deng,23,False,False
-app-2249,adware,youmi,22,False,False
+app-2249,Adware,youmi,22,False,False
 app-2246,No Identify,deng,29,False,True
-app-2242,adware,charboostads,53,False,False
-app-2241,adware,mobwin,57,False,False
-app-2240,adware,wooboo,8,False,False
+app-2242,Adware,charboostads,53,False,False
+app-2241,Adware,mobwin,57,False,False
+app-2240,Adware,wooboo,8,False,False
 app-2238,No Identify,No Identify,23,True,False
-app-2237,trojan,No Identify,27,False,False
-app-2235,adware,waps,23,False,False
+app-2237,Trojan,No Identify,27,False,False
+app-2235,Adware,waps,23,False,False
 app-2234,No Identify,No Identify,21,False,False
-app-2233,adware,No Identify,47,False,True
-app-2231,trojan,No Identify,20,False,False
-app-2230,riskware,dowgin,24,False,False
-app-2229,backdoor,No Identify,52,True,False
+app-2233,Adware,No Identify,47,False,True
+app-2231,Trojan,No Identify,20,False,False
+app-2230,Riskware,dowgin,24,False,False
+app-2229,Backdoor,No Identify,52,True,False
 app-2228,No Identify,No Identify,27,False,False
-app-2227,adware,No Identify,14,False,False
-app-2226,adware,plankton,4,False,False
+app-2227,Adware,No Identify,14,False,False
+app-2226,Adware,plankton,4,False,False
 app-2225,No Identify,deng,9,False,False
-app-2222,trojan,No Identify,5,False,False
-app-2221,adware,No Identify,17,False,False
-app-222,adware,startapp,21,False,True
-app-2219,addisplay,commplat,26,False,False
+app-2222,Trojan,No Identify,5,False,False
+app-2221,Adware,No Identify,17,False,False
+app-222,Adware,startapp,21,False,True
+app-2219,Adware,commplat,26,False,False
 app-2218,No Identify,No Identify,0,False,False
 app-2217,No Identify,ads,47,False,False
-app-2215,adware,douwan,40,False,False
+app-2215,Adware,douwan,40,False,False
 app-2214,No Identify,deng,14,False,False
-app-2213,adware,applovin,28,False,False
+app-2213,Adware,applovin,28,False,False
 app-2212,No Identify,kazy,7,False,False
-app-2211,adsware,admobads,7,False,False
-app-2210,adware,No Identify,17,True,False
-app-221,adware,startapp,21,False,True
+app-2211,Adware,admobads,7,False,False
+app-2210,Adware,No Identify,17,True,False
+app-221,Adware,startapp,21,False,True
 app-2208,No Identify,No Identify,30,False,False
 app-2207,No Identify,No Identify,34,False,False
-app-2206,adsware,charboostads,31,True,False
+app-2206,Adware,charboostads,31,True,False
 app-2204,No Identify,No Identify,20,False,False
 app-2203,No Identify,No Identify,66,True,False
-app-2202,adware,airpush,49,False,False
+app-2202,Adware,airpush,49,False,False
 app-2201,No Identify,classes,3,False,False
-app-2200,adware,No Identify,29,True,False
-app-22,adware,admobads,5,False,False
-app-2199,adware,No Identify,20,False,False
-app-2198,riskware,wiyun,23,False,False
-app-2197,adware,dowgin,54,True,False
-app-2195,adware,revmob,30,True,False
-app-2194,adware,airpush,43,False,False
+app-2200,Adware,No Identify,29,True,False
+app-22,Adware,admobads,5,False,False
+app-2199,Adware,No Identify,20,False,False
+app-2198,Riskware,wiyun,23,False,False
+app-2197,Adware,dowgin,54,True,False
+app-2195,Adware,revmob,30,True,False
+app-2194,Adware,airpush,43,False,False
 app-2193,No Identify,domob,29,True,False
-app-2191,adware,waps,5,False,False
-app-2189,troj,opfake,7,False,False
+app-2191,Adware,waps,5,False,False
+app-2189,Trojan,opfake,7,False,False
 app-2187,No Identify,No Identify,18,False,False
-app-2186,riskware,deng,20,False,False
-app-2185,adware,No Identify,21,False,False
-app-2184,trojan,No Identify,20,False,False
+app-2186,Riskware,deng,20,False,False
+app-2185,Adware,No Identify,21,False,False
+app-2184,Trojan,No Identify,20,False,False
 app-2183,No Identify,No Identify,36,False,False
-app-2182,adware,revmob,42,True,False
-app-2181,adware,revmob,42,True,False
-app-2180,adware,startapp,42,True,False
-app-2179,adware,startapp,42,True,False
-app-2178,adware,startapp,42,True,False
-app-2175,adware,graftor,7,False,False
-app-2174,adware++adware,umeng,27,False,False
-app-2173,adware,droidkungfu,16,True,False
+app-2182,Adware,revmob,42,True,False
+app-2181,Adware,revmob,42,True,False
+app-2180,Adware,startapp,42,True,False
+app-2179,Adware,startapp,42,True,False
+app-2178,Adware,startapp,42,True,False
+app-2175,Adware,graftor,7,False,False
+app-2174,Adware,umeng,27,False,False
+app-2173,Adware,droidkungfu,16,True,False
 app-2171,No Identify,boqx,18,False,False
-app-2170,adware,revmob,20,False,False
-app-217,adware,No Identify,24,True,False
-app-2169,adware,No Identify,31,False,False
-app-2168,adware,inmobiads,62,False,False
+app-2170,Adware,revmob,20,False,False
+app-217,Adware,No Identify,24,True,False
+app-2169,Adware,No Identify,31,False,False
+app-2168,Adware,inmobiads,62,False,False
 app-2166,No Identify,deng,6,False,False
 app-2165,No Identify,No Identify,5,True,False
 app-2164,No Identify,No Identify,31,False,False
-app-2163,trojan,No Identify,33,False,False
-app-2161,adware,airpush,35,False,False
-app-2160,adware,airpush,20,False,False
-app-2159,troj,No Identify,20,False,False
-app-2156,trojan,droidkungfu,9,True,False
-app-2154,trojan,ginmaster,28,False,False
-app-2152,adware,No Identify,32,True,False
+app-2163,Trojan,No Identify,33,False,False
+app-2161,Adware,airpush,35,False,False
+app-2160,Adware,airpush,20,False,False
+app-2159,Trojan,No Identify,20,False,False
+app-2156,Trojan,droidkungfu,9,True,False
+app-2154,Trojan,ginmaster,28,False,False
+app-2152,Adware,No Identify,32,True,False
 app-2151,No Identify,symmi,3,False,False
 app-2150,No Identify,deng,4,False,False
 app-2147,No Identify,deng,53,False,True
 app-2145,No Identify,No Identify,36,False,False
-app-2144,trojan,No Identify,22,False,False
-app-2143,adware,millennialmediaads,23,False,False
+app-2144,Trojan,No Identify,22,False,False
+app-2143,Adware,millennialmediaads,23,False,False
 app-2142,No Identify,deng,6,False,False
-app-2141,trojan,No Identify,14,False,False
-app-2140,adware,No Identify,22,False,False
+app-2141,Trojan,No Identify,14,False,False
+app-2140,Adware,No Identify,22,False,False
 app-2139,No Identify,No Identify,29,False,False
-app-2138,adware,No Identify,33,True,True
+app-2138,Adware,No Identify,33,True,True
 app-2137,No Identify,deng,23,False,False
 app-2136,No Identify,deng,17,False,False
-app-2135,adware,droidkungfu,41,False,False
+app-2135,Adware,droidkungfu,41,False,False
 app-2134,No Identify,No Identify,24,False,False
 app-2133,No Identify,deng,13,False,False
-app-2132,adware,No Identify,15,False,False
-app-2131,adware,charboostads,23,False,False
+app-2132,Adware,No Identify,15,False,False
+app-2131,Adware,charboostads,23,False,False
 app-2130,No Identify,No Identify,26,True,False
-app-2128,adware,wooboo,14,True,False
-app-2127,adware,No Identify,13,False,False
-app-2126,adware,umeng,27,False,False
-app-2124,adware,admobads,3,False,False
-app-2122,adware,youmi,38,True,False
-app-2120,adware,airpush,39,False,True
+app-2128,Adware,wooboo,14,True,False
+app-2127,Adware,No Identify,13,False,False
+app-2126,Adware,umeng,27,False,False
+app-2124,Adware,admobads,3,False,False
+app-2122,Adware,youmi,38,True,False
+app-2120,Adware,airpush,39,False,True
 app-2118,No Identify,No Identify,31,False,False
 app-2117,No Identify,No Identify,6,False,False
-app-2116,adware,madhouseads,18,True,False
+app-2116,Adware,madhouseads,18,True,False
 app-2115,No Identify,No Identify,21,False,False
-app-2114,adware,airpush,13,False,False
-app-2111,adware,youmi,33,True,True
+app-2114,Adware,airpush,13,False,False
+app-2111,Adware,youmi,33,True,True
 app-2110,No Identify,No Identify,20,False,False
-app-2108,spr,smalihook,11,False,False
-app-2107,adware,No Identify,64,False,False
-app-2106,trojan,No Identify,55,True,False
+app-2108,Spyware,smalihook,11,False,False
+app-2107,Adware,No Identify,64,False,False
+app-2106,Trojan,No Identify,55,True,False
 app-2105,No Identify,No Identify,18,True,False
 app-2104,No Identify,deng,29,False,False
 app-2102,No Identify,No Identify,27,False,False
-app-2101,adware,airpush,40,True,False
-app-21,adware,kuguo,40,True,True
-app-2099,riskware,wiyun,12,False,False
-app-2098,trojan,No Identify,13,False,False
+app-2101,Adware,airpush,40,True,False
+app-21,Adware,kuguo,40,True,True
+app-2099,Riskware,wiyun,12,False,False
+app-2098,Trojan,No Identify,13,False,False
 app-2095,No Identify,deng,7,False,False
-app-2094,adware,inmobiads,46,False,False
-app-2093,adware,No Identify,17,False,True
+app-2094,Adware,inmobiads,46,False,False
+app-2093,Adware,No Identify,17,False,True
 app-2092,No Identify,deng,6,False,False
-app-2091,adware,No Identify,22,False,False
-app-2090,trojan,No Identify,34,False,True
-app-2089,adware,airpush,26,False,False
-app-2087,adware,No Identify,54,False,False
-app-2086,adware,umeng,26,False,False
+app-2091,Adware,No Identify,22,False,False
+app-2090,Trojan,No Identify,34,False,True
+app-2089,Adware,airpush,26,False,False
+app-2087,Adware,No Identify,54,False,False
+app-2086,Adware,umeng,26,False,False
 app-2085,No Identify,deng,18,False,True
 app-2084,No Identify,No Identify,54,True,False
 app-2082,No Identify,deng,5,False,False
-app-2080,trojan,dowgin,66,False,False
-app-2079,adware,No Identify,22,False,False
+app-2080,Trojan,dowgin,66,False,False
+app-2079,Adware,No Identify,22,False,False
 app-2077,No Identify,deng,17,False,False
-app-2075,adware,revmob,36,False,False
-app-2074,adware,admobads,8,False,False
+app-2075,Adware,revmob,36,False,False
+app-2074,Adware,admobads,8,False,False
 app-2073,No Identify,deng,20,False,False
-app-2072,trojan,No Identify,41,False,False
+app-2072,Trojan,No Identify,41,False,False
 app-2071,No Identify,No Identify,28,True,False
 app-2069,No Identify,deng,20,False,False
 app-2067,No Identify,deng,10,False,False
-app-2066,adware,No Identify,42,True,False
-app-2063,adware,airpush,32,True,False
-app-2062,adware,mobclick,14,False,True
+app-2066,Adware,No Identify,42,True,False
+app-2063,Adware,airpush,32,True,False
+app-2062,Adware,mobclick,14,False,True
 app-2061,No Identify,No Identify,0,False,False
-app-2059,adware,umeng,39,True,False
-app-2057,riskware,dowgin,0,False,False
-app-2056,adware,No Identify,15,False,False
-app-2055,spr,pircob,10,False,True
+app-2059,Adware,umeng,39,True,False
+app-2057,Riskware,dowgin,0,False,False
+app-2056,Adware,No Identify,15,False,False
+app-2055,Spyware,pircob,10,False,True
 app-2053,No Identify,genbl,31,True,False
 app-2051,No Identify,deng,20,False,False
 app-2050,No Identify,deng,28,False,False
-app-2049,trojan,ginmaster,28,False,False
+app-2049,Trojan,ginmaster,28,False,False
 app-2048,No Identify,No Identify,22,False,False
-app-2047,spyware,dowgin,7,False,False
+app-2047,Spyware,dowgin,7,False,False
 app-2046,No Identify,deng,31,False,False
-app-2045,adware,adswo,29,True,False
-app-2044,troj,No Identify,26,False,False
-app-2042,dropper++trojan,ramnit,19,False,False
-app-2041,adware,No Identify,30,False,False
+app-2045,Adware,adswo,29,True,False
+app-2044,Trojan,No Identify,26,False,False
+app-2042,TrojanDropped,ramnit,19,False,False
+app-2041,Adware,No Identify,30,False,False
 app-2040,No Identify,deng,20,False,False
 app-204,No Identify,No Identify,24,False,False
-app-2039,adware,No Identify,22,False,False
+app-2039,Adware,No Identify,22,False,False
 app-2038,No Identify,deng,4,False,False
-app-2035,adware,inmobi,46,False,False
+app-2035,Adware,inmobi,46,False,False
 app-2034,No Identify,No Identify,63,True,False
 app-2033,No Identify,deng,18,True,False
-app-2032,trojan,No Identify,26,False,False
-app-2030,adware,waps,11,False,False
+app-2032,Trojan,No Identify,26,False,False
+app-2030,Adware,waps,11,False,False
 app-203,No Identify,No Identify,24,False,False
-app-2029,adware,No Identify,49,False,False
+app-2029,Adware,No Identify,49,False,False
 app-2028,No Identify,ads,52,True,False
-app-2026,clicker++trojan,dowgin,31,False,False
-app-2024,adware,adwo,28,True,False
-app-2023,adware,waps,5,False,False
-app-2022,adware,leadbolt,33,True,False
+app-2026,TrojanClicker,dowgin,31,False,False
+app-2024,Adware,adwo,28,True,False
+app-2023,Adware,waps,5,False,False
+app-2022,Adware,leadbolt,33,True,False
 app-2021,No Identify,No Identify,19,False,False
-app-2020,adware,waps,23,False,False
+app-2020,Adware,waps,23,False,False
 app-202,No Identify,No Identify,22,False,True
-app-2018,infostealer++trojan,No Identify,12,True,False
-app-2017,adware,leadbolt,35,True,False
-app-2016,trojan,ginmaster,19,False,True
+app-2018,TrojanInfostealer,No Identify,12,True,False
+app-2017,Adware,leadbolt,35,True,False
+app-2016,Trojan,ginmaster,19,False,True
 app-2015,No Identify,deng,7,False,False
 app-2013,No Identify,deng,21,False,False
-app-2012,trojan++trojansms,cwzgou,23,True,False
+app-2012,TrojanFakeinst,cwzgou,23,True,False
 app-2011,No Identify,deng,40,False,False
 app-2010,No Identify,deng,6,False,False
-app-2009,troj,eldorado,18,False,False
+app-2009,Trojan,eldorado,18,False,False
 app-2008,No Identify,opfake,4,True,False
 app-2007,No Identify,droidkungfu,11,False,False
-app-2006,trojan,cve,53,False,False
-app-2005,adware,airpush,22,False,False
+app-2006,Trojan,cve,53,False,False
+app-2005,Adware,airpush,22,False,False
 app-2004,No Identify,deng,14,False,False
 app-2001,No Identify,genbl,27,False,False
-app-2000,adware,airpush,31,True,False
-app-20,adware,No Identify,12,True,False
-app-2,trojan,fjcon,29,False,True
-app-1999,adware,No Identify,14,False,False
-app-1997,trojan,cosha,26,False,False
+app-2000,Adware,airpush,31,True,False
+app-20,Adware,No Identify,12,True,False
+app-2,Trojan,fjcon,29,False,True
+app-1999,Adware,No Identify,14,False,False
+app-1997,Trojan,cosha,26,False,False
 app-1996,No Identify,No Identify,20,True,False
 app-1995,No Identify,No Identify,34,True,False
-app-1994,clicker++trojan,dowgin,17,False,False
+app-1994,TrojanClicker,dowgin,17,False,False
 app-1992,No Identify,No Identify,0,False,False
 app-199,No Identify,No Identify,22,False,True
-app-1989,adware,No Identify,9,False,False
+app-1989,Adware,No Identify,9,False,False
 app-1988,No Identify,No Identify,68,True,False
 app-1987,No Identify,deng,7,False,False
 app-1986,No Identify,No Identify,36,True,False
 app-1985,No Identify,deng,24,False,False
-app-1984,adware,revmob,43,False,True
-app-1983,spyware,dowgin,26,False,False
-app-1981,adware,waps,21,False,False
-app-1980,adware,No Identify,78,False,True
-app-1979,adware,airpush,34,True,False
-app-1978,adware,leadbolt,86,True,True
-app-1977,adware,baiduad,44,True,False
-app-1976,adware,dowgin,51,True,True
+app-1984,Adware,revmob,43,False,True
+app-1983,Spyware,dowgin,26,False,False
+app-1981,Adware,waps,21,False,False
+app-1980,Adware,No Identify,78,False,True
+app-1979,Adware,airpush,34,True,False
+app-1978,Adware,leadbolt,86,True,True
+app-1977,Adware,baiduad,44,True,False
+app-1976,Adware,dowgin,51,True,True
 app-1975,No Identify,expiro,16,False,False
 app-1974,No Identify,No Identify,32,False,False
 app-1972,No Identify,No Identify,70,True,True
-app-1971,risktool++virus,pircob,26,False,False
-app-1970,clicker++trojan,dowgin,27,True,True
+app-1971,Riskware,pircob,26,False,False
+app-1970,TrojanClicker,dowgin,27,True,True
 app-197,No Identify,No Identify,22,False,True
-app-1968,adware,millennialmediaads,37,False,True
-app-1967,adware,ads,31,True,False
+app-1968,Adware,millennialmediaads,37,False,True
+app-1967,Adware,ads,31,True,False
 app-1964,No Identify,possiblyunwanted,33,False,False
 app-1962,No Identify,expiro,17,False,False
 app-1961,No Identify,viking,32,False,False
-app-1960,fakeinst++trojan,No Identify,30,False,False
+app-1960,TrojanFakeinst,No Identify,30,False,False
 app-196,No Identify,No Identify,22,False,True
-app-1958,trojan,No Identify,35,False,True
-app-1957,adware,umeng,37,True,False
+app-1958,Trojan,No Identify,35,False,True
+app-1957,Adware,umeng,37,True,False
 app-1956,No Identify,No Identify,23,False,False
 app-1954,No Identify,No Identify,32,False,False
-app-1952,trojan,ginmaster,33,False,False
-app-1950,worm,No Identify,21,True,False
+app-1952,Trojan,ginmaster,33,False,False
+app-1950,Worm,No Identify,21,True,False
 app-195,No Identify,No Identify,22,False,True
-app-1949,adware,No Identify,44,True,False
+app-1949,Adware,No Identify,44,True,False
 app-1948,No Identify,deng,16,False,True
-app-1947,adsware,millennialmediaads,32,False,False
+app-1947,Adware,millennialmediaads,32,False,False
 app-1945,No Identify,deng,18,False,False
 app-1943,No Identify,No Identify,45,True,True
 app-1940,No Identify,No Identify,31,False,False
 app-194,No Identify,No Identify,22,False,True
-app-1939,adsware,charboostads,33,False,False
-app-1938,adware,revmob,72,True,False
-app-1937,riskware,dowgin,33,False,False
-app-1936,adware,No Identify,48,False,False
+app-1939,Adware,charboostads,33,False,False
+app-1938,Adware,revmob,72,True,False
+app-1937,Riskware,dowgin,33,False,False
+app-1936,Adware,No Identify,48,False,False
 app-1935,No Identify,No Identify,52,True,True
-app-1934,adsware,millennialmediaads,31,False,False
-app-1933,adware,leadbolt,30,True,False
-app-1932,adware,airpush,43,True,False
-app-1931,adware,No Identify,40,True,True
+app-1934,Adware,millennialmediaads,31,False,False
+app-1933,Adware,leadbolt,30,True,False
+app-1932,Adware,airpush,43,True,False
+app-1931,Adware,No Identify,40,True,True
 app-1930,No Identify,deng,22,True,False
 app-193,No Identify,No Identify,22,False,True
-app-1929,adware,leadbolt,48,True,False
-app-1928,adware,dowgin,58,True,False
-app-1927,adware,No Identify,38,False,False
+app-1929,Adware,leadbolt,48,True,False
+app-1928,Adware,dowgin,58,True,False
+app-1927,Adware,No Identify,38,False,False
 app-1926,No Identify,deng,16,False,False
-app-1923,adware,No Identify,37,True,False
+app-1923,Adware,No Identify,37,True,False
 app-1921,No Identify,deng,23,True,False
-app-1920,adware,youmi,34,False,False
-app-1919,adware,No Identify,39,True,False
+app-1920,Adware,youmi,34,False,False
+app-1919,Adware,No Identify,39,True,False
 app-1918,No Identify,deng,37,True,False
-app-1917,adware,No Identify,39,True,False
-app-1916,adware,airpush,29,True,True
-app-1914,adware,No Identify,31,True,True
-app-1913,adware,umeng,32,True,True
+app-1917,Adware,No Identify,39,True,False
+app-1916,Adware,airpush,29,True,True
+app-1914,Adware,No Identify,31,True,True
+app-1913,Adware,umeng,32,True,True
 app-1911,No Identify,No Identify,52,True,False
-app-1910,adware,adwo,48,True,False
-app-1909,trojan,No Identify,29,True,False
-app-1908,troj,genbl,47,True,True
-app-1907,adware,airpush,48,True,False
-app-1905,adsware,greystripeads,36,False,False
+app-1910,Adware,adwo,48,True,False
+app-1909,Trojan,No Identify,29,True,False
+app-1908,Trojan,genbl,47,True,True
+app-1907,Adware,airpush,48,True,False
+app-1905,Adware,greystripeads,36,False,False
 app-1904,No Identify,cve,32,True,False
-app-1902,adware,plankton,31,True,False
+app-1902,Adware,plankton,31,True,False
 app-1901,No Identify,No Identify,70,True,True
-app-1900,adware,No Identify,25,True,False
-app-19,trojan,jifake,17,True,False
-app-1899,adware,youmi,21,True,False
-app-1898,troj,No Identify,39,True,False
-app-1895,adware,madhouseads,44,True,False
+app-1900,Adware,No Identify,25,True,False
+app-19,Trojan,jifake,17,True,False
+app-1899,Adware,youmi,21,True,False
+app-1898,Trojan,No Identify,39,True,False
+app-1895,Adware,madhouseads,44,True,False
 app-1894,No Identify,classes,26,True,False
-app-1893,trojan,No Identify,38,True,False
-app-1892,adware,airpush,47,True,False
-app-1891,adware,revmob,33,False,True
-app-1890,adware,No Identify,34,True,False
+app-1893,Trojan,No Identify,38,True,False
+app-1892,Adware,airpush,47,True,False
+app-1891,Adware,revmob,33,False,True
+app-1890,Adware,No Identify,34,True,False
 app-1889,No Identify,deng,32,True,False
-app-1888,adware,revmob,49,True,True
+app-1888,Adware,revmob,49,True,True
 app-1887,No Identify,deng,30,True,False
-app-1886,adware,kuguo,27,False,False
-app-1885,adware,charboostads,32,False,False
+app-1886,Adware,kuguo,27,False,False
+app-1885,Adware,charboostads,32,False,False
 app-1884,No Identify,deng,23,False,True
-app-1883,adware,dowgin,56,False,False
-app-1882,adware,No Identify,34,False,True
-app-1875,trojan,No Identify,9,False,False
-app-1872,adware,No Identify,20,False,False
-app-1870,adware,No Identify,13,False,False
-app-1867,trojan,No Identify,15,False,False
-app-1866,downloader++trojan,No Identify,24,False,False
-app-1864,adware,No Identify,21,False,False
+app-1883,Adware,dowgin,56,False,False
+app-1882,Adware,No Identify,34,False,True
+app-1875,Trojan,No Identify,9,False,False
+app-1872,Adware,No Identify,20,False,False
+app-1870,Adware,No Identify,13,False,False
+app-1867,Trojan,No Identify,15,False,False
+app-1866,TrojanDownloader,No Identify,24,False,False
+app-1864,Adware,No Identify,21,False,False
 app-1862,No Identify,deng,31,False,False
-app-1861,troj,No Identify,26,False,False
-app-1859,troj,No Identify,40,True,False
+app-1861,Trojan,No Identify,26,False,False
+app-1859,Trojan,No Identify,40,True,False
 app-1858,No Identify,misospy,14,True,False
 app-1857,No Identify,smsagent,21,False,False
-app-1856,trojan,systush,9,True,False
-app-1852,adware,revmob,34,True,False
+app-1856,Trojan,systush,9,True,False
+app-1852,Adware,revmob,34,True,False
 app-1847,No Identify,No Identify,21,False,False
-app-1845,malware,lzla,20,False,False
-app-1841,adware,cauly,13,False,False
-app-1840,adware,cauly,13,False,False
-app-1839,adware,No Identify,22,False,True
+app-1845,Malware,lzla,20,False,False
+app-1841,Adware,cauly,13,False,False
+app-1840,Adware,cauly,13,False,False
+app-1839,Adware,No Identify,22,False,True
 app-1837,No Identify,eldorado,28,True,False
 app-1835,No Identify,No Identify,18,False,False
 app-1829,No Identify,No Identify,19,False,False
-app-1827,adware,revmob,30,False,False
+app-1827,Adware,revmob,30,False,False
 app-1823,No Identify,No Identify,21,True,False
-app-1819,trojan,No Identify,25,False,False
-app-1816,riskware,No Identify,27,False,False
-app-1815,adware,waps,5,False,False
+app-1819,Trojan,No Identify,25,False,False
+app-1816,Riskware,No Identify,27,False,False
+app-1815,Adware,waps,5,False,False
 app-1814,No Identify,deng,5,False,False
 app-1813,No Identify,No Identify,33,True,True
-app-1811,trojan,No Identify,14,False,False
-app-1810,adware,revmob,29,False,True
+app-1811,Trojan,No Identify,14,False,False
+app-1810,Adware,revmob,29,False,True
 app-1809,No Identify,deng,7,False,False
-app-1806,adware,millennialmediaads,47,True,True
-app-1805,adware,douwan,63,False,True
-app-1804,adware,waps,5,False,True
-app-1803,adware,airpush,15,False,True
+app-1806,Adware,millennialmediaads,47,True,True
+app-1805,Adware,douwan,63,False,True
+app-1804,Adware,waps,5,False,True
+app-1803,Adware,airpush,15,False,True
 app-18,No Identify,droidkungfu,20,True,False
 app-1799,No Identify,No Identify,24,False,False
 app-1798,No Identify,No Identify,39,True,False
 app-1793,No Identify,No Identify,24,False,False
 app-1792,No Identify,No Identify,24,False,True
-app-1789,adware,dowgin,67,True,False
+app-1789,Adware,dowgin,67,True,False
 app-1787,No Identify,zusy,15,False,False
-app-1786,trojan,fakengry,42,False,True
-app-1785,adsware,millennialmediaads,23,False,False
-app-1784,troj,No Identify,33,True,True
+app-1786,Trojan,fakengry,42,False,True
+app-1785,Adware,millennialmediaads,23,False,False
+app-1784,Trojan,No Identify,33,True,True
 app-1781,No Identify,deng,7,False,False
-app-1776,adware,youmi,0,False,False
+app-1776,Adware,youmi,0,False,False
 app-1772,No Identify,No Identify,18,False,False
 app-1770,No Identify,No Identify,31,True,False
-app-1769,adware,youmi,18,True,False
-app-1768,adware,No Identify,33,True,False
-app-1758,trj,stopsms,68,True,False
-app-1755,riskware,dowgin,28,False,False
+app-1769,Adware,youmi,18,True,False
+app-1768,Adware,No Identify,33,True,False
+app-1758,Trojan,stopsms,68,True,False
+app-1755,Riskware,dowgin,28,False,False
 app-1753,No Identify,No Identify,29,False,False
 app-1750,No Identify,No Identify,27,False,False
-app-1749,adware,waps,43,False,False
+app-1749,Adware,waps,43,False,False
 app-1744,No Identify,No Identify,30,False,False
-app-1743,adware,No Identify,48,False,False
-app-1742,adware,charboostads,24,True,False
-app-1740,adware,airpush,15,False,False
-app-1738,troj,No Identify,43,True,False
+app-1743,Adware,No Identify,48,False,False
+app-1742,Adware,charboostads,24,True,False
+app-1740,Adware,airpush,15,False,False
+app-1738,Trojan,No Identify,43,True,False
 app-1735,No Identify,No Identify,39,True,False
-app-1734,adware,adwo,34,False,False
-app-1733,adware,No Identify,49,True,True
+app-1734,Adware,adwo,34,False,False
+app-1733,Adware,No Identify,49,True,True
 app-1732,No Identify,No Identify,29,False,False
-app-1730,adware,youmi,42,False,False
+app-1730,Adware,youmi,42,False,False
 app-1729,No Identify,No Identify,28,True,False
 app-1728,No Identify,graftor,9,False,False
-app-1722,backdoor,No Identify,15,False,True
+app-1722,Backdoor,No Identify,15,False,True
 app-1720,No Identify,No Identify,37,False,False
-app-1716,trojan,delf,23,False,False
-app-1715,trojan,smsspy,35,False,False
-app-1714,adware,airpush,22,False,True
+app-1716,Trojan,delf,23,False,False
+app-1715,Trojan,smsspy,35,False,False
+app-1714,Adware,airpush,22,False,True
 app-1712,No Identify,No Identify,60,False,False
-app-1711,exploit,loopb,15,False,False
-app-1710,adware,No Identify,20,False,True
-app-1709,adware,No Identify,24,True,False
-app-1708,adware,inmobiads,46,True,True
-app-1707,trojan,kuguo,45,True,False
+app-1711,Exploit,loopb,15,False,False
+app-1710,Adware,No Identify,20,False,True
+app-1709,Adware,No Identify,24,True,False
+app-1708,Adware,inmobiads,46,True,True
+app-1707,Trojan,kuguo,45,True,False
 app-1706,No Identify,No Identify,29,False,False
-app-1704,adware,No Identify,13,False,True
-app-1702,trojan,ginmaster,14,False,True
+app-1704,Adware,No Identify,13,False,True
+app-1702,Trojan,ginmaster,14,False,True
 app-1701,No Identify,No Identify,18,False,False
-app-1700,spyware,dowgin,18,False,False
-app-17,trojan,startapp,52,True,False
+app-1700,Spyware,dowgin,18,False,False
+app-17,Trojan,startapp,52,True,False
 app-1699,No Identify,deng,14,False,False
-app-1694,adware,kuguo,29,False,False
+app-1694,Adware,kuguo,29,False,False
 app-1693,No Identify,deng,5,False,False
-app-1692,adware,youmi,19,True,True
-app-1691,trojan,iacgm,20,False,False
+app-1692,Adware,youmi,19,True,True
+app-1691,Trojan,iacgm,20,False,False
 app-1690,No Identify,deng,5,False,False
 app-1689,No Identify,No Identify,46,False,False
 app-1686,No Identify,gumen,29,False,True
-app-1677,adware,mobclixads,44,False,False
+app-1677,Adware,mobclixads,44,False,False
 app-1676,No Identify,No Identify,22,False,False
 app-1673,No Identify,No Identify,31,False,False
-app-1672,trojan,winge,19,False,False
+app-1672,Trojan,winge,19,False,False
 app-1671,No Identify,No Identify,40,False,True
-app-1670,adware,kuguo,59,True,False
-app-1669,adware,admobads,3,False,False
-app-1668,adware,No Identify,15,False,False
+app-1670,Adware,kuguo,59,True,False
+app-1669,Adware,admobads,3,False,False
+app-1668,Adware,No Identify,15,False,False
 app-1666,No Identify,No Identify,62,False,True
-app-1663,adware,No Identify,22,False,False
-app-1656,adware,waps,23,False,False
-app-1654,adware,startapp,37,False,False
-app-1653,malware,No Identify,22,False,False
-app-1652,trojan,No Identify,9,False,False
+app-1663,Adware,No Identify,22,False,False
+app-1656,Adware,waps,23,False,False
+app-1654,Adware,startapp,37,False,False
+app-1653,Malware,No Identify,22,False,False
+app-1652,Trojan,No Identify,9,False,False
 app-1646,No Identify,No Identify,31,False,False
-app-1639,riskware,dowgin,0,False,False
+app-1639,Riskware,dowgin,0,False,False
 app-1636,No Identify,No Identify,21,False,False
-app-1633,adware,umeng,25,False,False
-app-1632,trojan,zitmo,56,False,False
-app-1630,adware,revmob,19,True,False
+app-1633,Adware,umeng,25,False,False
+app-1632,Trojan,zitmo,56,False,False
+app-1630,Adware,revmob,19,True,False
 app-1624,No Identify,No Identify,36,False,False
-app-1623,trojan,No Identify,8,True,False
-app-1622,adware,gingermaster,29,False,True
-app-1621,adware,No Identify,28,False,False
-app-1620,riskware,deng,15,False,False
+app-1623,Trojan,No Identify,8,True,False
+app-1622,Adware,gingermaster,29,False,True
+app-1621,Adware,No Identify,28,False,False
+app-1620,Riskware,deng,15,False,False
 app-1618,No Identify,deng,24,False,False
 app-1614,No Identify,deng,7,False,False
-app-1613,adware,airpush,54,False,False
-app-1608,adware,deng,7,False,False
-app-1606,adware,No Identify,12,False,True
-app-1605,adware,No Identify,15,False,True
-app-1604,adware,millennialmediaads,23,False,False
-app-1602,adware,inmobi,45,False,False
+app-1613,Adware,airpush,54,False,False
+app-1608,Adware,deng,7,False,False
+app-1606,Adware,No Identify,12,False,True
+app-1605,Adware,No Identify,15,False,True
+app-1604,Adware,millennialmediaads,23,False,False
+app-1602,Adware,inmobi,45,False,False
 app-16,No Identify,domob,12,True,False
-app-1599,troj,No Identify,28,False,False
-app-1597,adware,umeng,24,False,False
-app-1594,trojan,No Identify,20,False,True
-app-1590,adware,dowgin,7,False,False
+app-1599,Trojan,No Identify,28,False,False
+app-1597,Adware,umeng,24,False,False
+app-1594,Trojan,No Identify,20,False,True
+app-1590,Adware,dowgin,7,False,False
 app-1588,No Identify,No Identify,28,False,False
 app-1587,No Identify,deng,9,False,False
-app-1586,adware,airpush,16,False,False
-app-1584,adware,No Identify,18,False,False
-app-1583,trojan,gingermaster,8,False,False
-app-1581,trojan,deng,5,False,False
+app-1586,Adware,airpush,16,False,False
+app-1584,Adware,No Identify,18,False,False
+app-1583,Trojan,gingermaster,8,False,False
+app-1581,Trojan,deng,5,False,False
 app-1576,No Identify,No Identify,29,False,False
-app-1575,trojan,No Identify,21,False,True
-app-1574,spr,smalihook,3,False,False
-app-1571,troj,fcbhzii,3,False,False
-app-1570,trojan,zitmo,7,True,True
-app-1566,adware,No Identify,32,False,True
-app-1564,adware,airpush,26,False,False
-app-1562,adware,No Identify,17,False,False
-app-1561,adware,No Identify,18,False,False
+app-1575,Trojan,No Identify,21,False,True
+app-1574,Spyware,smalihook,3,False,False
+app-1571,Trojan,fcbhzii,3,False,False
+app-1570,Trojan,zitmo,7,True,True
+app-1566,Adware,No Identify,32,False,True
+app-1564,Adware,airpush,26,False,False
+app-1562,Adware,No Identify,17,False,False
+app-1561,Adware,No Identify,18,False,False
 app-1557,No Identify,No Identify,71,True,False
-app-1556,adware,airpush,15,False,False
-app-1554,adware,airpush,22,False,True
-app-1549,adware,deng,4,False,False
-app-1548,trojan,ginmaster,13,True,False
-app-1546,adware,airpush,20,False,False
+app-1556,Adware,airpush,15,False,False
+app-1554,Adware,airpush,22,False,True
+app-1549,Adware,deng,4,False,False
+app-1548,Trojan,ginmaster,13,True,False
+app-1546,Adware,airpush,20,False,False
 app-1543,No Identify,No Identify,24,False,False
 app-1538,No Identify,eldorado,25,False,False
 app-1537,No Identify,deng,28,False,True
-app-1534,adware,No Identify,20,False,False
+app-1534,Adware,No Identify,20,False,False
 app-1532,No Identify,genbl,79,False,False
-app-1530,adware,youmi,36,False,True
+app-1530,Adware,youmi,36,False,True
 app-1527,No Identify,No Identify,58,False,False
 app-1522,No Identify,No Identify,38,False,False
 app-1521,No Identify,boqx,18,False,False
-app-1520,adware,airpush,30,True,False
+app-1520,Adware,airpush,30,True,False
 app-1518,No Identify,deng,24,False,False
-app-1517,adware,droidkungfu,43,False,True
-app-1515,adware,airpush,21,False,True
-app-1512,adware,No Identify,7,False,False
-app-1503,adware,millennialmediaads,25,False,False
+app-1517,Adware,droidkungfu,43,False,True
+app-1515,Adware,airpush,21,False,True
+app-1512,Adware,No Identify,7,False,False
+app-1503,Adware,millennialmediaads,25,False,False
 app-1501,No Identify,deng,4,False,False
-app-1500,adware,No Identify,18,False,True
-app-15,adware,admobads,9,False,True
-app-1496,adware,No Identify,21,True,False
-app-1495,trojan,No Identify,30,True,False
-app-1492,adware,No Identify,17,True,False
+app-1500,Adware,No Identify,18,False,True
+app-15,Adware,admobads,9,False,True
+app-1496,Adware,No Identify,21,True,False
+app-1495,Trojan,No Identify,30,True,False
+app-1492,Adware,No Identify,17,True,False
 app-1490,No Identify,No Identify,27,False,False
-app-1487,adware,No Identify,27,False,False
+app-1487,Adware,No Identify,27,False,False
 app-1485,No Identify,deng,7,False,False
-app-1482,adware,waps,43,False,False
-app-1479,adware,airpush,14,False,False
+app-1482,Adware,waps,43,False,False
+app-1479,Adware,airpush,14,False,False
 app-1477,No Identify,genbl,24,True,False
-app-1475,adware,No Identify,13,True,False
-app-1472,adware,plankton,5,False,False
+app-1475,Adware,No Identify,13,True,False
+app-1472,Adware,plankton,5,False,False
 app-1471,No Identify,virtob,31,False,False
-app-1469,adware,dowgin,53,True,False
-app-1465,adware,No Identify,26,False,False
-app-1463,adware,revmob,34,True,False
-app-1459,adware,No Identify,13,True,True
-app-1458,trojan,deng,13,False,False
+app-1469,Adware,dowgin,53,True,False
+app-1465,Adware,No Identify,26,False,False
+app-1463,Adware,revmob,34,True,False
+app-1459,Adware,No Identify,13,True,True
+app-1458,Trojan,deng,13,False,False
 app-1457,No Identify,No Identify,54,True,False
-app-1456,adware,revmob,37,True,False
+app-1456,Adware,revmob,37,True,False
 app-1454,No Identify,deng,10,False,False
-app-1453,adware,airpush,18,False,True
-app-1447,adware,No Identify,17,False,False
-app-1446,spyware,dowgin,12,False,False
-app-1439,adware,No Identify,17,False,False
+app-1453,Adware,airpush,18,False,True
+app-1447,Adware,No Identify,17,False,False
+app-1446,Spyware,dowgin,12,False,False
+app-1439,Adware,No Identify,17,False,False
 app-1438,No Identify,deng,10,True,False
-app-1437,riskware,dowgin,17,False,False
-app-1436,addisplay,cnzz,26,False,False
-app-1434,adware,revmob,31,True,False
-app-1432,adware,No Identify,30,True,False
+app-1437,Riskware,dowgin,17,False,False
+app-1436,Adware,cnzz,26,False,False
+app-1434,Adware,revmob,31,True,False
+app-1432,Adware,No Identify,30,True,False
 app-1431,No Identify,No Identify,14,False,False
 app-1430,No Identify,deng,7,False,False
-app-1428,adware,waps,9,True,True
-app-1427,adware,No Identify,21,False,True
-app-1425,riskware,umeng,42,False,False
-app-1424,adware,No Identify,22,False,False
-app-1423,adware,No Identify,34,False,True
-app-1422,adware,wooboo,13,True,False
-app-1421,spyware,dowgin,35,False,True
-app-1419,adware,waps,6,False,False
+app-1428,Adware,waps,9,True,True
+app-1427,Adware,No Identify,21,False,True
+app-1425,Riskware,umeng,42,False,False
+app-1424,Adware,No Identify,22,False,False
+app-1423,Adware,No Identify,34,False,True
+app-1422,Adware,wooboo,13,True,False
+app-1421,Spyware,dowgin,35,False,True
+app-1419,Adware,waps,6,False,False
 app-1417,No Identify,No Identify,52,False,False
 app-1414,No Identify,ipamor,5,False,False
-app-1413,adware,No Identify,37,False,True
+app-1413,Adware,No Identify,37,False,True
 app-1412,No Identify,deng,7,False,False
-app-1410,adware,No Identify,21,False,False
-app-1407,trojan,No Identify,9,False,False
-app-1404,adware,No Identify,29,False,True
-app-1402,adware,No Identify,18,True,False
+app-1410,Adware,No Identify,21,False,False
+app-1407,Trojan,No Identify,9,False,False
+app-1404,Adware,No Identify,29,False,True
+app-1402,Adware,No Identify,18,True,False
 app-1401,No Identify,No Identify,24,False,False
-app-14,adware,kuguo,45,True,True
-app-1396,adware,No Identify,22,False,True
+app-14,Adware,kuguo,45,True,True
+app-1396,Adware,No Identify,22,False,True
 app-1395,No Identify,No Identify,25,True,False
-app-1394,adware,millennialmediaads,23,False,False
-app-1389,adware,revmob,25,False,True
-app-1388,trojan,artemis,33,True,False
+app-1394,Adware,millennialmediaads,23,False,False
+app-1389,Adware,revmob,25,False,True
+app-1388,Trojan,artemis,33,True,False
 app-1387,No Identify,zusy,4,False,False
-app-1386,adware,No Identify,14,False,True
+app-1386,Adware,No Identify,14,False,True
 app-1385,No Identify,deng,15,False,True
-app-1383,trojan,spyset,13,False,False
-app-1382,trojan,No Identify,30,False,True
-app-1381,adware,deng,4,False,False
+app-1383,Trojan,spyset,13,False,False
+app-1382,Trojan,No Identify,30,False,True
+app-1381,Adware,deng,4,False,False
 app-1378,No Identify,No Identify,35,False,False
-app-1377,adware,No Identify,7,False,False
-app-1376,adware,leadbolt,44,True,False
-app-1372,adware,waps,15,False,False
+app-1377,Adware,No Identify,7,False,False
+app-1376,Adware,leadbolt,44,True,False
+app-1372,Adware,waps,15,False,False
 app-1370,No Identify,No Identify,30,False,False
-app-1368,trojan,No Identify,14,False,False
-app-1367,adware,tapjoyads,57,False,True
-app-1366,adware,No Identify,35,True,False
+app-1368,Trojan,No Identify,14,False,False
+app-1367,Adware,tapjoyads,57,False,True
+app-1366,Adware,No Identify,35,True,False
 app-1365,No Identify,No Identify,19,False,False
-app-1364,exploit,No Identify,20,False,False
-app-1361,adware,viser,72,True,True
-app-1345,adware,airpush,14,False,False
-app-1344,adware,No Identify,14,True,False
+app-1364,Exploit,No Identify,20,False,False
+app-1361,Adware,viser,72,True,True
+app-1345,Adware,airpush,14,False,False
+app-1344,Adware,No Identify,14,True,False
 app-1337,No Identify,No Identify,42,False,True
-app-1335,adware,airpush,20,False,False
-app-1334,trojan,No Identify,24,False,False
-app-1328,adware,No Identify,13,False,True
+app-1335,Adware,airpush,20,False,False
+app-1334,Trojan,No Identify,24,False,False
+app-1328,Adware,No Identify,13,False,True
 app-1325,No Identify,deng,5,False,False
-app-1321,spyware,dowgin,15,False,False
-app-1319,adware,airpush,19,False,False
-app-1315,adware,jumptap,52,False,False
-app-1314,adware,leadbolt,37,True,True
-app-1312,adware,adwo,24,True,True
-app-1311,adware,airpush,36,False,False
-app-1310,adware,waps,5,False,False
-app-1308,malware,No Identify,13,False,False
-app-1304,trojan,No Identify,34,False,False
+app-1321,Spyware,dowgin,15,False,False
+app-1319,Adware,airpush,19,False,False
+app-1315,Adware,jumptap,52,False,False
+app-1314,Adware,leadbolt,37,True,True
+app-1312,Adware,adwo,24,True,True
+app-1311,Adware,airpush,36,False,False
+app-1310,Adware,waps,5,False,False
+app-1308,Malware,No Identify,13,False,False
+app-1304,Trojan,No Identify,34,False,False
 app-1303,No Identify,deng,7,False,False
 app-1302,No Identify,No Identify,22,False,True
-app-1300,troj,No Identify,34,True,False
-app-13,adware,dowgin,31,True,True
-app-1297,adsware,charboostads,29,True,True
-app-1296,adware,No Identify,20,False,False
-app-1295,adware,No Identify,18,False,True
-app-1294,adware,waps,6,False,False
-app-1293,adware,No Identify,22,True,False
+app-1300,Trojan,No Identify,34,True,False
+app-13,Adware,dowgin,31,True,True
+app-1297,Adware,charboostads,29,True,True
+app-1296,Adware,No Identify,20,False,False
+app-1295,Adware,No Identify,18,False,True
+app-1294,Adware,waps,6,False,False
+app-1293,Adware,No Identify,22,True,False
 app-1292,No Identify,No Identify,26,False,False
 app-1287,No Identify,deng,20,False,False
-app-1285,trojan,winge,3,False,True
+app-1285,Trojan,winge,3,False,True
 app-1284,No Identify,almanahe,32,True,False
-app-1282,trojan,No Identify,59,False,True
+app-1282,Trojan,No Identify,59,False,True
 app-1281,No Identify,deng,4,False,False
-app-1280,adware,No Identify,15,False,True
-app-1277,trj,zbot,29,False,True
-app-1276,adware,No Identify,28,True,False
+app-1280,Adware,No Identify,15,False,True
+app-1277,Trojan,zbot,29,False,True
+app-1276,Adware,No Identify,28,True,False
 app-1275,No Identify,No Identify,29,False,False
 app-1274,No Identify,No Identify,36,False,False
-app-1272,adware++adware,umeng,23,False,False
-app-1270,adware,No Identify,22,False,True
-app-1267,riskware,smspay,12,False,False
-app-1266,adware,revmob,33,True,True
-app-1259,trojan,No Identify,22,False,True
-app-1257,adware,No Identify,22,False,True
+app-1272,Adware,umeng,23,False,False
+app-1270,Adware,No Identify,22,False,True
+app-1267,Riskware,smspay,12,False,False
+app-1266,Adware,revmob,33,True,True
+app-1259,Trojan,No Identify,22,False,True
+app-1257,Adware,No Identify,22,False,True
 app-1256,No Identify,deng,5,False,False
 app-1254,No Identify,No Identify,18,False,False
 app-1253,No Identify,No Identify,66,True,True
-app-1252,package,No Identify,51,False,True
-app-1247,adware++adware,umeng,28,False,True
-app-1245,adware,No Identify,23,True,True
-app-1243,adware,adwo,18,True,False
-app-1241,troj,No Identify,33,False,False
+app-1252,Riskware,No Identify,51,False,True
+app-1247,Adware,umeng,28,False,True
+app-1245,Adware,No Identify,23,True,True
+app-1243,Adware,adwo,18,True,False
+app-1241,Trojan,No Identify,33,False,False
 app-1240,No Identify,No Identify,32,False,False
-app-1235,adware,No Identify,29,False,True
-app-1234,troj,genbl,37,False,False
-app-1232,adware,charboostads,50,False,False
-app-1230,adware,revmob,24,False,False
+app-1235,Adware,No Identify,29,False,True
+app-1234,Trojan,genbl,37,False,False
+app-1232,Adware,charboostads,50,False,False
+app-1230,Adware,revmob,24,False,False
 app-1227,No Identify,deng,7,False,False
-app-1225,adware,inmobiads,64,False,True
-app-1222,adware,revmob,27,True,False
-app-1220,adware,tapjoyads,63,False,False
-app-1218,trojan,No Identify,20,False,False
-app-1214,adware,youmi,11,False,True
-app-1213,trojan,No Identify,38,False,False
-app-1203,package,No Identify,7,True,False
-app-12,adware,kuguo,45,True,True
-app-1196,adware,tapjoyads,33,False,False
-app-1195,troj,No Identify,35,True,True
-app-1193,adware,kuguo,68,True,True
-app-1192,adware,No Identify,21,False,False
-app-1190,trojan,spyset,13,False,False
+app-1225,Adware,inmobiads,64,False,True
+app-1222,Adware,revmob,27,True,False
+app-1220,Adware,tapjoyads,63,False,False
+app-1218,Trojan,No Identify,20,False,False
+app-1214,Adware,youmi,11,False,True
+app-1213,Trojan,No Identify,38,False,False
+app-1203,Riskware,No Identify,7,True,False
+app-12,Adware,kuguo,45,True,True
+app-1196,Adware,tapjoyads,33,False,False
+app-1195,Trojan,No Identify,35,True,True
+app-1193,Adware,kuguo,68,True,True
+app-1192,Adware,No Identify,21,False,False
+app-1190,Trojan,spyset,13,False,False
 app-1188,No Identify,deng,7,False,False
-app-1181,adware,waps,7,True,False
+app-1181,Adware,waps,7,True,False
 app-1180,No Identify,No Identify,30,True,False
 app-1176,No Identify,No Identify,35,False,False
-app-1175,adware,leadbolt,30,False,True
+app-1175,Adware,leadbolt,30,False,True
 app-1174,No Identify,No Identify,27,False,True
-app-1164,adware,kuguo,33,True,True
-app-1163,adware,No Identify,15,False,False
-app-1162,adware,No Identify,28,False,True
-app-1159,adware,No Identify,34,True,True
-app-1158,trojan,gingermaster,51,True,True
-app-1153,adware,No Identify,22,False,True
+app-1164,Adware,kuguo,33,True,True
+app-1163,Adware,No Identify,15,False,False
+app-1162,Adware,No Identify,28,False,True
+app-1159,Adware,No Identify,34,True,True
+app-1158,Trojan,gingermaster,51,True,True
+app-1153,Adware,No Identify,22,False,True
 app-1152,No Identify,deng,4,False,False
 app-1150,No Identify,No Identify,24,False,False
-app-1145,adware,No Identify,14,False,True
+app-1145,Adware,No Identify,14,False,True
 app-1140,No Identify,No Identify,7,False,False
 app-1136,No Identify,No Identify,33,False,True
 app-1135,No Identify,deng,5,False,False
-app-1129,adware,gingermaster,22,True,True
-app-1128,adware,possiblyunwanted,8,False,False
-app-1126,adware,dowgin,22,False,False
-app-1125,adware,startapp,17,True,True
-app-1124,adware,No Identify,26,False,False
-app-1123,adware,inmobiads,33,True,False
-app-1122,trojan,droidkungfu,20,False,False
-app-1120,adware,deng,7,False,False
-app-1119,adware,youmi,32,False,True
-app-1118,trojan,No Identify,21,False,False
+app-1129,Adware,gingermaster,22,True,True
+app-1128,Adware,possiblyunwanted,8,False,False
+app-1126,Adware,dowgin,22,False,False
+app-1125,Adware,startapp,17,True,True
+app-1124,Adware,No Identify,26,False,False
+app-1123,Adware,inmobiads,33,True,False
+app-1122,Trojan,droidkungfu,20,False,False
+app-1120,Adware,deng,7,False,False
+app-1119,Adware,youmi,32,False,True
+app-1118,Trojan,No Identify,21,False,False
 app-1117,No Identify,No Identify,33,False,False
-app-1116,adsware,admobads,3,False,False
+app-1116,Adware,admobads,3,False,False
 app-1115,No Identify,No Identify,25,False,False
-app-1113,adware,inmobiads,76,True,False
+app-1113,Adware,inmobiads,76,True,False
 app-1106,No Identify,deng,15,False,False
-app-1105,trojan,No Identify,14,False,False
+app-1105,Trojan,No Identify,14,False,False
 app-1104,No Identify,deng,5,False,False
 app-1103,No Identify,deng,7,False,False
 app-1101,No Identify,deng,4,False,False
-app-11,adware,wooboo,7,True,True
+app-11,Adware,wooboo,7,True,True
 app-1097,No Identify,deng,4,False,False
-app-1095,adware,No Identify,20,False,False
+app-1095,Adware,No Identify,20,False,False
 app-1091,No Identify,No Identify,21,False,False
-app-1090,trojan,No Identify,12,False,False
+app-1090,Trojan,No Identify,12,False,False
 app-1087,No Identify,deng,4,False,False
-app-1085,adware,waps,21,True,False
-app-1084,adware,revmob,36,False,False
+app-1085,Adware,waps,21,True,False
+app-1084,Adware,revmob,36,False,False
 app-1082,No Identify,deng,14,False,False
-app-1079,adware,waps,15,False,False
-app-1078,trojan,basebridge,1,False,False
+app-1079,Adware,waps,15,False,False
+app-1078,Trojan,basebridge,1,False,False
 app-1077,No Identify,No Identify,37,True,False
-app-1076,adware,waps,6,False,False
-app-1071,trojan,generickdz,14,False,False
-app-1070,trojan,deng,13,False,False
+app-1076,Adware,waps,6,False,False
+app-1071,Trojan,generickdz,14,False,False
+app-1070,Trojan,deng,13,False,False
 app-1069,No Identify,deng,7,False,False
 app-1066,No Identify,deng,19,False,False
-app-1059,adsware,admobads,3,False,False
-app-1055,adware,waps,22,True,False
+app-1059,Adware,admobads,3,False,False
+app-1055,Adware,waps,22,True,False
 app-1049,No Identify,No Identify,25,False,False
-app-1048,adware,No Identify,41,False,False
-app-1045,adware,No Identify,14,False,True
+app-1048,Adware,No Identify,41,False,False
+app-1045,Adware,No Identify,14,False,True
 app-1044,No Identify,No Identify,24,False,False
-app-1041,spr,droidkungfu,15,True,False
+app-1041,Spyware,droidkungfu,15,True,False
 app-1039,No Identify,deng,7,False,False
-app-1036,spyware,dowgin,26,False,False
-app-1034,adware,adswo,26,True,False
-app-1031,adware,waps,4,False,False
+app-1036,Spyware,dowgin,26,False,False
+app-1034,Adware,adswo,26,True,False
+app-1031,Adware,waps,4,False,False
 app-1030,No Identify,mmarket,19,True,False
 app-1021,No Identify,No Identify,9,False,False
-app-1020,spyware,dowgin,15,True,True
-app-102,adware,umeng,17,False,False
-app-1019,spyware,adwo,14,False,True
-app-1017,adware,revmob,36,True,False
+app-1020,Spyware,dowgin,15,True,True
+app-102,Adware,umeng,17,False,False
+app-1019,Spyware,adwo,14,False,True
+app-1017,Adware,revmob,36,True,False
 app-1011,No Identify,No Identify,24,False,False
-app-101,trojan,kuguo,50,True,False
-app-1008,troj,No Identify,26,False,False
-app-1006,adware,No Identify,12,False,True
-app-1005,trj,No Identify,5,False,False
-app-1002,adware,mobwinads,4,False,False
-app-1000,trojan,No Identify,14,False,False
-app-100,adware,wapsx,19,True,True
-app-10,adware,youmi,21,False,True
-app-1,riskware,kuguo,18,True,False
+app-101,Trojan,kuguo,50,True,False
+app-1008,Trojan,No Identify,26,False,False
+app-1006,Adware,No Identify,12,False,True
+app-1005,Trojan,No Identify,5,False,False
+app-1002,Adware,mobwinads,4,False,False
+app-1000,Trojan,No Identify,14,False,False
+app-100,Adware,wapsx,19,True,True
+app-10,Adware,youmi,21,False,True
+app-1,Riskware,kuguo,18,True,False
