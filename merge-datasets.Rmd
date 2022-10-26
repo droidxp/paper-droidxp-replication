@@ -43,12 +43,12 @@ write.csv(avclass, "av.csv", sep=',', quote = F, row.names = F)
 
 
 s1 <- sqldf("select r.app, r.hash, a.family, 'True' as Malware
-				from repackaged r, avclass a where r.hash = a.hash")
+				from repackaged r, avclass a where r.hash = upper(a.hash)")
 						 
 
 s2 <- sqldf("select r.app, r.hash, 'None' as family, 'False' as Malware
                    from repackaged r
-                   where r.hash not in (select a.hash from avclass a)")
+                   where r.hash not in (select upper(a.hash) from avclass a)")
 
 nrow(s1)
 
