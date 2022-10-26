@@ -41,7 +41,7 @@ nrow(avclass)
 #nrow(hashes)
 
 
-s1 <- sqldf("select r.app, r.hash, a.malware, 'True' as Malware
+s1 <- sqldf("select r.app, r.hash, a.family, 'True' as Malware
 				from repackaged r, avclass a where r.hash = a.hash")
 						 
 
