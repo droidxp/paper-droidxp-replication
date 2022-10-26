@@ -1,0 +1,96 @@
+---
+title: "dataset-malware-analysis"
+author: "Rodrigo Bonifácio et al."
+date: '2022-10-14'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=5, fig.height=5, fig.path='./figures/', dev=c('png', 'pdf'))
+
+setwd(".")
+
+library(sqldf)
+library(xtable)
+```
+
+
+
+
+```{r vt}
+apps <- read.csv("appsHash.csv", head=T, sep=',')
+
+repackaged <- sqldf("select * from apps where version = 'malicious'")
+
+nrow(repackaged)
+
+avclass <- read.csv("avclass.csv", head=T, sep=',')
+
+nrow(avclass)
+
+avclass <- sqldf("select * 
+                  from avclass 
+                  where family != 'undetected' and family not like 'SINGLETON%'")
+
+nrow(avclass)
+
+hashes <- read.csv("sha256-md5-app.csv",head=T, sep=',')
+
+
+nrow(hashes)
+
+s1 <- sqldf("select r.app, h.sha256, h.md5, a.family, 'True' as Malware 
+                   from repackaged r, hashes h, avclass a
+                   where r.hash = h.sha256 and 
+                         h.md5 = a.hash")
+
+s2 <- sqldf("select r.app, h.sha256, h.md5, 'None' as family, 'False' as Malware 
+                   from repackaged r, hashes h
+                   where r.hash = h.sha256 and 
+                         h.md5 not in (select a.hash from avclass a)")
+
+nrow(s1)
+
+nrow(s2)
+
+ds <- rbind(s1, s2)
+
+# masResults <- read.csv("summaryTypeFamily.csv", head=T)
+
+# malwares <- sqldf("select m1.*, m2.malware as callDifferentAPIs, m2.hasDifferentTraces 
+#                   from malwares m1, masResults m2 where m1.app = m2.app")
+
+#nrow(malwares)
+#colnames(malwares)
+
+original <- read.csv("originalMalwareSample.csv", head=T)
+
+s1 <- sqldf("select ds.*, 'True' PreviousStudy 
+             from ds where 
+             ds.app in (select app from original)")
+
+s2 <- sqldf("select ds.*, 'False' PreviousStudy 
+             from ds where 
+             ds.app not in (select app from original)")
+
+nrow(s1)
+nrow(s2)
+
+ds <- rbind(s1,s2)
+
+masResults <- read.csv("summaryTypeFamily.csv", head=T)
+
+final_ds <- sqldf("select ds.*, m.malware as APIDetected, m.hasDifferentTraces as TraceDetected 
+                   from ds, masResults m where ds.app = m.app")
+
+colnames(final_ds)
+head(final_ds)
+
+
+ write.csv(final_ds, "final-ds.csv", sep=',', quote = F, row.names = F)
+```
+
+
+
+
