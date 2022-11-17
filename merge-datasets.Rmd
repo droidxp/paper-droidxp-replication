@@ -1,6 +1,6 @@
 ---
 title: "dataset-malware-analysis"
-author: "Rodrigo Bonifácio et al."
+author: "anonymous"
 date: '2022-10-14'
 output: html_document
 ---
