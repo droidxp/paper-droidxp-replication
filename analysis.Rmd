@@ -47,7 +47,7 @@ sqldf("select app, C1, C2, SimilarityIndex, simiscore from dataset")
 
 ### Summarizing our dataset 
 
-   * here we see that 193 out 800 malware instances (24.12%) have been detected by the the CallDiff approach
+   * here we see that 346 out 1203 malware instances (28.76%) have been detected by the the CallDiff approach
    
 ```{r summary}
 summary(dataset$CallDiffDetection)

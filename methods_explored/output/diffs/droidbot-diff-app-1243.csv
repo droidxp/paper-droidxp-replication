@@ -1,0 +1,1 @@
+"<android.net.wifi.WifiInfo: java.lang.String getMacAddress()>""<java.lang.reflect.Field: java.lang.Object get(java.lang.Object)>""<android.telephony.TelephonyManager: java.lang.String getNetworkOperator()>""<android.net.wifi.WifiManager: android.net.wifi.WifiInfo getConnectionInfo()>""<android.net.NetworkInfo: java.lang.String getTypeName()>"

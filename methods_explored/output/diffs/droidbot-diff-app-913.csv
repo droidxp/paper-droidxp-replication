@@ -1,0 +1,1 @@
+"<android.location.LocationManager: boolean isProviderEnabled(java.lang.String)>""<android.net.NetworkInfo: java.lang.String getTypeName()>""<android.net.ConnectivityManager: android.net.NetworkInfo[] getAllNetworkInfo()>"

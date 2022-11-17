@@ -1,0 +1,1 @@
+"<android.location.Location: double getLongitude()>""<android.net.NetworkInfo: int getType()>""<android.location.LocationManager: java.lang.String getBestProvider(android.location.Criteria,boolean)>""<android.location.Location: double getLatitude()>"

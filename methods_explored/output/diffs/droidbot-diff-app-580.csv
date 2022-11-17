@@ -1,0 +1,1 @@
+"<android.telephony.TelephonyManager: java.lang.String getNetworkOperatorName()>""<android.telephony.TelephonyManager: java.lang.String getSimCountryIso()>""<android.location.Location: double getLatitude()>""<android.location.Location: double getLongitude()>""<android.net.NetworkInfo: int getSubtype()>"

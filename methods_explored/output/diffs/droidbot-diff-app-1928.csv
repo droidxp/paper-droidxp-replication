@@ -1,0 +1,1 @@
+"<android.telephony.TelephonyManager: int getPhoneType()>""<android.telephony.TelephonyManager: java.lang.String getLine1Number()>""<android.telephony.cdma.CdmaCellLocation: int getNetworkId()>""<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>""<android.telephony.cdma.CdmaCellLocation: int getBaseStationId()>"

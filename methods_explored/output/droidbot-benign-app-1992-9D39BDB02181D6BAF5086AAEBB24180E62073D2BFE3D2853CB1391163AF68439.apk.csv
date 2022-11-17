@@ -1,0 +1,19 @@
+<android.webkit.WebHistoryItem: android.webkit.WebHistoryItem clone()>
+<android.content.ContextWrapper: android.content.pm.ApplicationInfo getApplicationInfo()>
+<android.animation.Animator: android.animation.Animator clone()>
+<android.webkit.WebBackForwardList: android.webkit.WebBackForwardList clone()>
+<android.widget.RemoteViews: android.widget.RemoteViews clone()>
+<java.lang.StringBuilder: java.lang.String toString()>
+<android.content.ComponentName: android.content.ComponentName clone()>
+<android.util.SparseBooleanArray: android.util.SparseBooleanArray clone()>
+<android.util.SparseArray: android.util.SparseArray clone()>
+
+<java.util.Locale: java.lang.String getLanguage()>
+<java.util.Locale: java.lang.String getCountry()>
+<java.io.Writer: java.io.Writer append(java.lang.CharSequence,int,int)>
+<android.app.Notification: android.app.Notification clone()>
+<android.os.Environment: java.io.File getExternalStorageDirectory()>
+<java.lang.Object: java.lang.Object clone()>
+<java.util.Locale: java.util.Locale getDefault()>
+<java.io.File: java.lang.String getAbsolutePath()>
+<android.view.animation.Animation: android.view.animation.Animation clone()>

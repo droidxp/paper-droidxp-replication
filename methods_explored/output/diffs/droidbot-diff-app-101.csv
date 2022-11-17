@@ -1,0 +1,1 @@
+"<android.app.ActivityManager: java.util.List getRunningTasks(int)>""<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>""<android.net.wifi.WifiInfo: java.lang.String getMacAddress()>""<android.net.NetworkInfo: java.lang.String getExtraInfo()>""<java.lang.reflect.Field: int getInt(java.lang.Object)>""<android.net.NetworkInfo: int getType()>"
