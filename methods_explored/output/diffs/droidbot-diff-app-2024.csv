@@ -1,1 +1,0 @@
-"<android.telephony.TelephonyManager: java.lang.String getNetworkOperator()>""<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>""<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>""<android.telephony.TelephonyManager: java.lang.String getLine1Number()>"

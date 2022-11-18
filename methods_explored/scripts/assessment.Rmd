@@ -1,6 +1,6 @@
 ---
 title: "DroidXPAssessment"
-author: "Rodrigo Bonifácio et al."
+author: "anonymous"
 date: "4/18/2022"
 output: html_document
 ---
