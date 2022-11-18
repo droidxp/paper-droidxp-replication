@@ -3,6 +3,7 @@ title: "dataset-malware-analysis"
 author: "anonymous"
 date: '2022-10-14'
 output: html_document
+description: This script create our final dataset file for analysis - final-ds.csv
 ---
 
 ```{r setup, include=FALSE}
