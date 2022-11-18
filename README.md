@@ -6,4 +6,4 @@ The Achilles’ Heel of the Android Mining Sandbox Approach for Malware Identifi
 
 SANER 2023 (RENE)
 
-[List of app with hash](https://github.com/droidxp/paper-droidxptrace-results/blob/main/appsHash.csv)
+[List of app with hash](https://anonymous.4open.science/r/paper-droidxptrace-results-F55A/appsHash.csv)
