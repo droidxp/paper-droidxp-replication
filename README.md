@@ -17,5 +17,5 @@ We also characterize our dataset according to the similarity between the origina
 
 ### Data Collection
 
-We take advantage of the [DroidXP](https://github.com/droidxp/benchmark) infrastructure for data collection. With DroidXP we collect all relevant information, such as calls to sensitive APIs, during the test execution performanced by test generator tool Droidbot, at all app pairs (orignal/repackage). 
+We take advantage of the [DroidXP](https://github.com/droidxp/benchmark) infrastructure for data collection. With DroidXP we collect all relevant information, such as calls to sensitive APIs, during the test execution performanced by test generator tool Droidbot. We execute DroidXP using Droidbot for 180 seconds, and repeted all process 3 times for each app pair (original/repackage). The final result from this exploratory step is compiled at this [zip] file.
 
