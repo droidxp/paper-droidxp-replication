@@ -2,7 +2,7 @@ import sys
 import csv
 
 from time import sleep
-VTKey = "Ask your Key at VirusTotal and put here"
+VTKey = "Ask for a Key at VirusTotal and put here"
 if sys.version_info[0] == 3:
     from urllib.request import urlopen
 else:
@@ -13,7 +13,7 @@ else:
 
 #create a list with app hash that you want to get Virus Total information on JSON file format (list.csv)
 #with this JSON file you can use avclass (https://github.com/malicialab/avclass) to label family malware app
-with open('list.csv') as csvfile:
+with open('listRepackageHash.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     for row in readCSV:
         with urlopen("https://www.virustotal.com/vtapi/v2/file/report?apikey="+VTkey+"&resource="+row[0]) as url:
