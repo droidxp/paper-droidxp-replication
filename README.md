@@ -9,6 +9,10 @@ representative number of malware from the gappusin family explains the higher nu
 
 ### Malware Dataset
 
-We use a curated dataset of 1203 repackaged apps available in the AndroZoo (https://androzoo.uni.lu/repackaging) repository, and arrange the samples on the following CSV [file](../paper-droidxptrace-results-F55A/appsHash.csv)
+We use a curated dataset of 1203 repackaged apps available in the AndroZoo (https://androzoo.uni.lu/repackaging) repository, and arrange the samples on the following CSV [file](../paper-droidxptrace-results-F55A/appsHash.csv). At this file, the colunms are the app version (original/repackaged), app description and app hash. The original dataset from previous research works is a subset of preview dataset and has 102 repackaged apps, which we separate and available them description at follow CSV [file](../paper-droidxptrace-results-F55A/originalMalwareSample.csv).
+
+We queried the VirusTotal repository (https://www.virustotal.com/gui/home/upload) to find out which repackaged apps in our dataset have been indeed labeled as a malware, and if confirmed, find which malware family the sample came from. To collect this information, we use avclass2 tool (https://github.com/malicialab/avclass). The first step for that is create a list of all repackage app hash which we would like to check at VirusTotal. This list is available [here](../paper-droidxptrace-results-F55A/listRepackageHash.csv). 
+
+
 
 [this subtext](../paper-droidxptrace-results-F55A/final-ds.csv)
