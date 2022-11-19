@@ -11,7 +11,7 @@ else:
     # might be around one day
     from urllib import urlopen
 
-#create a list with app hash that you want to get Virus Total information on JSON file format (list.csv)
+#create a list with app hash that you want to get Virus Total information on JSON file format (listRepackageHash.csv)
 #with this JSON file you can use avclass (https://github.com/malicialab/avclass) to label family malware app
 with open('listRepackageHash.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
