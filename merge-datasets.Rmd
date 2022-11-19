@@ -17,9 +17,9 @@ library(xtable)
 ```
 
 
-
-
 ```{r vt}
+
+#Load the Datasets
 apps <- read.csv("appsHash.csv", head=T, sep=',')
 
 repackaged <- sqldf("select * from apps where version = 'malicious'")
@@ -36,11 +36,6 @@ avclass <- sqldf("select *
 
 nrow(avclass)
 
-#hashes <- read.csv("sha256-md5-app.csv",head=T, sep=',')
-
-
-#nrow(hashes)
-
 
 s1 <- sqldf("select r.app, r.hash, a.family, 'True' as Malware
 				from repackaged r, avclass a where r.hash = upper(a.hash)")
@@ -56,13 +51,6 @@ nrow(s2)
 
 ds <- rbind(s1, s2)
 
-# masResults <- read.csv("summaryTypeFamily.csv", head=T)
-
-# malwares <- sqldf("select m1.*, m2.malware as callDifferentAPIs, m2.hasDifferentTraces 
-#                   from malwares m1, masResults m2 where m1.app = m2.app")
-
-#nrow(malwares)
-#colnames(malwares)
 
 original <- read.csv("originalMalwareSample.csv", head=T)
 
