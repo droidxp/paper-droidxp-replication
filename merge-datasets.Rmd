@@ -1,6 +1,6 @@
 ---
-title: "dataset-malware-analysis"
-author: "Rodrigo Bonifácio et al."
+title: "Dataset Merge"
+author: "anonymous"
 date: '2022-10-14'
 output: html_document
 ---
@@ -15,7 +15,24 @@ library(sqldf)
 library(xtable)
 ```
 
+## Merge Script
 
+The purpose of this R script is to merge several datasets into a single one. 
+The following datasets are merged:
+
+   * *appsHash* contains the hash of all apps, including information to indicate 
+   if a given asset is an original or a repackaged version of an app. 
+   
+   * *avclass* contains the results of using the tool av2class to identify 
+   the family of the malware in our dataset. 
+   
+   * *originalMalwareSample* contains the hash of the apps used in the 
+   Bao et al. study. 
+   
+   * *summaryTypeFamily.csv* contains the outputs of the mining android sandbox 
+   approach. 
+   
+We merge the above datasets and export the results to a file named *final-ds.csv*.   
 
 
 ```{r vt}
@@ -34,7 +51,7 @@ avclass <- sqldf("select *
                   where family != 'undetected' and family not like 'SINGLETON%'")
 
 nrow(avclass)
-write.csv(avclass, "av.csv", sep=',', quote = F, row.names = F)
+write.csv(avclass, "av.csv", quote = F, row.names = F)
 
 #hashes <- read.csv("sha256-md5-app.csv",head=T, sep=',')
 
@@ -88,7 +105,7 @@ colnames(final_ds)
 head(final_ds)
 
 
- write.csv(final_ds, "final-ds.csv", sep=',', quote = F, row.names = F)
+ write.csv(final_ds, "final-ds.csv",  quote = F, row.names = F)
 ```
 
 
