@@ -18,7 +18,7 @@ methods_in_diff = {}
 
 sensitive_methods = []
 
-with open('sensitive_methods2.txt', 'r') as fh:
+with open('sensitive_methods.txt', 'r') as fh:
     lines = fh.readlines()
 
     for line in lines:
