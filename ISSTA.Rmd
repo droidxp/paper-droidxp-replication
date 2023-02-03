@@ -1,0 +1,225 @@
+---
+title: "MiningSandbox-ISSTA"
+author: "Rodrigo Bonifácio et al."
+date: '2023-01-23'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=5, fig.height=5, fig.path='./figures/', dev=c('png', 'pdf'))
+
+library(sqldf)
+library(xtable)
+```
+
+
+### Loading the complete dataset
+
+```{r fullDataSet}
+full_ds <- read.csv("sample_final_ds.csv", head=T, sep=',')
+
+colnames(full_ds)
+nrow(full_ds)
+
+# "sha256"      "family"      "malware"     "apidetected" "similarity"
+```
+
+### Computing basic statistics for similarity (complete dataset)
+
+```{r similarityCDS}
+summary(full_ds$similarity)
+```
+
+### Number of malwares (complete dataset)
+```{r countMalwareCDS}
+sqldf("select malware, count(*) from full_ds group by malware")
+```
+
+### Number of repackaged apps the MAS approach labels as malware (complete dataset)
+
+```{r countLabeledAsMalwareCDS}
+sqldf("select apidetected, count(*) from full_ds group by apidetected")
+```
+
+
+### Accuracy assesment (complete dataset)
+
+```{r accuracyCDS}
+
+tp <- sqldf("select * from full_ds where malware = 'True' and apidetected = 'True'" )
+
+fp <- sqldf("select * from full_ds where malware = 'False' and apidetected = 'True'" )
+
+fn <- sqldf("select * from full_ds where malware = 'True' and apidetected = 'False'" )
+
+precision = nrow(tp) / (nrow(tp) + nrow(fp))
+
+recall = nrow(tp) / (nrow(tp) + nrow(fn))
+
+fscore = 2 * (precision*recall) / (precision + recall)
+
+precision
+recall
+fscore
+```
+
+```{r familyAssesmentCDS}
+sqldf("select family, count(*) from full_ds group by family")
+
+
+sqldf("select malware, apidetected, count(*) 
+       from full_ds 
+       where family = 'gappusin'
+       group by malware, apidetected")
+
+sqldf("select count(distinct family) from full_ds")
+
+
+sqldf("select count(*) from full_ds where family = 'None'")
+
+families <- sqldf("select family, count(*) as Total 
+                   from full_ds where family != 'None'
+                   group by family 
+                  order by 2 desc")
+
+sqldf("select family, total*100.0/662.0
+       from families 
+       group by family
+       order by 2 desc")
+```
+
+```{r smallDataSet}
+small_ds <- read.csv("samples_DL_final_ds.csv", head=T, sep=',')
+
+colnames(full_ds)
+nrow(full_ds)
+
+# "sha256"      "family"      "malware"     "apidetected" "similarity"
+
+summary(small_ds$similarity)
+
+rp <- sqldf("select count(*) from small_ds where malware = 'True'")
+
+tp <- sqldf("select * from small_ds where malware = 'True' and apidetected = 'True'" )
+
+fp <- sqldf("select * from small_ds where malware = 'False' and apidetected = 'True'" )
+
+fn <- sqldf("select * from small_ds where malware = 'True' and apidetected = 'False'" )
+
+
+precision = nrow(tp) / (nrow(tp) + nrow(fp))
+
+recall = nrow(tp) / (nrow(tp) + nrow(fn))
+
+fscore = 2 * (precision*recall) / (precision + recall)
+
+precision
+recall
+fscore
+
+sqldf("select count(*) from small_ds where family = 'None'")
+
+families <- sqldf("select family, count(*) as Total 
+                   from small_ds where family != 'None'
+                   group by family 
+                  order by 2 desc")
+
+sqldf("select family, total*100.0/69.0
+       from families 
+       order by 2 desc")
+
+sqldf("select malware, apidetected, count(*) 
+       from small_ds 
+       group by malware, apidetected")
+```
+
+### Comparing the similarity scores (complete and small datasets)
+
+```{r similarityComparison}
+summary(small_ds$similarity)
+summary(full_ds$similarity)
+
+sd(small_ds$similarity)
+sd(full_ds$similarity)
+
+
+sds <- sqldf("select similarity, 'Small Dataset' as dataset from small_ds") 
+cds <- sqldf("select similarity, 'Complete Dataset' as dataset from full_ds") 
+
+ds <- rbind(sds, cds)
+
+ds$dataset <- factor(ds$dataset , levels=c("Small Dataset", "Complete Dataset"))
+
+
+boxplot(similarity~dataset, data = ds, xlab="Datasets", ylab="Similarity Score")
+```
+
+### Logistic regression (on similarity)
+
+```{r glm}
+s1 <- sqldf("select ds.*, 1 as h1 
+             from full_ds ds 
+             where (malware = 'True' and apidetected = 'True') or 
+                   (malware = 'False' and apidetected = 'False')")
+
+s2 <- sqldf("select ds.*, 0 as h1 
+             from full_ds ds
+             where (malware = 'True' and apidetected = 'False') or 
+                   (malware = 'False' and apidetected = 'True')")
+
+ds <- rbind(s1, s2)
+
+
+ds$h1 <- as.factor(ds$h1)
+
+
+nrow(ds)
+
+sqldf("select h1, count(*) from ds group by h1")
+
+model <- glm(h1~similarity, data=ds, family = "binomial")
+
+summary(model)
+```
+
+### Clustering assessment (on similarity)
+
+```{r clusterinigSimilarity}
+set.seed(123)
+
+km.res <- kmeans(ds$similarity, 5)
+
+print(km.res)
+
+dd <- cbind(ds, cluster = km.res$cluster)
+
+head(dd)
+
+s1 <- sqldf("select cluster, count(*) as total from dd group by cluster")
+s2 <- sqldf("select cluster, count(*) as hits from dd where h1 = 1 group by cluster")
+
+dd = merge(s1, s2)
+
+dd["Percent"] = dd$hits * 100 / dd$total
+
+dd 
+
+## 1 0.1119763
+## 2 0.8261275
+## 3 0.9653697
+## 4 0.4371995
+## 5 0.6751769
+
+cs = data.frame("cluster" = c(1,2,3,4,5), 
+                "averageSimilarity" = c(0.11, 0.82, 0.96, 0.43, 0.67))
+
+cs = merge(dd, cs)
+
+colnames(cs)
+
+xtable(sqldf("select cluster, averageSimilarity, total, hits, percent 
+              from cs 
+              order by averageSimilarity"))
+
+```

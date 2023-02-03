@@ -3,6 +3,7 @@ title: "Dataset Merge"
 author: "anonymous"
 date: '2022-10-14'
 output: html_document
+description: This script create our final dataset file for analysis - final-ds.csv
 ---
 
 ```{r setup, include=FALSE}
@@ -16,6 +17,7 @@ library(xtable)
 ```
 
 ## Merge Script
+
 
 The purpose of this R script is to merge several datasets into a single one. 
 The following datasets are merged:
@@ -34,8 +36,9 @@ The following datasets are merged:
    
 We merge the above datasets and export the results to a file named *final-ds.csv*.   
 
-
 ```{r vt}
+
+#Load the Datasets
 apps <- read.csv("appsHash.csv", head=T, sep=',')
 
 repackaged <- sqldf("select * from apps where version = 'malicious'")
@@ -73,13 +76,6 @@ nrow(s2)
 
 ds <- rbind(s1, s2)
 
-# masResults <- read.csv("summaryTypeFamily.csv", head=T)
-
-# malwares <- sqldf("select m1.*, m2.malware as callDifferentAPIs, m2.hasDifferentTraces 
-#                   from malwares m1, masResults m2 where m1.app = m2.app")
-
-#nrow(malwares)
-#colnames(malwares)
 
 original <- read.csv("originalMalwareSample.csv", head=T)
 

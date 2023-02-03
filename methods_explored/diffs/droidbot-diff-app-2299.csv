@@ -1,1 +1,0 @@
-"<javax.net.SocketFactory: java.net.Socket createSocket()>""<android.net.wifi.WifiInfo: int getRssi()>""<javax.net.ssl.SSLContext: javax.net.ssl.SSLSocketFactory getSocketFactory()>""<android.net.ConnectivityManager: android.net.NetworkInfo[] getAllNetworkInfo()>""<java.lang.reflect.Field: boolean getBoolean(java.lang.Object)>"
