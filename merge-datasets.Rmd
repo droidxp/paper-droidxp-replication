@@ -41,7 +41,7 @@ We merge the above datasets and export the results to a file named *final-ds.csv
 #Load the Datasets
 apps <- read.csv("appsHash.csv", head=T, sep=',')
 
-repackaged <- sqldf("select * from apps where version = 'malicious'")
+repackaged <- sqldf("select * from apps where app like 'malicious%'")
 
 nrow(repackaged)
 
@@ -51,7 +51,7 @@ nrow(avclass)
 
 avclass <- sqldf("select * 
                   from avclass 
-                  where family != 'undetected' and family not like 'SINGLETON%'")
+                  where family != 'noIdentify' and family not like 'SINGLETON%'")
 
 nrow(avclass)
 write.csv(avclass, "av.csv", quote = F, row.names = F)
@@ -62,13 +62,13 @@ write.csv(avclass, "av.csv", quote = F, row.names = F)
 #nrow(hashes)
 
 
-s1 <- sqldf("select r.app, r.hash, a.family, 'True' as Malware
-				from repackaged r, avclass a where r.hash = upper(a.hash)")
+s1 <- sqldf("select r.app, r.hash, a.family as family, 'True' as Malware
+				from repackaged r, avclass a where r.hash = a.sha256")
 						 
 
 s2 <- sqldf("select r.app, r.hash, 'None' as family, 'False' as Malware
                    from repackaged r
-                   where r.hash not in (select upper(a.hash) from avclass a)")
+                   where r.hash not in (select a.sha256 from avclass a)")
 
 nrow(s1)
 
@@ -77,25 +77,10 @@ nrow(s2)
 ds <- rbind(s1, s2)
 
 
-original <- read.csv("originalMalwareSample.csv", head=T)
 
-s1 <- sqldf("select ds.*, 'True' PreviousStudy 
-             from ds where 
-             ds.app in (select app from original)")
+masResults <- read.csv("summarySimiDroid.csv", head=T)
 
-s2 <- sqldf("select ds.*, 'False' PreviousStudy 
-             from ds where 
-             ds.app not in (select app from original)")
-
-nrow(s1)
-nrow(s2)
-
-ds <- rbind(s1,s2)
-
-masResults <- read.csv("summaryTypeFamily.csv", head=T)
-
-final_ds <- sqldf("select ds.*, m.malware as APIDetected, m.hasDifferentTraces as TraceDetected 
-                   from ds, masResults m where ds.app = m.app")
+final_ds <- sqldf("select substring(ds.app,11) as app, ds.hash as hash, ds.family as family, ds.Malware as malware from ds")
 
 colnames(final_ds)
 head(final_ds)
