@@ -22,6 +22,11 @@ full_ds <- read.csv("sample_final_ds.csv", head=T, sep=',')
 colnames(full_ds)
 nrow(full_ds)
 
+full_ds <- sqldf("select * from full_ds where benign = 'True'")
+
+nrow(full_ds)
+
+
 # "sha256"      "family"      "malware"     "apidetected" "similarity"
 ```
 
@@ -64,8 +69,13 @@ recall
 fscore
 ```
 
+### Family Assessment (Complete Dataset)
+
 ```{r familyAssesmentCDS}
-sqldf("select family, count(*) from full_ds group by family")
+sqldf("select family, count(*) 
+       from full_ds 
+       where malware = 'True' 
+       group by family order by 2 desc")
 
 
 sqldf("select malware, apidetected, count(*) 
