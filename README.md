@@ -1,6 +1,6 @@
 ## Replication Package
 
-This is the replication package for the paper: The Achilles’ Heel of the Android Mining Sandbox Approach for Malware Identification.
+This is the replication package for the paper: The Achilles’ Heel of the Android Mining Sandbox Approach for Malware Identification
 
 ### Abstract
 
