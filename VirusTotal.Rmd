@@ -1,6 +1,6 @@
 ---
 title: "VirusTotal"
-author: "Rodrigo Bonifácio et al."
+author: "anonymous"
 date: "6/7/2022"
 output: html_document
 ---
