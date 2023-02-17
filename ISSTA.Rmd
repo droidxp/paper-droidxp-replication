@@ -1,6 +1,6 @@
 ---
 title: "MiningSandbox-ISSTA"
-author: "Rodrigo Bonifácio et al."
+author: "anonymous"
 date: '2023-01-23'
 output: html_document
 ---
