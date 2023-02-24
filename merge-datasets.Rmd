@@ -3,7 +3,7 @@ title: "Dataset Merge"
 author: "anonymous"
 date: '2022-10-14'
 output: html_document
-description: This script create our final dataset file for analysis - final-ds.csv
+description: This script create our final dataset file for analysis - sample_final_ds.csv.csv
 ---
 
 ```{r setup, include=FALSE}
@@ -41,7 +41,7 @@ We merge the above datasets and export the results to a file named *final-ds.csv
 #Load the Datasets
 apps <- read.csv("appsHash.csv", head=T, sep=',')
 
-repackaged <- sqldf("select * from apps where app like 'malicious%'")
+repackaged <- sqldf("select repackage from apps ")
 
 nrow(repackaged)
 
@@ -49,17 +49,44 @@ avclass <- read.csv("avclass.csv", head=T, sep=',')
 
 nrow(avclass)
 
-avclass <- sqldf("select * 
-                  from avclass 
-                  where family != 'noIdentify' and family not like 'SINGLETON%'")
+firstPart <- sqldf("select a.original as original,a.repackage as sha256,c.family as family from apps a 
+                     inner join avclass c on a.repackage = c.sha256")
 
-nrow(avclass)
-write.csv(avclass, "av.csv", quote = F, row.names = F)
+firstStep <- sqldf("select a.original as original,a.repackage as sha256,c.family as family from apps a 
+                     inner join avclass c on a.repackage = c.sha256")
 
-#hashes <- read.csv("sha256-md5-app.csv",head=T, sep=',')
+originalFamily <- read.csv("originalSampleFamily.csv", head=T, sep=',')
+
+originalFamily <- sqldf("select * from originalFamily ")
+
+secondStep <- sqldf("select f.original as sha256original,
+                     case
+	                     when (o.family isNull) THEN 'True'
+	                  Else 'False'
+                     END as benign,
+                     case
+	                     when (o.qt isNull) THEN '0'
+	                  Else o.qt
+                     END as vendorbenign,
+                     f.sha256 as sha256,f.family as family,
+                     case
+	                     when (f.family = 'None') THEN 'False'
+	                  Else 'True'
+                     END as malware
+                     
+                     from firstStep f 
+                     left join originalFamily o on f.original = upper(o.hash)")
+
+nrow(secondStep)
+
+malwareFamily <- read.csv("repackageSampleFamily.csv", head=T, sep=',')
+malwareFamily <- sqldf("select * from malwareFamily")
+
+result <- read.csv("methods_explored/output/diffs/summary.csv")
+result <- sqldf("select * from result")
 
 
-#nrow(hashes)
+write.csv(result, "av.csv", quote = F, row.names = F)
 
 
 s1 <- sqldf("select r.app, r.hash, a.family as family, 'True' as Malware
