@@ -17,7 +17,7 @@ library(xtable)
 # Loading and cleaning up the datasets
 
 ```{r fullDataSet}
-full_ds <- read.csv("final_ds_TSE.csv", head=T, sep=',')
+full_ds <- read.csv("final_dataset_TSE.csv", head=T, sep=',')
 small_ds <- read.csv("samples_DL_final_ds.csv", head=T, sep=',')
 
 
