@@ -1,0 +1,112 @@
+---
+title: "Dataset Merge"
+author: "Francisco Handrick"
+date: '2022-10-14'
+output: html_document
+description: This script create our final dataset file for analysis - sample_final_ds.csv.csv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=5, fig.height=5, fig.path='./figures/', dev=c('png', 'pdf'))
+
+setwd(".")
+
+library(sqldf)
+library(xtable)
+```
+
+## Merge Script
+
+
+The purpose of this R script is to merge several datasets into a single one. 
+The following datasets are merged:
+
+   * *appsHash* contains the hash of all apps, including information to indicate 
+   if a given asset is an original or a repackaged version of an app. 
+   
+   * *avclass* contains the results of using the tool av2class to identify 
+   the family of the malware in our dataset. 
+   
+   * *sampleAppHash.csv* contains the hash of the original apps used in our study. 
+   
+   * *originalSampleFamily* contains the malware family of the original apps used in our study. 
+   
+   * *repackageSampleFamily.csv* contains the malware family of the repackage apps used in our study. 
+   
+   * *summary.csv* contains the outputs of the mining android sandbox approach.
+   
+   * *summarySimiDroid.csv* contains the outputs of Simidroid with similarity of all app pairs.
+   
+We merge the above datasets and export the results to a file named *sample_f_ds.csv*.   
+
+```{r vt}
+
+#Load the Datasets
+apps <- read.csv("appsHash.csv", head=T, sep=',')
+
+repackaged <- sqldf("select repackaged from apps ")
+
+
+avclass <- read.csv("avClassResultRepackaged.csv", head=T, sep=',')
+
+
+firstPart <- sqldf("select a.original as original,a.repackaged as sha256,c.family as family from apps a 
+                     inner join avclass c on a.repackaged = c.sha256_repackaged")
+
+firstStep <- sqldf("select a.original as original,a.repackaged as sha256,c.family as family from apps a 
+                     inner join avclass c on a.repackaged = c.sha256_repackaged")
+
+originalFamily <- read.csv("originalSampleFamily.csv", head=T, sep=',')
+originalFamily <- sqldf("select * from originalFamily ")
+
+malwareFamily <- read.csv("repackageSampleFamily.csv", head=T, sep=',')
+malwareFamily <- sqldf("select * from malwareFamily")
+
+result <- read.csv("methods_explored/output/diffs/summary.csv")
+result <- sqldf("select * from result")
+
+apphash <- read.csv("sampleAppHash.csv", head=T, sep=',')
+apphash <- sqldf("select * from apphash")
+
+
+secondStep <- sqldf("select f.original as sha256original,
+                     o.benign as benign,
+	                  trim(o.qt) as vendorbenign,
+                     f.sha256 as sha256,f.family as family,
+                     case
+	                     when (f.family = 'None') THEN 'False'
+	                  Else 'True'
+                     END as malware,
+                     case
+	                     when (r.methods_in_diff = '0') THEN 'False'
+	                  Else 'True' 
+	                  END as apidetected
+                     
+                     from firstStep f 
+                     
+                     left join originalFamily o on f.original = o.hash
+                     inner join apphash h on h.hash = f.sha256
+                     inner join result r on r.apk = h.app")
+
+
+
+simiResults <- read.csv("summarySimiDroid.csv", head=T)
+simiResults <- sqldf("select * from simiResults")
+
+thirdStep <- sqldf("select s.*,r.identical,r.similar,r.new,r.deleted,r.similarity,m.vendormalicious from 
+                   secondStep s 
+                   inner join simiResults r on s.sha256 = r.sha256
+                   inner join malwareFamily m on s.sha256 = m.sha256repackage")
+
+nrow(thirdStep)
+write.csv(thirdStep, "sample_final_ds.csv", quote = F, row.names = F)
+
+```
+
+```{r vt}
+
+
+
+
+
