@@ -3,7 +3,7 @@ title: "Dataset Merge"
 author: "Francisco Handrick"
 date: '2022-10-14'
 output: html_document
-description: This script create our final dataset file for analysis - sample_final_ds.csv.csv
+description: This script create our final dataset file for analysis - sample_final_ds_before_VT_check.csv
 ---
 
 ```{r setup, include=FALSE}
@@ -63,7 +63,7 @@ originalFamily <- sqldf("select * from originalFamily ")
 malwareFamily <- read.csv("repackageSampleFamily.csv", head=T, sep=',')
 malwareFamily <- sqldf("select * from malwareFamily")
 
-result <- read.csv("methods_explored/output/diffs/summary.csv")
+result <- read.csv("../methods_explored/output/diffs/summary.csv")
 result <- sqldf("select * from result")
 
 apphash <- read.csv("sampleAppHash.csv", head=T, sep=',')
@@ -94,13 +94,13 @@ secondStep <- sqldf("select f.original as sha256original,
 simiResults <- read.csv("summarySimiDroid.csv", head=T)
 simiResults <- sqldf("select * from simiResults")
 
-thirdStep <- sqldf("select s.*,r.identical,r.similar,r.new,r.deleted,r.similarity,m.vendormalicious from 
+thirdStep <- sqldf("select s.*,r.identical,r.similar,r.new,r.deleted,r.similarity from 
                    secondStep s 
                    inner join simiResults r on s.sha256 = r.sha256
                    inner join malwareFamily m on s.sha256 = m.sha256repackage")
 
 nrow(thirdStep)
-write.csv(thirdStep, "sample_final_ds.csv", quote = F, row.names = F)
+write.csv(thirdStep, "sample_final_ds_before_VT_check.csv", quote = F, row.names = F)
 
 ```
 
