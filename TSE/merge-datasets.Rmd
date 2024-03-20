@@ -64,12 +64,15 @@ firstStep <- sqldf("select a.original as original,a.repackaged as sha256,c.famil
 
 originalFamily <- read.csv("originalSampleFamily.csv", head=T, sep=',')
 originalFamily <- sqldf("select * from originalFamily ")
+nrow(originalFamily)
 
 malwareFamily <- read.csv("repackageSampleFamily.csv", head=T, sep=',')
 malwareFamily <- sqldf("select * from malwareFamily")
+nrow(malwareFamily)
 
 result <- read.csv("../methods_explored/output/diffs/summary.csv")
 result <- sqldf("select * from result")
+nrow(result)
 
 apphash <- read.csv("sampleAppHash.csv", head=T, sep=',')
 apphash <- sqldf("select * from apphash")
@@ -77,7 +80,7 @@ apphash <- sqldf("select * from apphash")
 
 secondStep <- sqldf("select f.original as sha256original,
                      o.benign as benign,
-	                  trim(o.qt) as vendorbenign,
+	                  
                      f.sha256 as sha256,f.family as family,
                      case
 	                     when (f.family = 'None') THEN 'False'
