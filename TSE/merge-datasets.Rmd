@@ -47,12 +47,17 @@ apps <- read.csv("appsHash.csv", head=T, sep=',')
 
 repackaged <- sqldf("select repackaged from apps ")
 
+colnames(repackaged)
+
+nrow(repackaged)
+
 
 avclass <- read.csv("avClassResultRepackaged.csv", head=T, sep=',')
-
+nrow(avclass)
 
 firstPart <- sqldf("select a.original as original,a.repackaged as sha256,c.family as family from apps a 
                      inner join avclass c on a.repackaged = c.sha256_repackaged")
+nrow(firstPart)
 
 firstStep <- sqldf("select a.original as original,a.repackaged as sha256,c.family as family from apps a 
                      inner join avclass c on a.repackaged = c.sha256_repackaged")
