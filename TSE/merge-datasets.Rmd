@@ -94,7 +94,7 @@ secondStep <- sqldf("select f.original as sha256original,
 simiResults <- read.csv("summarySimiDroid.csv", head=T)
 simiResults <- sqldf("select * from simiResults")
 
-thirdStep <- sqldf("select s.*,r.identical,r.similar,r.new,r.deleted,r.similarity from 
+thirdStep <- sqldf("select s.*,r.identical,r.similar,r.new,r.deleted,r.simiscore from 
                    secondStep s 
                    inner join simiResults r on s.sha256 = r.sha256
                    inner join malwareFamily m on s.sha256 = m.sha256repackage")

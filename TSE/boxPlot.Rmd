@@ -18,7 +18,7 @@ library(xtable)
 
 ```{r fullDataSet}
 full_ds <- read.csv("final_dataset_TSE.csv", head=T, sep=',')
-small_ds <- read.csv("samples_DL_final_ds.csv", head=T, sep=',')
+small_ds <- read.csv("samples_previewStudy_dataSet.csv", head=T, sep=',')
 
 
 colnames(full_ds)
