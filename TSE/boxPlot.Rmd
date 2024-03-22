@@ -10,7 +10,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.width=5, fig.height=5, fig.path='./figures/', dev=c('png', 'pdf'))
-
+setwd(".")
 library(sqldf)
 ```
 
@@ -26,11 +26,12 @@ library(xtable)
 full_ds <- read.csv("sample_final_ds_before_VT_check.csv", head=T, sep=',')
 small_ds <- read.csv("samples_DL_final_ds.csv", head=T, sep=',')
 
+full_ds$similarity = as.numeric(full_ds$similarity)
 
 colnames(full_ds)
 nrow(full_ds)
 
-full_ds <- sqldf("select * from full_ds where benign = 'True'")
+full_ds <- sqldf("select * from full_ds where benign = 'True' and source = 'repack'")
 write.csv(full_ds, "sample_final_ds_after_VT_check.csv", quote = F, row.names = F)
 
 nrow(full_ds)
@@ -101,7 +102,6 @@ sqldf("select malware, apidetected, count(*)
        group by malware, apidetected")
 ```
 
-
 ## Accuracy assesment (complete dataset)
 
 ```{r accuracyCDS}
@@ -123,67 +123,6 @@ recall
 fscore
 
 ```
-## Accuracy assesment (complete dataset with parameter help)
-
-```{r accuracyCDS}
-
-tp <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'True' or paramdetected = 'True')" )
-
-fp <- sqldf("select * from full_ds where malware = 'False' and (apidetected = 'True' or paramdetected = 'True')" )
-
-fn <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'False' and paramdetected = 'False')" )
-
-precisionWithParam = nrow(tp) / (nrow(tp) + nrow(fp))
-
-recallWithParam = nrow(tp) / (nrow(tp) + nrow(fn))
-
-fscoreWithParam = 2 * (precisionWithParam*recallWithParam) / (precisionWithParam + recallWithParam)
-
-precisionWithParam
-recallWithParam
-fscoreWithParam
-```
-## Accuracy assesment (complete dataset with trace help)
-
-```{r accuracyCDS}
-
-tp <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'True' or tracedetected = 'True')" )
-
-fp <- sqldf("select * from full_ds where malware = 'False' and (apidetected = 'True' or tracedetected = 'True')" )
-
-fn <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'False' and tracedetected = 'False')" )
-
-precisionWithTrace = nrow(tp) / (nrow(tp) + nrow(fp))
-
-recallWithTrace = nrow(tp) / (nrow(tp) + nrow(fn))
-
-fscoreWithTrace = 2 * (precisionWithTrace*recallWithTrace) / (precisionWithTrace + recallWithTrace)
-
-precisionWithTrace
-recallWithTrace
-fscoreWithTrace
-```
-## Accuracy assesment (complete dataset with parameter and trace help)
-
-```{r accuracyCDS}
-
-tp <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'True' or tracedetected = 'True' or paramdetected = 'True')" )
-
-fp <- sqldf("select * from full_ds where malware = 'False' and (apidetected = 'True' or tracedetected = 'True' or paramdetected = 'True')" )
-
-fn <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'False' and tracedetected = 'False' and paramdetected = 'False')" )
-
-precisionWithAll = nrow(tp) / (nrow(tp) + nrow(fp))
-
-recallWithAll = nrow(tp) / (nrow(tp) + nrow(fn))
-
-fscoreWithAll = 2 * (precisionWithAll*recallWithAll) / (precisionWithAll + recallWithAll)
-
-precisionWithAll
-recallWithAll
-fscoreWithAll
-```
-
 # Section 4.2 (Similarity Assessment)
 
 ## Computing basic statistics for similarity 
@@ -193,7 +132,7 @@ summary(small_ds$similarity)
 sd(small_ds$similarity)
 
 summary(full_ds$similarity)
-sd(full_ds$similarity)
+#sd(full_ds$similarity)
 
 sqldf("select count(*) from full_ds where similarity = 0")
 
@@ -204,8 +143,6 @@ sqldf("select count(*)  from full_ds where similarity >= 0.75")
 sqldf("select count(*)  from full_ds where similarity >= 0.90")
 
 ```
-
-
 ### Comparing the similarity scores (complete and small datasets)
 
 ```{r similarityComparison}
@@ -341,9 +278,69 @@ xtable(sqldf("select cluster, averageSimilarity, total, hits, percent
               from cs 
               order by averageSimilarity"))
 
+
 ```
+# Section 5
+## Accuracy assesment (complete dataset with parameter help)
 
+```{r accuracyCDS}
 
+tp <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'True' or paramdetected = 'True')" )
+
+fp <- sqldf("select * from full_ds where malware = 'False' and (apidetected = 'True' or paramdetected = 'True')" )
+
+fn <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'False' and paramdetected = 'False')" )
+
+precisionWithParam = nrow(tp) / (nrow(tp) + nrow(fp))
+
+recallWithParam = nrow(tp) / (nrow(tp) + nrow(fn))
+
+fscoreWithParam = 2 * (precisionWithParam*recallWithParam) / (precisionWithParam + recallWithParam)
+
+precisionWithParam
+recallWithParam
+fscoreWithParam
+```
+## Accuracy assesment (complete dataset with trace help)
+
+```{r accuracyCDS}
+
+tp <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'True' or tracedetected = 'True')" )
+
+fp <- sqldf("select * from full_ds where malware = 'False' and (apidetected = 'True' or tracedetected = 'True')" )
+
+fn <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'False' and tracedetected = 'False')" )
+
+precisionWithTrace = nrow(tp) / (nrow(tp) + nrow(fp))
+
+recallWithTrace = nrow(tp) / (nrow(tp) + nrow(fn))
+
+fscoreWithTrace = 2 * (precisionWithTrace*recallWithTrace) / (precisionWithTrace + recallWithTrace)
+
+precisionWithTrace
+recallWithTrace
+fscoreWithTrace
+```
+## Accuracy assesment (complete dataset with parameter and trace help)
+
+```{r accuracyCDS}
+
+tp <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'True' or tracedetected = 'True' or paramdetected = 'True')" )
+
+fp <- sqldf("select * from full_ds where malware = 'False' and (apidetected = 'True' or tracedetected = 'True' or paramdetected = 'True')" )
+
+fn <- sqldf("select * from full_ds where malware = 'True' and (apidetected = 'False' and tracedetected = 'False' and paramdetected = 'False')" )
+
+precisionWithAll = nrow(tp) / (nrow(tp) + nrow(fp))
+
+recallWithAll = nrow(tp) / (nrow(tp) + nrow(fn))
+
+fscoreWithAll = 2 * (precisionWithAll*recallWithAll) / (precisionWithAll + recallWithAll)
+
+precisionWithAll
+recallWithAll
+fscoreWithAll
+```
 
 ### Accuracy assesment (Complete dataset without gappusin)
 
