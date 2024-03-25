@@ -23,16 +23,24 @@ library(xtable)
 # Loading and cleaning up the datasets
 
 ```{r fullDataSet}
+#full_ds <- read.csv("sample_final_ds.csv", head=T, sep=',')
 full_ds <- read.csv("sample_final_ds_before_VT_check.csv", head=T, sep=',')
 small_ds <- read.csv("samples_DL_final_ds.csv", head=T, sep=',')
 
-full_ds$similarity = as.numeric(full_ds$similarity)
 
 colnames(full_ds)
 nrow(full_ds)
 
-full_ds <- sqldf("select * from full_ds where benign = 'True' and source = 'repack'")
+full_ds <- sqldf("select * from full_ds where benign = 'True'")
+
+#full_ds$similarity <- as.numeric(gsub(",", ".", gsub("\\.", "", full_ds$similarity)))
+#options(digits=15)
+full_ds$similarity = as.numeric(as.character(full_ds$similarity))
+
+#as.numeric("1244713607364931585"),digits=15
+
 write.csv(full_ds, "sample_final_ds_after_VT_check.csv", quote = F, row.names = F)
+
 
 nrow(full_ds)
 
@@ -132,7 +140,7 @@ summary(small_ds$similarity)
 sd(small_ds$similarity)
 
 summary(full_ds$similarity)
-#sd(full_ds$similarity)
+sd(full_ds$similarity)
 
 sqldf("select count(*) from full_ds where similarity = 0")
 
@@ -161,7 +169,7 @@ ds <- rbind(sds, cds)
 ds$dataset <- factor(ds$dataset , levels=c("Small Dataset", "Complete Dataset"))
 
 
-boxplot(similarity~dataset, data = ds, xlab="Datasets", ylab="Similarity Score",outline=F)
+boxplot(similarity~dataset, data = ds, xlab="Datasets", ylab="Similarity Score", col = c("gray"), outline=F)
 ```
 
 ### Logistic regression (on similarity)
@@ -341,6 +349,27 @@ precisionWithAll
 recallWithAll
 fscoreWithAll
 ```
+# Section 6
+## Accuracy assesment (complete dataset with just one vendor)
+
+```{r accuracyCDS}
+
+tp <- sqldf("select * from full_ds where (malware = 'True' or qtdvendor = 1) and apidetected = 'True'")
+
+fp <- sqldf("select * from full_ds where (malware = 'False' and qtdvendor = 0) and apidetected = 'True'")
+
+fn <- sqldf("select * from full_ds where (malware = 'True' or qtdvendor = 1) and apidetected = 'False'" )
+
+precision1V = nrow(tp) / (nrow(tp) + nrow(fp))
+
+recall1V = nrow(tp) / (nrow(tp) + nrow(fn))
+
+fscore1V = 2 * (precision1V*recall1V) / (precision1V + recall1V)
+
+precision1V
+recall1V
+fscore1V
+```
 
 ### Accuracy assesment (Complete dataset without gappusin)
 
@@ -378,7 +407,7 @@ gappusin <- sqldf("select * from full_ds where family =  'gappusin'")
 
 summary(gappusin$similarity)
 sd(gappusin$similarity)
-hist(gappusin$similarity, main="", xlab="Similarity Score", ylab="Frequency")
+hist(gappusin$similarity, main="", xlab="Similarity Score", ylab="Frequency", col = c("gray"))
 
 ```
 
