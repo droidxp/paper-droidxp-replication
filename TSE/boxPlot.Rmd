@@ -33,14 +33,9 @@ nrow(full_ds)
 
 full_ds <- sqldf("select * from full_ds where benign = 'True'")
 
-#full_ds$similarity <- as.numeric(gsub(",", ".", gsub("\\.", "", full_ds$similarity)))
-#options(digits=15)
 full_ds$similarity = as.numeric(as.character(full_ds$similarity))
 
-#as.numeric("1244713607364931585"),digits=15
-
 write.csv(full_ds, "sample_final_ds_after_VT_check.csv", quote = F, row.names = F)
-
 
 nrow(full_ds)
 
