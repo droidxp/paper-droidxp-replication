@@ -31,7 +31,7 @@ small_ds <- read.csv("samples_DL_final_ds.csv", head=T, sep=',')
 colnames(full_ds)
 nrow(full_ds)
 
-full_ds <- sqldf("select * from full_ds where benign = 'True'")
+full_ds <- sqldf("select * from full_ds where benign = 'True' and similarity <> '0'")
 
 full_ds$similarity = as.numeric(as.character(full_ds$similarity))
 
@@ -120,6 +120,7 @@ precision = nrow(tp) / (nrow(tp) + nrow(fp))
 recall = nrow(tp) / (nrow(tp) + nrow(fn))
 
 fscore = 2 * (precision*recall) / (precision + recall)
+
 
 precision
 recall
@@ -431,8 +432,12 @@ families <- sqldf("select family, count(*) as Total
                    group by family 
                   order by 2 desc")
 
-sqldf("select family, total*100.0/2642.0
-       from families 
-       group by family
+sqldf("select family, total*100.0/1395.0
+       from families
        order by 2 desc")
+
+```
+
+
+
 ```
