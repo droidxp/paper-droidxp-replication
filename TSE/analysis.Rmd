@@ -207,7 +207,8 @@ dd["Percentage"] = dd$hits * 100 / dd$total
 dd 
 
 cs = data.frame("cluster" = c(1,2,3,4,5, 6, 7, 8, 9, 10), 
-                "averageSimilarity" = km.res$centers)
+                "averageSimilarity" = c(0.87, 0.90, 0.94, 0.98, 0.09,0.97,0.55,0.79, 0.99, 0.67))
+                
 
 cs = merge(dd, cs)
 
