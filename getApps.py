@@ -2,7 +2,7 @@
 #https://androzoo.uni.lu/ and ask for a key
 
 
-key="0a34ff6b56a67972ad9f8bc60664287f689e50575f036d6bb637ce98b28ce9a7" 
+key="Insert Here your Androzoo Key" 
 
 import os
 import csv
