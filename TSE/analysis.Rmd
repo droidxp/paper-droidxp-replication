@@ -23,6 +23,8 @@ library(xtable)
 full_ds <- read.csv("large_ds.csv", head=T, sep=',')
 small_ds <- read.csv("small_ds.csv", head=T, sep=',')
 full_ds$similarity = as.numeric(as.character(full_ds$similarity))
+#full_ds = sqldf("select * from full_ds where family in (select family from small_ds where family <> 'None')
+#                and family <> 'gappusin'")
 ```
 
 ### Showing the number of rows in the datasets
@@ -261,6 +263,9 @@ fscore = 2 * (precision*recall) / (precision + recall)
 precision
 recall
 fscore
+nrow(tp)
+nrow(fp)
+nrow(fn)
 ```
 
 ### Accuracy Assesment (LargeDS with Trace Extension)
@@ -282,6 +287,9 @@ fscore = 2 * (precision*recall) / (precision + recall)
 precision
 recall
 fscore
+nrow(tp)
+nrow(fp)
+nrow(fn)
 ```
 
 ### Accuracy Assesment (LargeDS with Trace and Parameter Extensions)
@@ -303,15 +311,18 @@ fscore = 2 * (precision*recall) / (precision + recall)
 precision
 recall
 fscore
+nrow(tp)
+nrow(fp)
+nrow(fn)
 ```
 
 
 
 
 
-# Gappusin Assessment 
+# Gappusin and Revmob Assessment 
 
-### Accuracy Assesment (LargeDS without samples from the Gappusin family)
+### Accuracy Assesment (LargeDS without samples from the Gappusin and Revmob family)
 
 ```{r accuracyCDSWithoutGappusin}
 
@@ -320,11 +331,22 @@ sqldf("select malware, apidetected, count(*)
        where family = 'gappusin'
        group by malware, apidetected")
 
-tp <- sqldf("select * from full_ds where malware = 'True' and apidetected = 'True' and family != 'gappusin'" )
+tp <- sqldf("select * from full_ds where malware = 'True' and apidetected = 'True' and family 
+            
+            not in ('revmob','gappusin')
+            
+            
+            
+            ")
 
-fp <- sqldf("select * from full_ds where malware = 'False' and apidetected = 'True' and family != 'gappusin'" )
+fp <- sqldf("select * from full_ds where malware = 'False' and apidetected = 'True'")
 
-fn <- sqldf("select * from full_ds where malware = 'True' and apidetected = 'False' and family != 'gappusin'" )
+fn <- sqldf("select * from full_ds where malware = 'True' and apidetected = 'False' and family
+            not in ('revmob','gappusin')
+            
+            
+            ") 
+
 
 precision = nrow(tp) / (nrow(tp) + nrow(fp))
 

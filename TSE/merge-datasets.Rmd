@@ -56,7 +56,6 @@ nrow(avclass)
 
 result <- read.csv("../methods_explored/output/diffs/summary.csv")
 result <- sqldf("select * from result")
-nrow(result)
 
 
 apphash <- read.csv("sampleAppHash.csv", head=T, sep=',')
@@ -90,11 +89,11 @@ malwareFamily <- sqldf("select * from malwareFamily")
 
 vendorCkeck <- read.csv("vendorCkeck.csv", head=T, sep=',')
 vendorCkeck <- sqldf("select * from vendorCkeck")
-nrow(vendorCkeck)
 
 thirdPart <- sqldf("select se.source, se.sha256original, o.benign ,se.sha256, r.family, 
                     case
-	                     when (r.family = 'None') THEN 'False'
+	                     when ((r.family = 'None' and v.qtdvendor = '0') 
+	                                  or (r.family = 'None' and v.qtdvendor = '1'))THEN 'False'
 	                  Else 'True'
                      END as malware,v.qtdvendor as qtdvendor,
                se.apidetected,se.identical, se.similar, se.new, se.deleted, se.similarity from secondPart se 
@@ -110,7 +109,12 @@ lastPart <- sqldf("select t.source as source, t.sha256original as sha256original
                 inner join param_trace_diff tp on tp.original = t.sha256original
                 and tp.repackaged = t.sha256")
 
+
 write.csv(lastPart, "sample_final_ds_before_VT_check.csv", quote = F, row.names = F)
+
+large_ds = sqldf("select * from lastPart where benign = 'True'")
+
+write.csv(large_ds, "large_ds.csv", quote = F, row.names = F)
 
 ```
 
