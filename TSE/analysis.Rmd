@@ -369,8 +369,6 @@ summary(gappusin$similarity)
 sd(gappusin$similarity)
 hist(gappusin$similarity, main="", xlab="Similarity Score", ylab="Frequency", col = c("gray"))
 ```
-
-
 ### Family Assessment
 
 ```{r familyAssesmentCDS}
@@ -388,16 +386,16 @@ sqldf("select malware, apidetected, count(*)
 sqldf("select count(distinct family) from full_ds")
 
 
-totalWithFamily <- nrow(sqldf("select * from full_ds where family != 'None'"))
+totalWithFamily <- nrow(sqldf("select * from full_ds where malware = 'True'"))
 
 families <- sqldf("select family, count(*) as Total 
-                   from full_ds where family != 'None'
+                   from full_ds 
                    group by family 
                   order by 2 desc")
 
 families["Percentage"] <- families["Total"] * 100 / totalWithFamily
-sqldf("select family, percentage
-       from families
+sqldf("select family, Percentage
+       from families where family <> 'None'
        order by 2 desc")
 ```
 
